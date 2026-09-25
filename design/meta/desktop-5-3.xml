@@ -1,0 +1,442 @@
+<canvas id="0:1" name="Homepage" x="0" y="0" width="0" height="0">
+  <frame id="5:3" name="Desktop — Home 1440" x="0" y="0" width="1440" height="7330.96142578125">
+    <frame id="5:4" name="Top bar" x="0" y="0" width="1440" height="38">
+      <frame id="5:5" name="left" x="96" y="10" width="321" height="18">
+        <text id="5:6" name="CCB #240826" x="0" y="0" width="92" height="18" />
+        <text id="5:7" name="LICENSED · BONDED · INSURED" x="112" y="0" width="209" height="18" />
+      </frame>
+      <frame id="5:8" name="right" x="962" y="10" width="382" height="18">
+        <text id="5:9" name="HABLAMOS ESPAÑOL" x="0" y="0" width="135" height="18" />
+        <text id="5:10" name="FREE ESTIMATES · 503-840-8056" x="155" y="0" width="227" height="18" />
+      </frame>
+    </frame>
+    <frame id="5:11" name="Header" x="0" y="38" width="1440" height="101">
+      <rounded-rectangle id="5:12" name="Logo (logo_transparent)" x="96" y="14" width="108" height="72" />
+      <frame id="5:13" name="Nav" x="335.5" y="40" width="564" height="20">
+        <text id="5:14" name="Interior" x="0" y="0" width="55" height="20" />
+        <text id="5:15" name="Exterior" x="91" y="0" width="60" height="20" />
+        <text id="5:16" name="Cabinets" x="187" y="0" width="65" height="20" />
+        <text id="5:17" name="Our work" x="288" y="0" width="66" height="20" />
+        <text id="5:18" name="About" x="390" y="0" width="45" height="20" />
+        <text id="5:19" name="Service area" x="471" y="0" width="93" height="20" />
+      </frame>
+      <frame id="5:20" name="Actions" x="1031" y="24" width="313" height="52">
+        <frame id="5:21" name="Phone" x="0" y="2" width="139" height="48">
+          <text id="5:22" name="CALL EFRAIN" x="0" y="0" width="87" height="18" />
+          <text id="5:23" name="503-840-8056" x="0" y="18" width="139" height="30" />
+        </frame>
+        <frame id="5:24" name="Button/Primary" x="159" y="0" width="154" height="52">
+          <text id="5:25" name="Free estimate" x="26" y="16" width="102" height="20" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="6:2" name="Hero" x="0" y="139" width="1440" height="960">
+      <rounded-rectangle id="6:3" name="bg" x="0" y="0" width="1440" height="860" />
+      <rounded-rectangle id="6:4" name="Hero photo (olvera_01_hero_exterior)" x="680" y="0" width="760" height="860" />
+      <rounded-rectangle id="6:5" name="photo fade" x="680" y="0" width="340" height="860" />
+      <vector id="6:6" name="Fir skyline (brand motif from logo)" x="-30" y="1465.4000244140625" width="1477.9000244140625" height="91.5" />
+      <rounded-rectangle id="6:7" name="ground" x="0" y="860" width="1440" height="100" />
+      <frame id="6:8" name="Hero copy" x="96" y="72" width="640" height="663.8577270507812">
+        <frame id="6:9" name="Tape label" x="-3.3527612686157227e-7" y="9.868708610534668" width="377.70847684144974" height="41.857744086533785">
+          <text id="6:10" name="HILLSBORO, OREGON · 10+ YEARS PAINTING HOMES" x="16" y="7" width="345.3529649153352" height="27.024879086762667" />
+        </frame>
+        <text id="6:11" name="Hillsboro house painters for interiors, exteriors and cabinets" x="0" y="67.85774230957031" width="640" height="328" />
+        <text id="6:12" name="We cover your floors and furniture and do the prep that makes paint last. Tell us what needs painting and we&#39;ll set up a free estimate." x="0" y="421.85772705078125" width="520" height="90" />
+        <frame id="6:13" name="CTAs" x="0" y="537.8577270507812" width="442" height="57">
+          <frame id="6:14" name="Button/Primary" x="0" y="0" width="233" height="56">
+            <text id="6:15" name="Get my free estimate →" x="28" y="18" width="177" height="20" />
+          </frame>
+          <frame id="6:16" name="Button/Outline" x="247" y="0" width="195" height="57">
+            <text id="6:17" name="Call 503-840-8056" x="29.5" y="18.5" width="136" height="20" />
+          </frame>
+        </frame>
+        <frame id="6:18" name="Trust chips" x="0" y="620.8577270507812" width="623" height="43">
+          <frame id="6:19" name="Google badge (PLACEHOLDER)" x="0" y="0" width="249" height="43">
+            <text id="6:20" name="5.0" x="14" y="11.5" width="23" height="20" />
+            <text id="6:21" name="★★★★★" x="47" y="11.5" width="78" height="20" />
+            <text id="6:22" name="Google reviews" x="135" y="10" width="98" height="23" />
+          </frame>
+          <text id="6:23" name="60+ SIGNED CLIENT TESTIMONIALS" x="271" y="12.5" width="238" height="18" />
+          <text id="6:24" name="CCB #240826" x="531" y="12.5" width="92" height="18" />
+        </frame>
+      </frame>
+      <frame id="6:25" name="Estimate bar (form)" x="96" y="806" width="1248" height="127">
+        <frame id="6:26" name="Form title" x="28" y="30" width="265" height="67">
+          <text id="6:27" name="Get a free estimate" x="0" y="0" width="265" height="42" />
+          <text id="6:28" name="We&#39;ll call you to set up a time." x="0" y="44" width="187" height="23" />
+        </frame>
+        <frame id="6:29" name="Field/Name" x="311.20001220703125" y="24" width="170" height="79">
+          <text id="6:30" name="NAME" x="0" y="0" width="35" height="18" />
+          <frame id="6:31" name="input" x="0" y="24" width="170" height="55">
+            <text id="6:32" name="Your name" x="15" y="14" width="78" height="27" />
+          </frame>
+        </frame>
+        <frame id="6:33" name="Field/Phone" x="499.4000244140625" y="24" width="160" height="79">
+          <text id="6:34" name="PHONE" x="0" y="0" width="43" height="18" />
+          <frame id="6:35" name="input" x="0" y="24" width="160" height="55">
+            <text id="6:36" name="503-000-0000" x="15" y="14" width="108" height="27" />
+          </frame>
+        </frame>
+        <frame id="6:37" name="Field/Address or ZIP" x="677.6000366210938" y="24" width="130" height="79">
+          <text id="6:38" name="ADDRESS OR ZIP" x="0" y="0" width="110" height="18" />
+          <frame id="6:39" name="input" x="0" y="24" width="130" height="55">
+            <text id="6:40" name="97124" x="15" y="14" width="42" height="27" />
+          </frame>
+        </frame>
+        <frame id="6:41" name="Field/What needs painting?" x="825.800048828125" y="24" width="178" height="79">
+          <text id="6:42" name="WHAT NEEDS PAINTING?" x="0" y="0" width="163" height="18" />
+          <frame id="6:43" name="input" x="0" y="24" width="178" height="55">
+            <text id="6:44" name="Interior" x="15" y="14" width="55" height="27" />
+            <text id="6:45" name="▾" x="156" y="14" width="7" height="27" />
+          </frame>
+        </frame>
+        <frame id="6:46" name="Button/Primary" x="1022.0000610351562" y="35.5" width="206" height="56">
+          <text id="6:47" name="Get my free estimate" x="26" y="18" width="154" height="20" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="7:2" name="Trust strip" x="0" y="1099" width="1440" height="232">
+      <frame id="7:3" name="Stat" x="96" y="40" width="286.5" height="128">
+        <text id="7:4" name="10+" x="0" y="0" width="87" height="70" />
+        <text id="7:5" name="Years painting homes around Hillsboro" x="0" y="74" width="262.5" height="54" />
+      </frame>
+      <frame id="7:6" name="Stat" x="382.5" y="40" width="320.5" height="101">
+        <text id="7:7" name="60+" x="34" y="0" width="87" height="70" />
+        <text id="7:8" name="Hand-signed client testimonials" x="34" y="74" width="262.5" height="27" />
+      </frame>
+      <frame id="7:9" name="Stat" x="703" y="40" width="320.5" height="128">
+        <text id="7:10" name="$0" x="34" y="0" width="58" height="70" />
+        <text id="7:11" name="Free estimates, no pressure to book" x="34" y="74" width="262.5" height="54" />
+      </frame>
+      <frame id="7:12" name="Stat" x="1023.5" y="40" width="320.5" height="101">
+        <text id="7:13" name="50 MI" x="34" y="0" width="122" height="70" />
+        <text id="7:14" name="Radius we cover from Hillsboro" x="34" y="74" width="262.5" height="27" />
+      </frame>
+    </frame>
+    <frame id="7:15" name="Services" x="0" y="1331" width="1440" height="1012">
+      <frame id="7:16" name="Section head" x="96" y="88" width="1248" height="84">
+        <frame id="7:17" name="titles" x="0" y="0" width="613" height="84">
+          <text id="7:18" name="WHAT WE PAINT" x="0" y="0" width="107" height="18" />
+          <text id="7:19" name="Painting services for your home" x="0" y="28" width="613" height="56" />
+        </frame>
+        <text id="7:20" name="Interior, exterior and cabinet painting for homes within about 50 miles of Hillsboro." x="868" y="30" width="380" height="54" />
+      </frame>
+      <frame id="7:21" name="Paint-chip cards" x="96" y="220" width="1248" height="688">
+        <frame id="7:22" name="Card/Interior painting" x="0" y="0" width="397.3333435058594" height="688">
+          <rounded-rectangle id="7:23" name="photo (olvera_02_kitchen_pendants)" x="1" y="1" width="395.3333435058594" height="380" />
+          <frame id="7:24" name="Swatch strip" x="1" y="381" width="395.3333435058594" height="52">
+            <frame id="7:25" name="chip/Warm white" x="0" y="0" width="131.77777099609375" height="52">
+              <text id="7:26" name="WARM WHITE" x="14" y="26" width="64" height="18" />
+            </frame>
+            <frame id="7:27" name="chip/Clay" x="131.77777099609375" y="0" width="131.7777862548828" height="52">
+              <text id="7:28" name="CLAY" x="14" y="26" width="25" height="18" />
+            </frame>
+            <frame id="7:29" name="chip/Plum" x="263.5555419921875" y="0" width="131.7777862548828" height="52">
+              <text id="7:30" name="PLUM" x="14" y="26" width="26" height="18" />
+            </frame>
+          </frame>
+          <frame id="7:31" name="body" x="1" y="433" width="395.3333435058594" height="254">
+            <text id="7:32" name="Interior painting" x="28" y="28" width="235" height="42" />
+            <text id="7:33" name="Walls, ceilings, trim and doors, from one bedroom to the whole house. We cover furniture and floors and patch holes before we paint." x="28" y="82" width="339.3333435058594" height="108" />
+            <text id="7:34" name="Interior painting →" x="28" y="202" width="143" height="20" />
+          </frame>
+        </frame>
+        <frame id="7:35" name="Card/Exterior painting" x="425.3333435058594" y="0" width="397.33331298828125" height="688">
+          <rounded-rectangle id="7:36" name="photo (olvera_13_craftsman_exterior)" x="1" y="1" width="395.33331298828125" height="380" />
+          <frame id="7:37" name="Swatch strip" x="1" y="381" width="395.33331298828125" height="52">
+            <frame id="7:38" name="chip/Cedar" x="0" y="0" width="131.77777099609375" height="52">
+              <text id="7:39" name="CEDAR" x="14" y="26" width="32" height="18" />
+            </frame>
+            <frame id="7:40" name="chip/Trim white" x="131.77777099609375" y="0" width="131.77777099609375" height="52">
+              <text id="7:41" name="TRIM WHITE" x="14" y="26" width="60" height="18" />
+            </frame>
+            <frame id="7:42" name="chip/Door green" x="263.5555419921875" y="0" width="131.77777099609375" height="52">
+              <text id="7:43" name="DOOR GREEN" x="14" y="26" width="63" height="18" />
+            </frame>
+          </frame>
+          <frame id="7:44" name="body" x="1" y="433" width="395.33331298828125" height="227">
+            <text id="7:45" name="Exterior painting" x="28" y="28" width="241" height="42" />
+            <text id="7:46" name="Siding, trim, shakes, soffits and doors. We wash, scrape, caulk and prime first so the paint holds up to Oregon rain." x="28" y="82" width="339.33331298828125" height="81" />
+            <text id="7:47" name="Exterior painting →" x="28" y="175" width="148" height="20" />
+          </frame>
+        </frame>
+        <frame id="7:48" name="Card/Cabinet painting" x="850.6666259765625" y="0" width="397.33331298828125" height="688">
+          <rounded-rectangle id="7:49" name="photo (olvera_12_green_cabinets)" x="1" y="1" width="395.33331298828125" height="380" />
+          <frame id="7:50" name="Swatch strip" x="1" y="381" width="395.33331298828125" height="52">
+            <frame id="7:51" name="chip/Evergreen" x="0" y="0" width="131.77777099609375" height="52">
+              <text id="7:52" name="EVERGREEN" x="14" y="26" width="58" height="18" />
+            </frame>
+            <frame id="7:53" name="chip/Sage" x="131.77777099609375" y="0" width="131.77777099609375" height="52">
+              <text id="7:54" name="SAGE" x="14" y="26" width="25" height="18" />
+            </frame>
+            <frame id="7:55" name="chip/Brass" x="263.5555419921875" y="0" width="131.77777099609375" height="52">
+              <text id="7:56" name="BRASS" x="14" y="26" width="31" height="18" />
+            </frame>
+          </frame>
+          <frame id="7:57" name="body" x="1" y="433" width="395.33331298828125" height="254">
+            <text id="7:58" name="Cabinet painting" x="28" y="28" width="226" height="42" />
+            <text id="7:59" name="A new look for your kitchen without replacing the cabinets. We clean, sand and use a bonding primer so the finish holds up to daily use." x="28" y="82" width="339.33331298828125" height="108" />
+            <text id="7:60" name="Cabinet painting →" x="28" y="202" width="144" height="20" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="8:2" name="Recent work" x="0" y="2343" width="1440" height="956">
+      <frame id="8:3" name="Section head" x="96" y="96" width="1248" height="124">
+        <frame id="8:4" name="titles" x="0" y="0" width="331" height="124">
+          <text id="8:5" name="OUR WORK" x="0" y="0" width="69" height="18" />
+          <text id="8:6" name="Recent work" x="0" y="28" width="243" height="56" />
+          <text id="8:7" name="Every photo here is from an Olvera job." x="0" y="94" width="331" height="30" />
+        </frame>
+        <frame id="8:8" name="Button/Outline dark" x="1013" y="69" width="235" height="55">
+          <text id="8:9" name="See more of our work →" x="27.5" y="17.5" width="180" height="20" />
+        </frame>
+      </frame>
+      <frame id="8:10" name="Mosaic" x="96" y="260" width="1248" height="600">
+        <frame id="8:11" name="Tile (olvera_03_terracotta_bedroom)" x="0" y="0" width="496" height="600" />
+        <frame id="8:15" name="Tile (olvera_04_plum_wall)" x="512" y="0" width="360" height="600" />
+        <frame id="8:19" name="stack" x="888" y="0" width="360" height="600">
+          <frame id="8:20" name="Tile (orig_bathroom_vanity)" x="0" y="0" width="360" height="292" />
+          <frame id="8:24" name="Tile (orig_white_doors_landing)" x="0" y="308" width="360" height="292" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="8:28" name="Process — protect your home" x="0" y="3299" width="1440" height="970">
+      <rounded-rectangle id="8:29" name="photo (olvera_11_brush_cutin)" x="96" y="104" width="500" height="660" />
+      <frame id="8:30" name="steps col" x="676" y="104" width="668" height="762">
+        <frame id="8:31" name="titles" x="0" y="0" width="668" height="140">
+          <text id="8:32" name="OUR PROCESS" x="0" y="0" width="91" height="18" />
+          <text id="8:33" name="How we protect your home while we paint" x="0" y="28" width="668" height="112" />
+        </frame>
+        <frame id="8:34" name="steps" x="0" y="172" width="668" height="590">
+          <frame id="8:35" name="Step 1" x="0" y="0" width="668" height="128">
+            <frame id="8:36" name="tape number" x="0.9947236180305481" y="20" width="48.97827600687742" height="39.243472158908844">
+              <text id="8:37" name="01" x="12" y="4" width="24.777084432542324" height="30.61796674132347" />
+            </frame>
+            <frame id="8:38" name="text" x="72.978271484375" y="20" width="595.021728515625" height="88">
+              <text id="8:39" name="Walkthrough and free estimate" x="0" y="0" width="325" height="30" />
+              <text id="8:40" name="We look at the project with you, talk through colors, and give you a price before any work starts." x="0" y="34" width="595.021728515625" height="54" />
+            </frame>
+          </frame>
+          <frame id="8:41" name="Step 2" x="0" y="128" width="668" height="102">
+            <frame id="8:42" name="tape number" x="-3.3527612686157227e-7" y="22.256492614746094" width="48.97827600687742" height="39.243472158908844">
+              <text id="8:43" name="02" x="12" y="4" width="24.777084432542324" height="30.61796674132347" />
+            </frame>
+            <frame id="8:44" name="text" x="72.978271484375" y="21" width="595.021728515625" height="61">
+              <text id="8:45" name="Cover and mask" x="0" y="0" width="159" height="30" />
+              <text id="8:46" name="Floors, furniture, fixtures and plants get covered before we open a can." x="0" y="34" width="595.021728515625" height="27" />
+            </frame>
+          </frame>
+          <frame id="8:47" name="Step 3" x="0" y="230" width="668" height="129">
+            <frame id="8:48" name="tape number" x="0.9947236180305481" y="21" width="48.97827600687742" height="39.243472158908844">
+              <text id="8:49" name="03" x="12" y="4" width="24.777084432542324" height="30.61796674132347" />
+            </frame>
+            <frame id="8:50" name="text" x="72.978271484375" y="21" width="595.021728515625" height="88">
+              <text id="8:51" name="Prep" x="0" y="0" width="47" height="30" />
+              <text id="8:52" name="Washing, scraping, sanding, patching, caulking and priming. This is the part that decides how long the paint lasts." x="0" y="34" width="595.021728515625" height="54" />
+            </frame>
+          </frame>
+          <frame id="8:53" name="Step 4" x="0" y="359" width="668" height="129">
+            <frame id="8:54" name="tape number" x="-3.3527612686157227e-7" y="22.256492614746094" width="48.97827600687742" height="39.243472158908844">
+              <text id="8:55" name="04" x="12" y="4" width="24.777084432542324" height="30.61796674132347" />
+            </frame>
+            <frame id="8:56" name="text" x="72.978271484375" y="21" width="595.021728515625" height="88">
+              <text id="8:57" name="Paint" x="0" y="0" width="53" height="30" />
+              <text id="8:58" name="Brush, roller or sprayer, whichever fits the surface, with enough coats to cover evenly." x="0" y="34" width="595.021728515625" height="54" />
+            </frame>
+          </frame>
+          <frame id="8:59" name="Step 5" x="0" y="488" width="668" height="102">
+            <frame id="8:60" name="tape number" x="0.9947236180305481" y="21" width="48.97827600687742" height="39.243472158908844">
+              <text id="8:61" name="05" x="12" y="4" width="24.777084432542324" height="30.61796674132347" />
+            </frame>
+            <frame id="8:62" name="text" x="72.978271484375" y="21" width="595.021728515625" height="61">
+              <text id="8:63" name="Clean up and final walkthrough" x="0" y="0" width="332" height="30" />
+              <text id="8:64" name="We pull the masking, clean up, and walk the job with you before we call it done." x="0" y="34" width="595.021728515625" height="27" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="8:65" name="Why Olvera" x="0" y="4269" width="1440" height="597">
+      <rounded-rectangle id="8:66" name="bg (olvera_10_fog_forest_wide)" x="0" y="0" width="1440" height="597" />
+      <rounded-rectangle id="8:67" name="overlay" x="0" y="0" width="1440" height="597" />
+      <frame id="8:68" name="content" x="96" y="96" width="1248" height="405">
+        <frame id="8:69" name="titles" x="0" y="0" width="563" height="84">
+          <text id="8:70" name="WHY OLVERA" x="0" y="0" width="85" height="18" />
+          <text id="8:71" name="Why homeowners call Olvera" x="0" y="28" width="563" height="56" />
+        </frame>
+        <frame id="8:72" name="reasons" x="0" y="132" width="1248" height="273">
+          <frame id="8:73" name="Reason" x="0" y="0" width="394.6666564941406" height="273">
+            <text id="8:74" name="OWNER-RUN" x="29" y="29" width="80" height="18" />
+            <text id="8:75" name="You deal with the owner." x="29" y="61" width="336.6666564941406" height="84" />
+            <text id="8:76" name="Efrain Olvera owns and runs the company, and 503-840-8056 is his number." x="29" y="159" width="336.6666564941406" height="54" />
+          </frame>
+          <frame id="8:77" name="Reason" x="426.6666564941406" y="0" width="394.66668701171875" height="273">
+            <text id="8:78" name="CCB #240826" x="29" y="29" width="92" height="18" />
+            <text id="8:79" name="Check our license before you hire." x="29" y="61" width="336.66668701171875" height="84" />
+            <text id="8:80" name="Look up CCB #240826 on the Oregon Construction Contractors Board website. It’s worth doing with any contractor." x="29" y="159" width="336.66668701171875" height="81" />
+          </frame>
+          <frame id="8:81" name="Reason" x="853.3333740234375" y="0" width="394.66668701171875" height="273">
+            <text id="8:82" name="EN · ES" x="29" y="29" width="49" height="18" />
+            <text id="8:83" name="Hablamos español." x="29" y="61" width="336.66668701171875" height="42" />
+            <text id="8:84" name="Call us in English or Spanish." x="29" y="117" width="336.66668701171875" height="27" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="9:2" name="Testimonials wall" x="0" y="4866" width="1440" height="790.96142578125">
+      <frame id="9:3" name="Section head" x="96" y="104" width="1248" height="124">
+        <frame id="9:4" name="titles" x="0" y="0" width="616" height="124">
+          <text id="9:5" name="60+ SIGNED TESTIMONIALS" x="0" y="0" width="183" height="18" />
+          <text id="9:6" name="What our clients say" x="0" y="28" width="399" height="56" />
+          <text id="9:7" name="More than 60 clients have signed testimonials for Olvera. Here are a few." x="0" y="94" width="616" height="30" />
+        </frame>
+        <frame id="9:8" name="Google badge (PLACEHOLDER — real reviews at dev)" x="1049" y="47" width="199" height="77">
+          <text id="9:9" name="5.0" x="21" y="17.5" width="41" height="42" />
+          <frame id="9:10" name="s" x="76" y="17" width="98" height="43">
+            <text id="9:11" name="★★★★★" x="0" y="0" width="78" height="20" />
+            <text id="9:12" name="Google reviews" x="0" y="20" width="98" height="23" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="9:76" name="Paper cards" x="96" y="284" width="1248" height="394.96142578125">
+        <frame id="9:77" name="Paper card (SAMPLE quote — replace with signed testimonial)" x="11.885037422180176" y="20.00000762939453" width="391.60166311077774" height="374.96141213178635">
+          <text id="9:78" name="★★★★★" x="32" y="44" width="78.40174416452646" height="21.62912317737937" />
+          <text id="9:79" name="“Efrain and his crew repainted our whole downstairs and you would never know they were there. Everything got covered, and they cleaned up at the end of every day.”" x="32" y="82" width="323.07119188830256" height="156.66868209838867" />
+          <text id="9:80" name="Linda M." x="32" y="250" width="105.60524767264724" height="32.192375706508756" />
+          <rounded-rectangle id="9:81" name="Rectangle" x="32" y="298" width="119.99462816305459" height="3.5128713101148605" />
+          <text id="9:82" name="LINDA M. · HILLSBORO" x="32" y="317" width="150.34407076612115" height="21.13741610571742" />
+          <rounded-rectangle id="9:83" name="green tape" x="561" y="-12" width="110.73891981691122" height="31.060464065521955" />
+        </frame>
+        <frame id="9:84" name="Paper card (SAMPLE quote — replace with signed testimonial)" x="429.4566650390625" y="25.361478805541992" width="389.0866980096325" height="372.325711786747">
+          <text id="9:85" name="★★★★★" x="32" y="44" width="78.27164222672582" height="21.08710099570453" />
+          <text id="9:86" name="“Our cedar house had not been painted in 15 years. They scraped, primed and replaced two rotted boards before any paint went on. It looks brand new.”" x="32" y="82" width="322.0631419029087" height="154.4532796740532" />
+          <text id="9:87" name="Mark &amp; Jen T." x="32" y="250" width="169.40239575318992" height="32.356684871949255" />
+          <rounded-rectangle id="9:88" name="Rectangle" x="32" y="298" width="120.00226774904877" height="2.675364188849926" />
+          <text id="9:89" name="MARK AND JEN T. · BEAVERTON" x="32" y="317" width="212.23065908439457" height="20.958228070288897" />
+          <rounded-rectangle id="9:90" name="green tape" x="243" y="-12" width="111.82393962144852" height="36.35657146573067" />
+        </frame>
+        <frame id="9:91" name="Paper card (SAMPLE quote — replace with signed testimonial)" x="857.7750244140625" y="20" width="387.50793425086886" height="341.0026854276657">
+          <text id="9:92" name="★★★★★" x="32" y="44" width="78.20515846088529" height="20.81570246629417" />
+          <text id="9:93" name="“We painted our kitchen cabinets white instead of replacing them. Best money we have spent on this house.”" x="32" y="82" width="321.23906653374434" height="123.34439069032669" />
+          <text id="9:94" name="Sandra R." x="32" y="220" width="121.30751834623516" height="31.265440837480128" />
+          <rounded-rectangle id="9:95" name="Rectangle" x="32" y="268" width="120.00389143172652" height="2.256559304893017" />
+          <text id="9:96" name="SANDRA R. · TIGARD" x="32" y="287" width="136.18103438802063" height="19.423175640404224" />
+          <rounded-rectangle id="9:97" name="green tape" x="137" y="-12" width="110.09706945810467" height="28.383801356423646" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="9:38" name="Service area" x="0" y="5656.96142578125" width="1440" height="678">
+      <frame id="9:39" name="text col" x="96" y="106.5" width="576" height="465">
+        <frame id="9:40" name="titles" x="0" y="0" width="576" height="140">
+          <text id="9:41" name="SERVICE AREA" x="0" y="0" width="96" height="18" />
+          <text id="9:42" name="Serving Hillsboro and homes within 50 miles" x="0" y="28" width="576" height="112" />
+        </frame>
+        <text id="9:43" name="We&#39;re based in Hillsboro and paint homes within about 50 miles, including Beaverton, Aloha, Tigard, Tualatin, Forest Grove, Portland and Newberg." x="0" y="164" width="576" height="90" />
+        <frame id="9:44" name="City chips" x="0" y="278" width="576" height="92">
+          <frame id="9:45" name="chip" x="0" y="0" width="88" height="41">
+            <text id="9:46" name="Hillsboro" x="15" y="9" width="58" height="23" />
+          </frame>
+          <frame id="9:47" name="chip" x="98" y="0" width="97" height="41">
+            <text id="9:48" name="Beaverton" x="15" y="9" width="67" height="23" />
+          </frame>
+          <frame id="9:49" name="chip" x="205" y="0" width="67" height="41">
+            <text id="9:50" name="Aloha" x="15" y="9" width="37" height="23" />
+          </frame>
+          <frame id="9:51" name="chip" x="282" y="0" width="72" height="41">
+            <text id="9:52" name="Tigard" x="15" y="9" width="42" height="23" />
+          </frame>
+          <frame id="9:53" name="chip" x="364" y="0" width="83" height="41">
+            <text id="9:54" name="Tualatin" x="15" y="9" width="53" height="23" />
+          </frame>
+          <frame id="9:55" name="chip" x="457" y="0" width="113" height="41">
+            <text id="9:56" name="Forest Grove" x="15" y="9" width="83" height="23" />
+          </frame>
+          <frame id="9:57" name="chip" x="0" y="51" width="86" height="41">
+            <text id="9:58" name="Portland" x="15" y="9" width="56" height="23" />
+          </frame>
+          <frame id="9:59" name="chip" x="96" y="51" width="89" height="41">
+            <text id="9:60" name="Newberg" x="15" y="9" width="59" height="23" />
+          </frame>
+        </frame>
+        <frame id="9:61" name="note" x="0" y="394" width="336" height="27">
+          <text id="9:62" name="Not sure if you’re in range? Call" x="0" y="0" width="224" height="27" />
+          <text id="9:63" name="503-840-8056" x="230" y="0" width="106" height="20" />
+        </frame>
+        <text id="9:64" name="See our service area →" x="0" y="445" width="174" height="20" />
+      </frame>
+      <frame id="9:65" name="Oregon map (brand outline)" x="744" y="104" width="600" height="470">
+        <vector id="9:66" name="Oregon outline" x="24.799999237060547" y="26.600000381469727" width="579.5999755859375" height="410.20001220703125" />
+        <ellipse id="9:67" name="50-mile radius" x="67.12000274658203" y="24.676000595092773" width="140" height="140" />
+        <ellipse id="9:68" name="Ellipse" x="155.44000244140625" y="90.6760025024414" width="8" height="8" />
+        <ellipse id="9:69" name="Ellipse" x="134.55999755859375" y="112.05999755859375" width="8" height="8" />
+        <ellipse id="9:70" name="Ellipse" x="124.4800033569336" y="90.6760025024414" width="8" height="8" />
+        <ellipse id="9:71" name="Hillsboro pin" x="128.1199951171875" y="85.6760025024414" width="18" height="18" />
+        <frame id="9:72" name="pin label" x="153.1199951171875" y="50.67599868774414" width="127" height="28">
+          <text id="9:73" name="HILLSBORO · HQ" x="10" y="5" width="107" height="18" />
+        </frame>
+        <frame id="9:74" name="radius label" x="93.12000274658203" y="172.67599487304688" width="91" height="24">
+          <text id="9:75" name="≈ 50 MILES" x="8" y="3" width="75" height="18" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="10:2" name="CTA band wrap" x="0" y="6334.96142578125" width="1440" height="569">
+      <frame id="10:3" name="CTA band (mirrors business card)" x="96" y="24" width="1248" height="441">
+        <frame id="10:4" name="green panel" x="1" y="1" width="766" height="439">
+          <text id="10:5" name="FREE ESTIMATES" x="64" y="64" width="112" height="18" />
+          <text id="10:6" name="Ready for a free estimate?" x="64" y="104" width="638" height="140" />
+          <text id="10:7" name="Tell us what you want painted and we&#39;ll set up a time to come see it." x="64" y="266" width="638" height="30" />
+          <frame id="10:8" name="CTAs" x="64" y="318" width="442" height="57">
+            <frame id="10:9" name="Button/White" x="0" y="0" width="233" height="56">
+              <text id="10:10" name="Get my free estimate →" x="28" y="18" width="177" height="20" />
+            </frame>
+            <frame id="10:11" name="Button/Outline" x="247" y="0" width="195" height="57">
+              <text id="10:12" name="Call 503-840-8056" x="29.5" y="18.5" width="136" height="20" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="10:13" name="white panel" x="767" y="1" width="480" height="439">
+          <rounded-rectangle id="10:14" name="Logo (logo_transparent)" x="105" y="87.5" width="270" height="180" />
+          <text id="10:15" name="INTERIOR &amp; EXTERIOR PAINTING" x="96" y="285.5" width="288" height="30" />
+          <text id="10:16" name="CCB #240826 · LICENSED · INSURED · BONDED" x="81" y="333.5" width="318" height="18" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="10:17" name="Footer" x="0" y="6903.96142578125" width="1440" height="427">
+      <frame id="10:18" name="columns" x="96" y="72" width="1248" height="219">
+        <frame id="10:19" name="brand" x="0" y="0" width="264" height="219">
+          <rounded-rectangle id="10:20" name="Logo (logo_light)" x="0" y="0" width="180" height="120" />
+          <text id="10:21" name="Residential interior, exterior and cabinet painting in Hillsboro and the Portland metro." x="0" y="138" width="264" height="81" />
+        </frame>
+        <frame id="10:22" name="Contact" x="328" y="0" width="264" height="203">
+          <text id="10:23" name="CONTACT" x="0" y="0" width="59" height="18" />
+          <text id="10:24" name="Olvera Painting LLC" x="0" y="28" width="144" height="27" />
+          <text id="10:25" name="24880 NW Meek Rd" x="0" y="65" width="141" height="27" />
+          <text id="10:26" name="Hillsboro, OR 97124" x="0" y="102" width="139" height="27" />
+          <text id="10:27" name="503-840-8056" x="0" y="139" width="105" height="27" />
+          <text id="10:28" name="olverapaintingllc@gmail.com" x="0" y="176" width="213" height="27" />
+        </frame>
+        <frame id="10:29" name="Services" x="656" y="0" width="264" height="203">
+          <text id="10:30" name="SERVICES" x="0" y="0" width="64" height="18" />
+          <text id="10:31" name="Interior painting" x="0" y="28" width="119" height="27" />
+          <text id="10:32" name="Exterior painting" x="0" y="65" width="124" height="27" />
+          <text id="10:33" name="Cabinet painting" x="0" y="102" width="121" height="27" />
+          <text id="10:34" name="Our work" x="0" y="139" width="66" height="27" />
+          <text id="10:35" name="Free estimate" x="0" y="176" width="103" height="27" />
+        </frame>
+        <frame id="10:36" name="Company" x="984" y="0" width="264" height="203">
+          <text id="10:37" name="COMPANY" x="0" y="0" width="61" height="18" />
+          <text id="10:38" name="About" x="0" y="28" width="45" height="27" />
+          <text id="10:39" name="Service area" x="0" y="65" width="92" height="27" />
+          <text id="10:40" name="Hours: 9 am – 5 pm, Mon–Fri" x="0" y="102" width="204" height="27" />
+          <text id="10:41" name="CCB #240826" x="0" y="139" width="101" height="27" />
+          <text id="10:42" name="Licensed, bonded and insured" x="0" y="176" width="220" height="27" />
+        </frame>
+      </frame>
+      <frame id="10:43" name="bottom line" x="96" y="339" width="1248" height="48">
+        <text id="10:44" name="© 2026 Olvera Painting LLC. All rights reserved." x="0" y="25" width="307" height="23" />
+        <text id="10:45" name="Hablamos español" x="1129" y="25" width="119" height="23" />
+      </frame>
+    </frame>
+  </frame>
+</canvas>

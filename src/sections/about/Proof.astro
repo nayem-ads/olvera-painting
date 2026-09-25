@@ -1,0 +1,23 @@
+---
+// About: "Proof you can check" (copy doc PAGE 5). Same markers as components/inner/CheckList, but items carry links,
+// so the list is written out here. CCB number links to the Oregon CCB lookup; "Read some of them" goes to Our work.
+import Section from '../../components/inner/Section.astro';
+import { CCB, CCB_LOOKUP, ROUTES } from '../../data/site';
+const link = 'font-bold text-forest underline decoration-[1.5px] underline-offset-[3px] hover:text-forest-dark';
+---
+<Section bg="white" id="proof" title="Proof you can check" narrow>
+  <ul class="grid gap-y-[14px] lg:gap-y-[18px]">
+    <li class="flex gap-[14px] items-start t-body-m lg:t-body-l text-ink">
+      <span aria-hidden="true" class="mt-[9px] lg:mt-[11px] shrink-0 w-[10px] h-[10px] bg-forest rotate-[4deg]"></span>
+      <span>Licensed, bonded and insured: Oregon <a href={CCB_LOOKUP} target="_blank" rel="noopener" class={link}>{CCB}<span class="sr-only"> (opens the CCB license search in a new tab)</span></a>. You can look it up on the Construction Contractors Board website.</span>
+    </li>
+    <li class="flex gap-[14px] items-start t-body-m lg:t-body-l text-ink">
+      <span aria-hidden="true" class="mt-[9px] lg:mt-[11px] shrink-0 w-[10px] h-[10px] bg-forest rotate-[4deg]"></span>
+      <span>60+ hand-signed client testimonials. <a href={ROUTES.ourWork} class={link}>Read some of them</a></span>
+    </li>
+    <li class="flex gap-[14px] items-start t-body-m lg:t-body-l text-ink">
+      <span aria-hidden="true" class="mt-[9px] lg:mt-[11px] shrink-0 w-[10px] h-[10px] bg-forest rotate-[4deg]"></span>
+      <span><span lang="es">Hablamos español.</span> Call in English or Spanish.</span>
+    </li>
+  </ul>
+</Section>

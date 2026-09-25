@@ -1,0 +1,30 @@
+---
+// About page (copy doc PAGE 5). Owner: about-area agent.
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/inner/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Story from '../../sections/about/Story.astro';
+import HowWeWork from '../../sections/about/HowWeWork.astro';
+import Proof from '../../sections/about/Proof.astro';
+import { breadcrumbs } from '../../data/schema';
+import { PHONE_DISPLAY } from '../../data/site';
+---
+<Base
+  title="About Olvera Painting LLC | Hillsboro, OR House Painters"
+  description="Olvera Painting LLC is a Hillsboro, Oregon painting company run by owner Efrain Olvera. 10+ years painting homes. Licensed, bonded and insured, CCB #240826."
+  pageClass="op-about"
+  schema={breadcrumbs([['About', '/about/']])}
+>
+  <PageHero
+    tag="ABOUT · HILLSBORO, OR"
+    title="About Olvera Painting, house painters in Hillsboro"
+    lead="Olvera Painting LLC is a residential painting company in Hillsboro, Oregon, owned by Efrain Olvera. We've been painting homes for more than 10 years."
+    photo="olvera-01-hero-exterior"
+    photoAlt="Two-story cedar-shake house with white trim and a balcony, an exterior painted by Olvera Painting"
+    photoPosition="center 40%"
+  />
+  <Story />
+  <HowWeWork />
+  <Proof />
+  <CtaBand title="Talk to us" text={`Call ${PHONE_DISPLAY} or request a free estimate online.`} eyebrow="FREE ESTIMATES" />
+</Base>

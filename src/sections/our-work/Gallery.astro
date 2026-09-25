@@ -1,0 +1,72 @@
+---
+// Our work: filterable photo grid (All / Interior / Exterior). Tiles follow the homepage "Recent work" style (8:11 / 12:51).
+// Only Olvera job photos (olvera-01..04 retouched, orig-* untouched). Never mood-* images here.
+// No Cabinets filter: there are no cabinet photos yet (handoff note). Without JS every tile shows and the filter bar stays hidden.
+import Section from '../../components/inner/Section.astro';
+import Photo from '../../components/Photo.astro';
+
+type Cat = 'interior' | 'exterior';
+// caption = wide-desktop chip (xl, 1280+), short = chip on narrower tiles (mobile and 1024-1279). Captions say only what the photo shows.
+const items: { photo: string; cat: Cat; caption: string; short: string; alt: string; pos?: string }[] = [
+  { photo: 'olvera-03-clay-bedroom', cat: 'interior', caption: 'Bedroom · clay walls, black trim', short: 'Clay bedroom', alt: 'Bedroom with clay-colored walls and black window trim and baseboards' },
+  { photo: 'olvera-01-hero-exterior', cat: 'exterior', caption: 'Cedar shake exterior', short: 'Cedar shake', alt: 'Two-story cedar shake house with white trim, posts and balcony' },
+  { photo: 'orig-kitchen-pendants', cat: 'interior', caption: 'Kitchen masked and covered for painting', short: 'Kitchen masked', alt: 'Kitchen with the floor covered in protective paper and blue tape along the edges' },
+  { photo: 'olvera-02-kitchen', cat: 'interior', caption: 'Kitchen · finished', short: 'Kitchen finished', alt: 'Finished kitchen with white walls, white cabinets, rattan pendant lights and a walnut island' },
+  { photo: 'orig-exterior-side-siding', cat: 'exterior', caption: 'Lap siding exterior, in progress', short: 'Lap siding', alt: 'Side of a house with gray lap siding and a ladder on the ground, work in progress' },
+  { photo: 'orig-green-room-doorway', cat: 'interior', caption: 'Blue-green walls, black door trim', short: 'Blue-green room', alt: 'Room with blue-green walls seen through a doorway with black trim' },
+  { photo: 'olvera-04-plum-wall', cat: 'interior', caption: 'Plum accent wall, bathroom', short: 'Plum accent wall', alt: 'Plum accent wall around a black-framed window in a bathroom with dark tile' },
+  { photo: 'orig-exterior-porch-entry', cat: 'exterior', caption: 'Porch entry, white posts and trim', short: 'Porch entry', alt: 'Covered front porch with white posts and trim on a cedar shake house', pos: 'center 60%' },
+  { photo: 'orig-stairwell', cat: 'interior', caption: 'Stairwell walls and trim', short: 'Stairwell', alt: 'Stairwell with light walls and a dark handrail cap' },
+  { photo: 'orig-terracotta-black-doorway', cat: 'interior', caption: 'Doorway trim painted black', short: 'Black door trim', alt: 'Clay-colored walls with a doorway trimmed in black' },
+  { photo: 'orig-exterior-stairs', cat: 'exterior', caption: 'Siding and exterior stairs, in progress', short: 'Exterior stairs', alt: 'Cedar shake and lap siding house with white exterior stairs, site work still in progress', pos: 'center 40%' },
+  { photo: 'orig-gray-room-doors', cat: 'interior', caption: 'Gray walls, white doors, floors covered', short: 'Gray walls', alt: 'Gray walls and white doors with the floor covered and taped during the job' },
+];
+const filters: [string, string][] = [['all', 'All'], ['interior', 'Interior'], ['exterior', 'Exterior']];
+---
+<Section bg="primer" id="work">
+  <h2 class="sr-only">Project photos</h2>
+  <div data-work-filters hidden class="mb-[20px] lg:mb-[32px]">
+    <div role="group" aria-label="Filter photos" class="flex flex-wrap gap-[8px] lg:gap-[10px]">
+      {filters.map(([key, label], i) => (
+        <button type="button" data-filter={key} aria-pressed={i === 0 ? 'true' : 'false'}
+          class="op-filter cursor-pointer rounded-[6px] border-[1.5px] border-ink px-[18px] py-[10px] lg:px-[22px] lg:py-[12px] t-button text-ink bg-transparent hover:bg-ink/5 aria-pressed:bg-ink aria-pressed:text-white focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-forest">
+          {label}
+        </button>
+      ))}
+    </div>
+    <p data-work-status class="sr-only" aria-live="polite"></p>
+  </div>
+  <ul class="grid grid-cols-2 lg:grid-cols-3 gap-[10px] lg:gap-[16px]">
+    {items.map((it) => (
+      <li data-cat={it.cat} class="min-w-0">
+        <figure class="relative aspect-[17/22] lg:aspect-[4/5] overflow-hidden rounded-[4px] bg-mist">
+          <Photo name={it.photo} alt={it.alt} class="absolute inset-0 w-full h-full object-cover" style={it.pos ? `object-position:${it.pos}` : undefined} />
+          <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-[100px] lg:h-[160px] bg-gradient-to-b from-[rgba(22,36,28,0)] to-[rgba(22,36,28,0.75)]"></div>
+          <figcaption class="absolute left-[10px] bottom-[10px] lg:left-[20px] lg:bottom-[20px] max-w-[calc(100%-20px)] lg:max-w-[calc(100%-40px)] bg-white rounded-[3px] px-[7px] py-[4px] lg:px-[10px] lg:py-[6px] tm-micro lg:t-tag text-ink uppercase">
+            <span class="xl:hidden">{it.short}</span><span class="hidden xl:inline">{it.caption}</span>
+          </figcaption>
+        </figure>
+      </li>
+    ))}
+  </ul>
+</Section>
+
+<script>
+  // Progressive enhancement: reveal the filter bar, then show/hide tiles by data-cat. Buttons are native, so Tab + Enter/Space work.
+  const bar = document.querySelector<HTMLElement>('[data-work-filters]');
+  if (bar) {
+    const buttons = [...bar.querySelectorAll<HTMLButtonElement>('button[data-filter]')];
+    const tiles = [...document.querySelectorAll<HTMLElement>('#work li[data-cat]')];
+    const status = bar.querySelector<HTMLElement>('[data-work-status]');
+    bar.hidden = false;
+    for (const btn of buttons) {
+      btn.addEventListener('click', () => {
+        const f = btn.dataset.filter;
+        let n = 0;
+        for (const t of tiles) { const show = f === 'all' || t.dataset.cat === f; t.hidden = !show; if (show) n++; }
+        for (const b of buttons) b.setAttribute('aria-pressed', String(b === btn));
+        if (status) status.textContent = `Showing ${n} ${f === 'all' ? '' : btn.textContent!.trim().toLowerCase() + ' '}photos`;
+      });
+    }
+  }
+</script>

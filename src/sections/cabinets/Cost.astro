@@ -1,0 +1,19 @@
+---
+// Cabinet painting: cost factors (no prices published).
+import Section from '../../components/inner/Section.astro';
+import CheckList from '../../components/inner/CheckList.astro';
+import { ROUTES } from '../../data/site';
+const factors = [
+  'Number of doors and drawer fronts',
+  'Cabinet material and current finish',
+  'Condition: grease, peeling or damage',
+  'Painting the inside of the boxes or not',
+  'One color or two-tone (for example, a different color on the island)',
+];
+---
+<Section id="cabinet-cost" bg="primer" eyebrow="COST" title="What affects the cost of cabinet painting">
+  <div class="flex flex-col gap-[24px] lg:gap-[32px]">
+    <CheckList items={factors} cols={2} />
+    <p class="t-body-m lg:t-body-l text-ink"><a href={ROUTES.freeEstimate} class="underline decoration-forest decoration-2 underline-offset-4 hover:text-forest"><strong class="font-bold">Every estimate is free.</strong></a></p>
+  </div>
+</Section>

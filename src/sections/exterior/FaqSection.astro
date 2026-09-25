@@ -1,0 +1,9 @@
+---
+// Exterior page: "Exterior painting FAQ" (copy doc PAGE 3). Items are exported so the page can emit FAQPage JSON-LD from the same source.
+import Section from '../../components/inner/Section.astro';
+import Faq from '../../components/inner/Faq.astro';
+import { exteriorFaq } from './faq';
+---
+<Section bg="white" id="exterior-faq" title="Exterior painting FAQ" narrow>
+  <Faq items={exteriorFaq} />
+</Section>

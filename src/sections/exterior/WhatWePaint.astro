@@ -1,0 +1,24 @@
+---
+// Exterior page: "What we paint outside" (copy doc PAGE 3). Checklist + a real Olvera exterior photo on desktop.
+import Section from '../../components/inner/Section.astro';
+import CheckList from '../../components/inner/CheckList.astro';
+import Photo from '../../components/Photo.astro';
+const items = [
+  'Lap, panel and fiber cement siding',
+  'Cedar siding and cedar shakes',
+  'Trim, fascia and soffits',
+  'Front doors and garage doors',
+  'Gutters and downspouts',
+  'Porches and railings',
+];
+---
+<Section bg="white" id="what-we-paint" title="What we paint outside">
+  <div class="grid gap-[32px] lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-[72px] lg:items-start">
+    <div class="lg:pt-[8px]"><CheckList items={items} cols={2} /></div>
+    <div class="hidden lg:block relative -mt-[96px]">
+      <div class="relative rotate-[1.2deg] bg-white p-[10px] drop-shadow-[0px_16px_24px_rgba(23,36,28,0.16)]">
+        <Photo name="orig-exterior-side-siding" alt="Gray lap siding along the side of a house, with a ladder laid on the ground beside it" class="block w-full h-[320px] object-cover" style="object-position:60% 45%" />
+      </div>
+    </div>
+  </div>
+</Section>

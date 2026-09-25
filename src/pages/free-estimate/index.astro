@@ -1,0 +1,30 @@
+---
+// PAGE 8: Free estimate / contact (copy doc). Owner: estimate agent.
+import Base from '../../layouts/Base.astro';
+import EstimateHero from '../../sections/estimate/EstimateHero.astro';
+import EstimateForm from '../../sections/estimate/EstimateForm.astro';
+import EstimateAside from '../../sections/estimate/EstimateAside.astro';
+import { housePainter, breadcrumbs } from '../../data/schema';
+---
+<Base
+  title="Free Painting Estimate, Hillsboro OR | Olvera Painting LLC"
+  description="Request a free painting estimate from Olvera Painting LLC in Hillsboro, OR. Call 503-840-8056 or send us your project details and photos online."
+  pageClass="op-estimate"
+  schema={[housePainter, breadcrumbs([['Free estimate', '/free-estimate/']])]}
+>
+  <EstimateHero
+    tag="FREE ESTIMATES"
+    title="Get a free painting estimate in the Hillsboro area"
+    lead="Tell us what you want painted. We'll call to set up a time to see the project and give you a price. There's no cost and no pressure to book."
+  />
+  <div class="bg-primer">
+    <div class="mx-auto max-w-[1440px] px-[16px] lg:px-[96px] pt-[8px] pb-[56px] lg:pt-[24px] lg:pb-[104px]">
+      <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-[48px] lg:gap-[64px] items-start">
+        <EstimateForm />
+        <div class="px-[4px] lg:px-0 lg:pt-[8px]">
+          <EstimateAside />
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>

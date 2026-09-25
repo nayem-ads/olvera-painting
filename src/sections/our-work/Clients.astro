@@ -1,0 +1,20 @@
+---
+// Our work: "From our clients". SAMPLE testimonials from the copy doc (PAGE 6), to be replaced with real signed ones.
+import Section from '../../components/inner/Section.astro';
+import TestimonialCard from '../../components/inner/TestimonialCard.astro';
+
+const items: { quote: string; name: string; place: string; lang?: string }[] = [
+  { quote: 'Efrain and his crew repainted our whole downstairs and you would never know they were there. Everything got covered, and they cleaned up at the end of every day.', name: 'Linda M.', place: 'Hillsboro' },
+  { quote: 'Our cedar house had not been painted in 15 years. They scraped, primed and replaced two rotted boards before any paint went on. It looks brand new.', name: 'Mark and Jen T.', place: 'Beaverton' },
+  { quote: 'We painted our kitchen cabinets white instead of replacing them. Best money we have spent on this house.', name: 'Sandra R.', place: 'Tigard' },
+  { quote: 'They helped us pick a dark green for the office and it came out exactly how we pictured it.', name: 'Carlos G.', place: 'Forest Grove' },
+  { quote: 'Showed up when they said and finished when they said. Easy to deal with from the first visit to the final walkthrough.', name: 'Dave P.', place: 'Portland' },
+  { quote: 'Me explicaron todo en español y el exterior de la casa quedó muy bien. Los recomiendo.', name: 'María L.', place: 'Cornelius', lang: 'es' },
+];
+const tilts = [-1.2, 0.8, -0.6, 1, -0.9, 0.6];
+---
+<Section bg="white" id="clients" title="From our clients">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-[28px] gap-y-[40px] lg:gap-y-[48px] pt-[12px] items-start">
+    {items.map((t, i) => <TestimonialCard quote={t.quote} name={t.name} place={t.place} tilt={tilts[i]} lang={t.lang} />)}
+  </div>
+</Section>

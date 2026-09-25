@@ -1,0 +1,741 @@
+const imgLogoLogoTransparent = "https://www.figma.com/api/mcp/asset/f8543f0d-414f-4689-bb5b-52fafc3cf591.png";
+const imgHeroPhotoOlvera01HeroExterior = "https://www.figma.com/api/mcp/asset/fe8946ad-5392-4004-914e-5a5e1a4b02e9.png";
+const imgRectangle = "https://www.figma.com/api/mcp/asset/833dd1d8-29aa-4e00-81de-aff7aa4ed911.png";
+const imgRectangle1 = "https://www.figma.com/api/mcp/asset/85b64141-6dfd-48b4-8bf0-5c061da57f2f.png";
+const imgRectangle2 = "https://www.figma.com/api/mcp/asset/84008625-0a47-4235-831a-2ce9ca172971.png";
+const imgTile = "https://www.figma.com/api/mcp/asset/31687571-e9e3-4401-8014-000b9bfc5d69.png";
+const imgTile1 = "https://www.figma.com/api/mcp/asset/460064b2-ad19-4f59-8334-a8b3913cd358.png";
+const imgTile2 = "https://www.figma.com/api/mcp/asset/04b03194-0223-4e93-a688-e2f0522c3b7b.png";
+const imgTile3 = "https://www.figma.com/api/mcp/asset/7855b86e-d9b8-4cf4-b6aa-4e556dcd8c14.png";
+const imgPhotoOlvera11BrushCutin = "https://www.figma.com/api/mcp/asset/25500baa-f93f-4b5e-ac4c-c1ff689d8917.png";
+const imgWhyOlvera = "https://www.figma.com/api/mcp/asset/aaf8218d-fb3d-4d8c-81d8-20e52cb7eb1f.png";
+const img50MileRadius = "https://www.figma.com/api/mcp/asset/bdbf13bf-9de1-4acd-b8a1-b977592bd90c.png";
+const imgLogoLogoLight = "https://www.figma.com/api/mcp/asset/33b58448-1b91-4980-b3e0-5b671f67f085.png";
+const imgPager = "https://www.figma.com/api/mcp/asset/d2ba8223-7914-433a-bfde-c6e30c2aeb31.svg";
+const imgOregonOutline = "https://www.figma.com/api/mcp/asset/67020ea0-9dc7-4149-ba49-126d25168e36.svg";
+const imgEllipse = "https://www.figma.com/api/mcp/asset/96f29c69-a482-451f-a7e8-da12739ddaad.svg";
+const imgHillsboroPin = "https://www.figma.com/api/mcp/asset/8792ea42-1e59-48b3-a3d7-21aee9fa175d.svg";
+
+export default function MobileHome390() {
+  return (
+    <div className="bg-[#f4f5f0] flex flex-col items-start size-full" data-node-id="11:2">
+      <div className="bg-[#16241c] flex items-start justify-center overflow-clip px-[20px] py-[8px] w-full" data-node-id="11:3">
+        <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[11px] text-[color:#74b852] tracking-[2.4px] whitespace-nowrap" data-node-id="11:4">
+          CCB #240826 · LICENSED · BONDED · INSURED
+        </p>
+      </div>
+      <div className="bg-[white] flex items-center justify-between overflow-clip pl-[20px] pr-[16px] py-[10px] w-full" data-node-id="11:5">
+        <div className="h-[52px] w-[78px]" data-node-id="11:6">
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgLogoLogoTransparent} />
+        </div>
+        <div className="flex gap-[10px] items-center overflow-clip" data-node-id="11:7">
+          <div className="bg-[#448c2c] flex items-start overflow-clip px-[14px] py-[10px] rounded-[40px]" data-node-id="11:8">
+            <p className="font-['Barlow:Bold'] leading-[20px] text-[16px] text-[color:white] tracking-[0.3px] whitespace-nowrap" data-node-id="11:9">
+              Call
+            </p>
+          </div>
+          <div className="bg-[#f4f5f0] flex flex-col gap-[5px] items-start overflow-clip px-[10px] py-[13px] rounded-[6px]" data-node-id="11:10">
+            <div className="bg-[#2f4538] h-[2px] w-[20px]" data-node-id="11:11" />
+            <div className="bg-[#2f4538] h-[2px] w-[20px]" data-node-id="11:12" />
+            <div className="bg-[#2f4538] h-[2px] w-[20px]" data-node-id="11:13" />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#16241c] h-[300px] overflow-clip w-full" data-node-id="11:14">
+        <div className="absolute h-[300px] left-0 top-0 w-[390px]" data-node-id="11:15">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHeroPhotoOlvera01HeroExterior} />
+        </div>
+        <div className="absolute bg-gradient-to-b from-[rgba(22,36,28,0)] h-[160px] left-0 to-[#16241c] top-[160px] w-[390px]" data-node-id="11:16" />
+        <div className="absolute flex h-[33.095px] items-center justify-center left-[20px] top-[252.9px] w-[195.666px]" data-node-id="11:17">
+          <div className="flex-none rotate-[-1.5deg]">
+            <div className="bg-[#448c2c] flex items-start overflow-clip px-[12px] py-[5px]">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:white] tracking-[2.4px] whitespace-nowrap" data-node-id="11:18">
+                HILLSBORO, OR · 10+ YEARS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#16241c] flex flex-col gap-[16px] items-start overflow-clip pb-[36px] pt-[8px] px-[20px] w-full" data-node-id="11:19">
+        <p className="font-['Bebas_Neue:Regular'] leading-[0] text-[0px] text-[color:white] w-full" data-node-id="11:20">
+          <span className="leading-[47px] text-[48px]">{`Hillsboro house painters for `}</span>
+          <span className="leading-[47px] text-[#74b852] text-[48px]">interiors, exteriors and cabinets</span>
+        </p>
+        <p className="font-['Barlow:Regular'] leading-[27px] opacity-84 text-[17px] text-[color:white] w-full" data-node-id="11:21">{`We cover your floors and furniture and do the prep that makes paint last. Tell us what needs painting and we'll set up a free estimate.`}</p>
+        <div className="bg-[#448c2c] flex items-start justify-center overflow-clip py-[17px] rounded-[6px] w-full" data-node-id="11:22">
+          <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:white] tracking-[0.3px] whitespace-pre" data-node-id="11:23" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Get my free estimate  →`}</p>
+        </div>
+        <div className="border-[1.5px] border-[rgba(255,255,255,0.55)] border-solid flex items-start justify-center overflow-clip py-[17px] rounded-[6px] w-full" data-node-id="11:24">
+          <p className="font-['Barlow:Bold'] leading-[20px] text-[16px] text-[color:white] tracking-[0.3px] whitespace-nowrap" data-node-id="11:25">
+            Call 503-840-8056
+          </p>
+        </div>
+        <div className="content-center flex flex-wrap gap-[10px_12px] items-center overflow-clip w-full whitespace-nowrap" data-node-id="11:26">
+          <div className="bg-[white] flex gap-[8px] items-center overflow-clip pl-[12px] pr-[14px] py-[8px] rounded-[40px]" data-node-id="11:27">
+            <p className="font-['Barlow:Bold'] leading-[20px] text-[16px] text-[color:#2f4538] tracking-[0.3px]" data-node-id="11:28">
+              5.0
+            </p>
+            <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#fbbc04] tracking-[0.3px]" data-node-id="11:29" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+              ★★★★★
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#5b6b60]" data-node-id="11:30">
+              Google
+            </p>
+          </div>
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] opacity-80 text-[12px] text-[color:white] tracking-[2.4px]" data-node-id="11:31">
+            60+ SIGNED TESTIMONIALS
+          </p>
+        </div>
+      </div>
+      <div className="bg-[#f4f5f0] flex flex-col items-start overflow-clip pb-[8px] px-[16px] w-full" data-node-id="11:32">
+        <div className="bg-[white] flex flex-col gap-[14px] items-start overflow-clip px-[20px] py-[24px] rounded-[12px] shadow-[0px_12px_30px_0px_rgba(23,36,28,0.16)] w-full" data-node-id="11:33">
+          <p className="font-['Bebas_Neue:Regular'] leading-[36px] text-[34px] text-[color:#2f4538] tracking-[0.5px] whitespace-nowrap" data-node-id="11:34">
+            Get a free estimate
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full text-[15px] text-[color:#5b6b60] w-[min-content]" data-node-id="11:35">{`We'll call you to set up a time to see the project.`}</p>
+          <div className="flex flex-col gap-[6px] items-start overflow-clip w-full" data-node-id="11:36">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="11:37">
+              NAME
+            </p>
+            <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start justify-between overflow-clip p-[14px] rounded-[6px] w-full" data-node-id="11:38">
+              <p className="font-['Barlow:Regular'] leading-[27px] opacity-80 text-[17px] text-[color:#5b6b60] whitespace-nowrap" data-node-id="11:39">
+                Your name
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-[6px] items-start overflow-clip w-full" data-node-id="11:40">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="11:41">
+              PHONE
+            </p>
+            <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start justify-between overflow-clip p-[14px] rounded-[6px] w-full" data-node-id="11:42">
+              <p className="font-['Barlow:Regular'] leading-[27px] opacity-80 text-[17px] text-[color:#5b6b60] whitespace-nowrap" data-node-id="11:43">
+                503-000-0000
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-[6px] items-start overflow-clip w-full" data-node-id="11:44">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="11:45">
+              ADDRESS OR ZIP
+            </p>
+            <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start justify-between overflow-clip p-[14px] rounded-[6px] w-full" data-node-id="11:46">
+              <p className="font-['Barlow:Regular'] leading-[27px] opacity-80 text-[17px] text-[color:#5b6b60] whitespace-nowrap" data-node-id="11:47">
+                97124
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-[6px] items-start overflow-clip w-full whitespace-nowrap" data-node-id="11:48">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#2f4538] tracking-[2.4px]" data-node-id="11:49">
+              WHAT NEEDS PAINTING?
+            </p>
+            <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex font-['Barlow:Regular'] items-start justify-between leading-[27px] overflow-clip p-[14px] rounded-[6px] text-[17px] w-full" data-node-id="11:50">
+              <p className="opacity-80 text-[color:#5b6b60]" data-node-id="11:51">
+                Interior
+              </p>
+              <p className="font-normal text-[color:#2f4538]" data-node-id="11:52" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                ▾
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-[6px] items-start overflow-clip w-full" data-node-id="11:53">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="11:54">
+              ANYTHING WE SHOULD KNOW? (OPTIONAL)
+            </p>
+            <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start justify-between overflow-clip p-[14px] rounded-[6px] w-full" data-node-id="11:55">
+              <p className="font-['Barlow:Regular'] leading-[27px] opacity-80 text-[17px] text-[color:#5b6b60] whitespace-nowrap" data-node-id="11:56">
+                Rooms, colors, timing…
+              </p>
+            </div>
+          </div>
+          <div className="bg-[#448c2c] flex items-start justify-center overflow-clip py-[17px] rounded-[6px] w-full" data-node-id="11:57">
+            <p className="font-['Barlow:Bold'] leading-[20px] text-[16px] text-[color:white] tracking-[0.3px] whitespace-nowrap" data-node-id="11:58">
+              Get my free estimate
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#f4f5f0] content-start flex flex-wrap gap-[24px_16px] items-start overflow-clip pb-[40px] pt-[32px] px-[20px] w-full" data-node-id="11:59">
+        <div className="flex flex-col gap-[2px] items-start overflow-clip w-[167px]" data-node-id="11:60">
+          <p className="font-['Bebas_Neue:Regular'] leading-[52px] text-[52px] text-[color:#448c2c] whitespace-nowrap" data-node-id="11:61">
+            10+
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full text-[15px] text-[color:#2f4538] w-[min-content]" data-node-id="11:62">
+            Years painting homes
+          </p>
+        </div>
+        <div className="flex flex-col gap-[2px] items-start overflow-clip w-[167px]" data-node-id="11:63">
+          <p className="font-['Bebas_Neue:Regular'] leading-[52px] text-[52px] text-[color:#448c2c] whitespace-nowrap" data-node-id="11:64">
+            60+
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full text-[15px] text-[color:#2f4538] w-[min-content]" data-node-id="11:65">
+            Hand-signed testimonials
+          </p>
+        </div>
+        <div className="flex flex-col gap-[2px] items-start overflow-clip w-[167px]" data-node-id="11:66">
+          <p className="font-['Bebas_Neue:Regular'] leading-[52px] text-[52px] text-[color:#448c2c] whitespace-nowrap" data-node-id="11:67">
+            $0
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full text-[15px] text-[color:#2f4538] w-[min-content]" data-node-id="11:68">
+            Free estimates
+          </p>
+        </div>
+        <div className="flex flex-col gap-[2px] items-start overflow-clip w-[167px]" data-node-id="11:69">
+          <p className="font-['Bebas_Neue:Regular'] leading-[52px] text-[52px] text-[color:#448c2c] whitespace-nowrap" data-node-id="11:70">
+            50 MI
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full text-[15px] text-[color:#2f4538] w-[min-content]" data-node-id="11:71">
+            Around Hillsboro
+          </p>
+        </div>
+      </div>
+      <div className="bg-[white] flex flex-col gap-[28px] items-start overflow-clip px-[20px] py-[56px] w-full" data-node-id="12:2">
+        <div className="flex flex-col gap-[8px] items-start overflow-clip w-full" data-node-id="12:3">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#448c2c] tracking-[2.4px] whitespace-nowrap" data-node-id="12:4">
+            WHAT WE PAINT
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[40px] min-w-full text-[40px] text-[color:#2f4538] tracking-[0.5px] w-[min-content]" data-node-id="12:5">
+            Painting services for your home
+          </p>
+        </div>
+        <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex flex-col items-start overflow-clip rounded-[4px] w-full" data-node-id="12:6">
+          <div className="h-[240px] w-full" data-node-id="12:7">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle} />
+          </div>
+          <div className="flex items-start overflow-clip w-full" data-node-id="12:8">
+            <div className="bg-[#ede7dc] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:9">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="12:10">
+                WARM WHITE
+              </p>
+            </div>
+            <div className="bg-[#b97a68] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:11">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:white] tracking-[2.4px] whitespace-nowrap" data-node-id="12:12">
+                CLAY
+              </p>
+            </div>
+            <div className="bg-[#6b2f4e] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:13">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:white] tracking-[2.4px] whitespace-nowrap" data-node-id="12:14">
+                PLUM
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-[10px] items-start overflow-clip pb-[24px] pt-[20px] px-[20px] w-full" data-node-id="12:15">
+            <p className="font-['Bebas_Neue:Regular'] leading-[32px] text-[30px] text-[color:#2f4538] tracking-[0.5px] whitespace-nowrap" data-node-id="12:16">
+              Interior painting
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[23px] min-w-full text-[15px] text-[color:#5b6b60] w-[min-content]" data-node-id="12:17">
+              Walls, ceilings, trim and doors, from one bedroom to the whole house. We cover furniture and floors and patch holes before we paint.
+            </p>
+            <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#448c2c] tracking-[0.3px] whitespace-pre" data-node-id="12:18" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Interior painting  →`}</p>
+          </div>
+        </div>
+        <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex flex-col items-start overflow-clip rounded-[4px] w-full" data-node-id="12:19">
+          <div className="h-[240px] w-full" data-node-id="12:20">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle1} />
+          </div>
+          <div className="flex items-start overflow-clip w-full" data-node-id="12:21">
+            <div className="bg-[#b5713f] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:22">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:white] tracking-[2.4px] whitespace-nowrap" data-node-id="12:23">
+                CEDAR
+              </p>
+            </div>
+            <div className="bg-[#f5f4ef] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:24">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="12:25">
+                TRIM WHITE
+              </p>
+            </div>
+            <div className="bg-[#3a5a48] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:26">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:white] tracking-[2.4px] whitespace-nowrap" data-node-id="12:27">
+                DOOR GREEN
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-[10px] items-start overflow-clip pb-[24px] pt-[20px] px-[20px] w-full" data-node-id="12:28">
+            <p className="font-['Bebas_Neue:Regular'] leading-[32px] text-[30px] text-[color:#2f4538] tracking-[0.5px] whitespace-nowrap" data-node-id="12:29">
+              Exterior painting
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[23px] min-w-full text-[15px] text-[color:#5b6b60] w-[min-content]" data-node-id="12:30">
+              Siding, trim, shakes, soffits and doors. We wash, scrape, caulk and prime first so the paint holds up to Oregon rain.
+            </p>
+            <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#448c2c] tracking-[0.3px] whitespace-pre" data-node-id="12:31" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Exterior painting  →`}</p>
+          </div>
+        </div>
+        <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex flex-col items-start overflow-clip rounded-[4px] w-full" data-node-id="12:32">
+          <div className="h-[240px] w-full" data-node-id="12:33">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle2} />
+          </div>
+          <div className="flex items-start overflow-clip w-full" data-node-id="12:34">
+            <div className="bg-[#2f4538] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:35">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:white] tracking-[2.4px] whitespace-nowrap" data-node-id="12:36">
+                EVERGREEN
+              </p>
+            </div>
+            <div className="bg-[#a7b59b] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:37">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="12:38">
+                SAGE
+              </p>
+            </div>
+            <div className="bg-[#b89a5a] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[6px] pl-[10px] pt-[18px]" data-node-id="12:39">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="12:40">
+                BRASS
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-[10px] items-start overflow-clip pb-[24px] pt-[20px] px-[20px] w-full" data-node-id="12:41">
+            <p className="font-['Bebas_Neue:Regular'] leading-[32px] text-[30px] text-[color:#2f4538] tracking-[0.5px] whitespace-nowrap" data-node-id="12:42">
+              Cabinet painting
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[23px] min-w-full text-[15px] text-[color:#5b6b60] w-[min-content]" data-node-id="12:43">
+              A new look for your kitchen without replacing the cabinets. We clean, sand and use a bonding primer so the finish holds up to daily use.
+            </p>
+            <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#448c2c] tracking-[0.3px] whitespace-pre" data-node-id="12:44" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Cabinet painting  →`}</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#f4f5f0] flex flex-col gap-[28px] items-start overflow-clip px-[20px] py-[56px] w-full" data-node-id="12:45">
+        <div className="flex flex-col gap-[8px] items-start overflow-clip w-full" data-node-id="12:46">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#448c2c] tracking-[2.4px] whitespace-nowrap" data-node-id="12:47">
+            OUR WORK
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[40px] min-w-full text-[40px] text-[color:#2f4538] tracking-[0.5px] w-[min-content]" data-node-id="12:48">
+            Recent work
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[27px] min-w-full text-[17px] text-[color:#5b6b60] w-[min-content]" data-node-id="12:49">
+            Every photo here is from an Olvera job.
+          </p>
+        </div>
+        <div className="content-start flex flex-wrap gap-[10px] items-start overflow-clip w-full" data-node-id="12:50">
+          <div className="h-[220px] overflow-clip rounded-[4px] w-[170px]" data-node-id="12:51">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgTile} />
+            <div className="absolute bg-[white] flex items-start left-[10px] overflow-clip px-[7px] py-[4px] rounded-[3px] top-[184px]" data-node-id="12:52">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="12:53">
+                CLAY BEDROOM
+              </p>
+            </div>
+          </div>
+          <div className="h-[220px] overflow-clip rounded-[4px] w-[170px]" data-node-id="12:54">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgTile1} />
+            <div className="absolute bg-[white] flex items-start left-[10px] overflow-clip px-[7px] py-[4px] rounded-[3px] top-[184px]" data-node-id="12:55">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="12:56">
+                PLUM ACCENT WALL
+              </p>
+            </div>
+          </div>
+          <div className="h-[220px] overflow-clip rounded-[4px] w-[170px]" data-node-id="12:57">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgTile2} />
+            <div className="absolute bg-[white] flex items-start left-[10px] overflow-clip px-[7px] py-[4px] rounded-[3px] top-[184px]" data-node-id="12:58">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="12:59">
+                BATH · SOFT WHITE
+              </p>
+            </div>
+          </div>
+          <div className="h-[220px] overflow-clip rounded-[4px] w-[170px]" data-node-id="12:60">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgTile3} />
+            <div className="absolute bg-[white] flex items-start left-[10px] overflow-clip px-[7px] py-[4px] rounded-[3px] top-[184px]" data-node-id="12:61">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[10px] text-[color:#2f4538] tracking-[2.4px] whitespace-nowrap" data-node-id="12:62">
+                DOORS AND TRIM
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="border-[1.5px] border-[#2f4538] border-solid flex items-start justify-center overflow-clip py-[16px] rounded-[6px] w-full" data-node-id="12:63">
+          <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#2f4538] tracking-[0.3px] whitespace-pre" data-node-id="12:64" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`See more of our work  →`}</p>
+        </div>
+      </div>
+      <div className="bg-[white] flex flex-col gap-[24px] items-start overflow-clip px-[20px] py-[56px] w-full" data-node-id="12:65">
+        <div className="flex flex-col gap-[8px] items-start overflow-clip w-full" data-node-id="12:66">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#448c2c] tracking-[2.4px] whitespace-nowrap" data-node-id="12:67">
+            OUR PROCESS
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[40px] min-w-full text-[40px] text-[color:#2f4538] tracking-[0.5px] w-[min-content]" data-node-id="12:68">
+            How we protect your home while we paint
+          </p>
+        </div>
+        <div className="h-[300px] rounded-[4px] w-full" data-node-id="12:69">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgPhotoOlvera11BrushCutin} />
+        </div>
+        <div className="flex flex-col items-start overflow-clip w-full" data-node-id="12:70">
+          <div className="border-0 border-[#e3e8e0] border-solid flex gap-[16px] items-start overflow-clip py-[16px] w-full" data-node-id="12:71">
+            <div className="flex h-[30.958px] items-center justify-center w-[37.773px]" data-node-id="12:72">
+              <div className="flex-none rotate-[1.5deg]">
+                <div className="bg-[#448c2c] flex items-start overflow-clip px-[9px] py-[3px]">
+                  <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:white] tracking-[1px] whitespace-nowrap" data-node-id="12:73">
+                    01
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-[1_0_0] flex-col gap-[3px] items-start min-w-px overflow-clip" data-node-id="12:74">
+              <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:#2f4538] tracking-[1px] w-full" data-node-id="12:75">
+                Walkthrough and free estimate
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#5b6b60] w-full" data-node-id="12:76">
+                We look at the project with you, talk through colors, and give you a price before any work starts.
+              </p>
+            </div>
+          </div>
+          <div className="border-[#e3e8e0] border-solid border-t flex gap-[16px] items-start overflow-clip py-[16px] w-full" data-node-id="12:77">
+            <div className="flex h-[30.958px] items-center justify-center w-[37.773px]" data-node-id="12:78">
+              <div className="flex-none rotate-[-1.5deg]">
+                <div className="bg-[#448c2c] flex items-start overflow-clip px-[9px] py-[3px]">
+                  <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:white] tracking-[1px] whitespace-nowrap" data-node-id="12:79">
+                    02
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-[1_0_0] flex-col gap-[3px] items-start min-w-px overflow-clip" data-node-id="12:80">
+              <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:#2f4538] tracking-[1px] w-full" data-node-id="12:81">
+                Cover and mask
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#5b6b60] w-full" data-node-id="12:82">
+                Floors, furniture, fixtures and plants get covered before we open a can.
+              </p>
+            </div>
+          </div>
+          <div className="border-[#e3e8e0] border-solid border-t flex gap-[16px] items-start overflow-clip py-[16px] w-full" data-node-id="12:83">
+            <div className="flex h-[30.958px] items-center justify-center w-[37.773px]" data-node-id="12:84">
+              <div className="flex-none rotate-[1.5deg]">
+                <div className="bg-[#448c2c] flex items-start overflow-clip px-[9px] py-[3px]">
+                  <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:white] tracking-[1px] whitespace-nowrap" data-node-id="12:85">
+                    03
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-[1_0_0] flex-col gap-[3px] items-start min-w-px overflow-clip" data-node-id="12:86">
+              <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:#2f4538] tracking-[1px] w-full" data-node-id="12:87">
+                Prep
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#5b6b60] w-full" data-node-id="12:88">
+                Washing, scraping, sanding, patching, caulking and priming. This is the part that decides how long the paint lasts.
+              </p>
+            </div>
+          </div>
+          <div className="border-[#e3e8e0] border-solid border-t flex gap-[16px] items-start overflow-clip py-[16px] w-full" data-node-id="12:89">
+            <div className="flex h-[30.958px] items-center justify-center w-[37.773px]" data-node-id="12:90">
+              <div className="flex-none rotate-[-1.5deg]">
+                <div className="bg-[#448c2c] flex items-start overflow-clip px-[9px] py-[3px]">
+                  <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:white] tracking-[1px] whitespace-nowrap" data-node-id="12:91">
+                    04
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-[1_0_0] flex-col gap-[3px] items-start min-w-px overflow-clip" data-node-id="12:92">
+              <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:#2f4538] tracking-[1px] w-full" data-node-id="12:93">
+                Paint
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#5b6b60] w-full" data-node-id="12:94">
+                Brush, roller or sprayer, whichever fits the surface, with enough coats to cover evenly.
+              </p>
+            </div>
+          </div>
+          <div className="border-[#e3e8e0] border-solid border-t flex gap-[16px] items-start overflow-clip py-[16px] w-full" data-node-id="12:95">
+            <div className="flex h-[30.958px] items-center justify-center w-[37.773px]" data-node-id="12:96">
+              <div className="flex-none rotate-[1.5deg]">
+                <div className="bg-[#448c2c] flex items-start overflow-clip px-[9px] py-[3px]">
+                  <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:white] tracking-[1px] whitespace-nowrap" data-node-id="12:97">
+                    05
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-[1_0_0] flex-col gap-[3px] items-start min-w-px overflow-clip" data-node-id="12:98">
+              <p className="font-['Bebas_Neue:Regular'] leading-[24px] text-[22px] text-[color:#2f4538] tracking-[1px] w-full" data-node-id="12:99">
+                Clean up and final walkthrough
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#5b6b60] w-full" data-node-id="12:100">
+                We pull the masking, clean up, and walk the job with you before we call it done.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-[24px] items-start overflow-clip px-[20px] py-[56px] w-full" data-node-id="13:2">
+        <div aria-hidden className="absolute inset-0 pointer-events-none">
+          <div className="absolute bg-[#16241c] inset-0" />
+          <img alt="" className="absolute max-w-none object-cover opacity-30 size-full" src={imgWhyOlvera} />
+        </div>
+        <div className="flex flex-col gap-[8px] items-start overflow-clip w-full" data-node-id="13:3">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#74b852] tracking-[2.4px] whitespace-nowrap" data-node-id="13:4">
+            WHY OLVERA
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[40px] min-w-full text-[40px] text-[color:white] tracking-[0.5px] w-[min-content]" data-node-id="13:5">
+            Why homeowners call Olvera
+          </p>
+        </div>
+        <div className="bg-[rgba(255,255,255,0.07)] border border-[rgba(255,255,255,0.16)] border-solid flex flex-col gap-[10px] items-start overflow-clip pb-[22px] pt-[20px] px-[20px] rounded-[4px] w-full" data-node-id="13:6">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#74b852] tracking-[2.4px] whitespace-nowrap" data-node-id="13:7">
+            OWNER-RUN
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[32px] min-w-full text-[30px] text-[color:white] tracking-[0.5px] w-[min-content]" data-node-id="13:8">
+            You deal with the owner.
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-80 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:9">
+            Efrain Olvera owns and runs the company, and 503-840-8056 is his number.
+          </p>
+        </div>
+        <div className="bg-[rgba(255,255,255,0.07)] border border-[rgba(255,255,255,0.16)] border-solid flex flex-col gap-[10px] items-start overflow-clip pb-[22px] pt-[20px] px-[20px] rounded-[4px] w-full" data-node-id="13:10">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#74b852] tracking-[2.4px] whitespace-nowrap" data-node-id="13:11">
+            CCB #240826
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[32px] min-w-full text-[30px] text-[color:white] tracking-[0.5px] w-[min-content]" data-node-id="13:12">
+            Check our license before you hire.
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-80 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:13">
+            Look up CCB #240826 on the Oregon Construction Contractors Board website. It’s worth doing with any contractor.
+          </p>
+        </div>
+        <div className="bg-[rgba(255,255,255,0.07)] border border-[rgba(255,255,255,0.16)] border-solid flex flex-col gap-[10px] items-start overflow-clip pb-[22px] pt-[20px] px-[20px] rounded-[4px] w-full" data-node-id="13:14">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#74b852] tracking-[2.4px] whitespace-nowrap" data-node-id="13:15">
+            EN · ES
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[32px] min-w-full text-[30px] text-[color:white] tracking-[0.5px] w-[min-content]" data-node-id="13:16">
+            Hablamos español.
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-80 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:17">
+            Call us in English or Spanish.
+          </p>
+        </div>
+      </div>
+      <div className="bg-[#f4f5f0] flex flex-col gap-[24px] items-start overflow-clip pb-[64px] pt-[56px] px-[20px] w-full" data-node-id="13:18">
+        <div className="flex flex-col gap-[8px] items-start overflow-clip w-full" data-node-id="13:19">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#448c2c] tracking-[2.4px] whitespace-nowrap" data-node-id="13:20">
+            60+ SIGNED TESTIMONIALS
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[40px] min-w-full text-[40px] text-[color:#2f4538] tracking-[0.5px] w-[min-content]" data-node-id="13:21">
+            What our clients say
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[27px] min-w-full text-[17px] text-[color:#5b6b60] w-[min-content]" data-node-id="13:22">
+            More than 60 clients have signed testimonials for Olvera. Here are a few.
+          </p>
+        </div>
+        <div className="bg-[white] border border-[#e3e8e0] border-solid flex gap-[10px] items-center overflow-clip pl-[14px] pr-[16px] py-[10px] rounded-[8px] whitespace-nowrap" data-node-id="13:23">
+          <p className="font-['Bebas_Neue:Regular'] leading-[30px] text-[30px] text-[color:#2f4538] tracking-[0.5px]" data-node-id="13:24">
+            5.0
+          </p>
+          <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#fbbc04] tracking-[0.3px]" data-node-id="13:25" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+            ★★★★★
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#5b6b60]" data-node-id="13:26">
+            Google reviews
+          </p>
+        </div>
+        <div className="flex gap-[16px] items-start pb-[12px] pl-[4px] pt-[16px]" data-node-id="13:27">
+          <div className="flex h-[335.011px] items-center justify-center w-[295.715px]" data-node-id="13:28">
+            <div className="flex-none rotate-1">
+              <div className="bg-[white] drop-shadow-[0px_8px_10px_rgba(23,36,28,0.12)] flex flex-col gap-[14px] items-start pb-[24px] pt-[34px] px-[22px] w-[290px]">
+                <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#fbbc04] tracking-[0.3px] whitespace-nowrap" data-node-id="13:29" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                  ★★★★★
+                </p>
+                <p className="font-['Barlow:Regular'] leading-[27px] min-w-full text-[17px] text-[color:#2f4538] w-[min-content]" data-node-id="13:30">
+                  “Efrain and his crew repainted our whole downstairs and you would never know they were there. Everything got covered, and they cleaned up at the end of every day.”
+                </p>
+                <p className="font-['Caveat:Bold'] font-bold leading-[30px] text-[30px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:31">
+                  Linda M.
+                </p>
+                <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[11px] text-[color:#5b6b60] tracking-[2.4px] whitespace-nowrap" data-node-id="13:32">
+                  LINDA M. · HILLSBORO
+                </p>
+                <div className="absolute flex h-[27.126px] items-center justify-center left-[99.16px] top-[-10px] w-[90.783px]" data-node-id="13:33">
+                  <div className="flex-none rotate-2">
+                    <div className="bg-[rgba(116,184,82,0.85)] h-[24px] w-[90px]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex h-[308.015px] items-center justify-center w-[295.244px]" data-node-id="13:34">
+            <div className="-rotate-1 flex-none">
+              <div className="bg-[white] drop-shadow-[0px_8px_10px_rgba(23,36,28,0.12)] flex flex-col gap-[14px] items-start pb-[24px] pt-[34px] px-[22px] w-[290px]">
+                <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#fbbc04] tracking-[0.3px] whitespace-nowrap" data-node-id="13:35" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                  ★★★★★
+                </p>
+                <p className="font-['Barlow:Regular'] leading-[27px] min-w-full text-[17px] text-[color:#2f4538] w-[min-content]" data-node-id="13:36">
+                  “Our cedar house had not been painted in 15 years. They scraped, primed and replaced two rotted boards before any paint went on. It looks brand new.”
+                </p>
+                <p className="font-['Caveat:Bold'] font-bold leading-[30px] text-[30px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:37">{`Mark & Jen T.`}</p>
+                <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[11px] text-[color:#5b6b60] tracking-[2.4px] whitespace-nowrap" data-node-id="13:38">
+                  MARK AND JEN T. · BEAVERTON
+                </p>
+                <div className="absolute flex h-[27.126px] items-center justify-center left-[100px] top-[-13.14px] w-[90.783px]" data-node-id="13:39">
+                  <div className="-rotate-2 flex-none">
+                    <div className="bg-[rgba(116,184,82,0.85)] h-[24px] w-[90px]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[6px] w-[42px]" data-node-id="13:40">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPager} />
+        </div>
+      </div>
+      <div className="bg-[white] flex flex-col gap-[24px] items-start overflow-clip px-[20px] py-[56px] w-full" data-node-id="13:44">
+        <div className="flex flex-col gap-[8px] items-start overflow-clip w-full" data-node-id="13:45">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#448c2c] tracking-[2.4px] whitespace-nowrap" data-node-id="13:46">
+            SERVICE AREA
+          </p>
+          <p className="font-['Bebas_Neue:Regular'] leading-[40px] min-w-full text-[40px] text-[color:#2f4538] tracking-[0.5px] w-[min-content]" data-node-id="13:47">
+            Serving Hillsboro and homes within 50 miles
+          </p>
+        </div>
+        <p className="font-['Barlow:Regular'] leading-[27px] min-w-full text-[17px] text-[color:#5b6b60] w-[min-content]" data-node-id="13:48">{`We're based in Hillsboro and paint homes within about 50 miles, including Beaverton, Aloha, Tigard, Tualatin, Forest Grove, Portland and Newberg.`}</p>
+        <div className="h-[272.6px] w-[348px]" data-node-id="13:49">
+          <div className="absolute h-[237.916px] left-[14.38px] top-[15.43px] w-[336.168px]" data-node-id="13:50">
+            <div className="absolute inset-[-1.22%_-0.86%]">
+              <img alt="" className="block max-w-none size-full" src={imgOregonOutline} />
+            </div>
+          </div>
+          <div className="absolute left-[38.93px] size-[81.2px] top-[14.31px]" data-node-id="13:51">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" height="81.2" src={img50MileRadius} width="81.2" />
+          </div>
+          <div className="absolute left-[90.16px] size-[4.64px] top-[52.59px]" data-node-id="13:52">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[78.04px] size-[4.64px] top-[64.99px]" data-node-id="13:53">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[72.2px] size-[4.64px] top-[52.59px]" data-node-id="13:54">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[74.31px] size-[10.44px] top-[49.69px]" data-node-id="13:55">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHillsboroPin} />
+          </div>
+          <div className="absolute bg-[#16241c] flex items-start left-[88.81px] overflow-clip px-[5.8px] py-[2.9px] rounded-[1.74px] top-[29.39px]" data-node-id="13:56">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[10.44px] text-[8.12px] text-[color:white] tracking-[1.392px] whitespace-nowrap" data-node-id="13:57">
+              HILLSBORO · HQ
+            </p>
+          </div>
+          <div className="absolute bg-[white] flex items-start left-[54.01px] overflow-clip px-[4.64px] py-[1.74px] rounded-[1.74px] top-[100.15px]" data-node-id="13:58">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[10.44px] text-[8.12px] text-[color:#448c2c] tracking-[1.392px] whitespace-nowrap" data-node-id="13:59">
+              ≈ 50 MILES
+            </p>
+          </div>
+        </div>
+        <div className="content-start flex flex-wrap gap-[8px] items-start overflow-clip w-full" data-node-id="13:60">
+          <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start overflow-clip px-[12px] py-[7px] rounded-[40px]" data-node-id="13:61">
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:62">
+              Hillsboro
+            </p>
+          </div>
+          <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start overflow-clip px-[12px] py-[7px] rounded-[40px]" data-node-id="13:63">
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:64">
+              Beaverton
+            </p>
+          </div>
+          <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start overflow-clip px-[12px] py-[7px] rounded-[40px]" data-node-id="13:65">
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:66">
+              Aloha
+            </p>
+          </div>
+          <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start overflow-clip px-[12px] py-[7px] rounded-[40px]" data-node-id="13:67">
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:68">
+              Tigard
+            </p>
+          </div>
+          <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start overflow-clip px-[12px] py-[7px] rounded-[40px]" data-node-id="13:69">
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:70">
+              Tualatin
+            </p>
+          </div>
+          <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start overflow-clip px-[12px] py-[7px] rounded-[40px]" data-node-id="13:71">
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:72">
+              Forest Grove
+            </p>
+          </div>
+          <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start overflow-clip px-[12px] py-[7px] rounded-[40px]" data-node-id="13:73">
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:74">
+              Portland
+            </p>
+          </div>
+          <div className="bg-[#f4f5f0] border border-[#e3e8e0] border-solid flex items-start overflow-clip px-[12px] py-[7px] rounded-[40px]" data-node-id="13:75">
+            <p className="font-['Barlow:Regular'] leading-[23px] text-[15px] text-[color:#2f4538] whitespace-nowrap" data-node-id="13:76">
+              Newberg
+            </p>
+          </div>
+        </div>
+        <p className="font-['Barlow:Regular'] leading-[27px] min-w-full text-[17px] text-[color:#2f4538] w-[min-content]" data-node-id="13:77">
+          Not sure if you’re in range? Call 503-840-8056 and ask.
+        </p>
+      </div>
+      <div className="bg-[white] flex flex-col items-start overflow-clip pb-[56px] pt-[8px] px-[20px] w-full" data-node-id="13:78">
+        <div className="bg-[white] border border-[#e3e8e0] border-solid flex flex-col items-start overflow-clip rounded-[10px] w-full" data-node-id="13:79">
+          <div className="bg-[#448c2c] flex flex-col gap-[16px] items-start overflow-clip pb-[28px] pt-[32px] px-[24px] w-full" data-node-id="13:80">
+            <p className="font-['Bebas_Neue:Regular'] leading-[46px] text-[46px] text-[color:white] w-full" data-node-id="13:81">
+              Ready for a free estimate?
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-90 text-[17px] text-[color:white] w-full" data-node-id="13:82">{`Tell us what you want painted and we'll set up a time to come see it.`}</p>
+            <div className="bg-[white] flex items-start justify-center overflow-clip py-[17px] rounded-[6px] w-full" data-node-id="13:83">
+              <p className="font-['Barlow:Bold'] font-bold leading-[20px] text-[16px] text-[color:#35701f] tracking-[0.3px] whitespace-pre" data-node-id="13:84" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Get my free estimate  →`}</p>
+            </div>
+          </div>
+          <div className="bg-[white] flex flex-col gap-[10px] items-center overflow-clip py-[24px] w-full" data-node-id="13:85">
+            <div className="h-[120px] w-[180px]" data-node-id="13:86">
+              <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgLogoLogoTransparent} />
+            </div>
+            <p className="font-['Bebas_Neue:Regular'] leading-[34px] text-[32px] text-[color:#2f4538] tracking-[0.5px] whitespace-nowrap" data-node-id="13:87">
+              503-840-8056
+            </p>
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[11px] text-[color:#5b6b60] tracking-[2.4px] whitespace-nowrap" data-node-id="13:88">
+              CCB #240826 · LICENSED · INSURED · BONDED
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#16241c] flex flex-col gap-[24px] items-start overflow-clip pb-[110px] pt-[48px] px-[20px] w-full" data-node-id="13:89">
+        <div className="h-[88px] w-[132px]" data-node-id="13:90">
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgLogoLogoLight} />
+        </div>
+        <div className="flex flex-col gap-[8px] items-start overflow-clip w-full" data-node-id="13:91">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#74b852] tracking-[2.4px] whitespace-nowrap" data-node-id="13:92">
+            CONTACT
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-85 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:93">
+            Olvera Painting LLC
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-85 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:94">
+            24880 NW Meek Rd, Hillsboro, OR 97124
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-85 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:95">
+            503-840-8056
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-85 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:96">
+            olverapaintingllc@gmail.com
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-85 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:97">
+            Hours: 9 am – 5 pm, Mon–Fri
+          </p>
+        </div>
+        <div className="flex flex-col gap-[8px] items-start overflow-clip w-full" data-node-id="13:98">
+          <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] text-[12px] text-[color:#74b852] tracking-[2.4px] whitespace-nowrap" data-node-id="13:99">
+            PAGES
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-85 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:100">
+            Interior painting · Exterior painting · Cabinet painting
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-85 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:101">
+            Our work · About · Service area · Free estimate
+          </p>
+        </div>
+        <p className="font-['Barlow:Regular'] leading-[23px] min-w-full opacity-60 text-[15px] text-[color:white] w-[min-content]" data-node-id="13:102">
+          CCB #240826 · Licensed, bonded and insured · Hablamos español
+        </p>
+        <p className="font-['Barlow:Regular'] leading-[23px] opacity-50 text-[15px] text-[color:white] whitespace-nowrap" data-node-id="13:103">
+          © 2026 Olvera Painting LLC
+        </p>
+      </div>
+      <div className="absolute bg-[white] bottom-0 flex gap-[10px] items-start left-0 overflow-clip pb-[22px] pt-[10px] px-[14px] right-0 shadow-[0px_-6px_20px_0px_rgba(23,36,28,0.18)]" data-node-id="13:104">
+        <div className="border-[1.5px] border-[#448c2c] border-solid flex flex-[1_0_0] items-start justify-center min-w-px overflow-clip py-[15px] rounded-[6px]" data-node-id="13:105">
+          <p className="font-['Barlow:Bold'] leading-[20px] text-[16px] text-[color:#448c2c] tracking-[0.3px] whitespace-nowrap" data-node-id="13:106">
+            Call
+          </p>
+        </div>
+        <div className="bg-[#448c2c] flex flex-[1_0_0] items-start justify-center min-w-px overflow-clip py-[15px] rounded-[6px]" data-node-id="13:107">
+          <p className="font-['Barlow:Bold'] leading-[20px] text-[16px] text-[color:white] tracking-[0.3px] whitespace-nowrap" data-node-id="13:108">
+            Free estimate
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

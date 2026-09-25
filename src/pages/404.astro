@@ -1,0 +1,20 @@
+---
+// 404 page. noindex. Owner: estimate agent.
+import Base from '../layouts/Base.astro';
+import EstimateHero from '../sections/estimate/EstimateHero.astro';
+import Button from '../components/Button.astro';
+import { ROUTES } from '../data/site';
+const link = 'underline decoration-forest-light underline-offset-[4px] hover:text-forest-light';
+---
+<Base title="Page not found | Olvera Painting LLC" noindex pageClass="op-404">
+  <EstimateHero tag="404" title="Page not found" lead="This page doesn't exist or has moved." tall>
+    <nav aria-label="Our services">
+      <p class="t-body-m lg:t-body-l">Our services: <a class={link} href={ROUTES.interior}>Interior painting</a>, <a class={link} href={ROUTES.exterior}>Exterior painting</a>, <a class={link} href={ROUTES.cabinets}>Cabinet painting</a></p>
+    </nav>
+    <div class="flex flex-col lg:flex-row gap-[12px] lg:gap-[14px] pt-[8px]">
+      <Button href={ROUTES.home} class="w-full lg:w-auto py-[17px] lg:px-[28px] lg:py-[18px]">Back to home</Button>
+      <Button href={ROUTES.freeEstimate} variant="outline-light" class="w-full lg:w-auto py-[17px] lg:px-[28px]">Get my free estimate  →</Button>
+    </div>
+  </EstimateHero>
+  <div class="bg-primer h-[56px] lg:h-[96px]" aria-hidden="true"></div>
+</Base>

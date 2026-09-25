@@ -1,0 +1,11 @@
+---
+// Inner-page photo from src/data/photos.json (full photos, not Figma crops). Size it with CSS; object-fit cover.
+// Names: olvera-01..04 = retouched Olvera jobs; orig-* = untouched Olvera job photos; mood-* = AI mood images (never label as Olvera work).
+import photos from '../data/photos.json';
+interface Props { name: string; alt: string; class?: string; priority?: boolean; style?: string }
+const { name, alt, class: cls = '', priority = false, style } = Astro.props;
+const p = (photos as Record<string, { src: string; width: number; height: number }>)[name];
+if (!p) throw new Error(`Photo: unknown photo ${name} (see src/data/photos.json)`);
+---
+<img src={p.src} width={p.width} height={p.height} alt={alt} class={cls} style={style}
+  loading={priority ? 'eager' : 'lazy'} decoding="async" fetchpriority={priority ? 'high' : 'auto'} />

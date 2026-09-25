@@ -1,0 +1,17 @@
+---
+// Compact evergreen hero for /free-estimate/ (PageHero style, no CTAs: the form sits right below it).
+// Also used for the thank-you and 404 pages via the optional slot (buttons, extra lines).
+interface Props { tag?: string; title: string; lead?: string; tall?: boolean }
+const { tag, title, lead, tall = false } = Astro.props;
+---
+<section aria-labelledby="page-title" class="relative bg-evergreen text-white overflow-hidden">
+  <div class={`relative mx-auto max-w-[1440px] px-[20px] lg:px-[96px] ${tall ? 'pt-[48px] pb-[88px] lg:pt-[120px] lg:pb-[176px]' : 'pt-[40px] pb-[64px] lg:pt-[88px] lg:pb-[128px]'}`}>
+    <div class="flex flex-col gap-[16px] lg:gap-[24px] lg:max-w-[860px]">
+      {tag && <p class="self-start -rotate-[1.5deg] bg-forest px-[12px] py-[5px] lg:px-[16px] lg:py-[7px] tm-eyebrow lg:t-eyebrow text-white">{tag}</p>}
+      <h1 id="page-title" class="tm-hero lg:t-display-l">{title}</h1>
+      {lead && <p class="t-body-m lg:t-body-l opacity-84 lg:max-w-[760px]">{lead}</p>}
+      <slot />
+    </div>
+  </div>
+  <img src="/svg/fir-skyline.svg" alt="" aria-hidden="true" width="1480" height="94" class="pointer-events-none absolute bottom-[-1px] left-0 w-full h-auto min-w-[720px]" />
+</section>

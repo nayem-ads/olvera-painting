@@ -1,0 +1,42 @@
+---
+// /cabinet-painting/ (copy doc PAGE 4). Owner: cabinets agent. Shared kit only; sections in src/sections/cabinets/.
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/inner/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Fit from '../../sections/cabinets/Fit.astro';
+import Process from '../../sections/cabinets/Process.astro';
+import Care from '../../sections/cabinets/Care.astro';
+import Cost from '../../sections/cabinets/Cost.astro';
+import CabinetFaq from '../../sections/cabinets/CabinetFaq.astro';
+import { PHONE_DISPLAY, ROUTES } from '../../data/site';
+import { service, breadcrumbs, faqPage } from '../../data/schema';
+
+const title = 'Cabinet Painting in Hillsboro, OR | Olvera Painting LLC';
+const description = 'Kitchen and bathroom cabinet painting in Hillsboro, Beaverton and Portland. Cleaned, sanded and primed with a bonding primer before paint. Free estimates.';
+const faq: [string, string][] = [
+  ['Can laminate or thermofoil cabinets be painted?', "Some can with the right primer, and some aren't worth painting. We'll look at yours at the estimate and tell you honestly."],
+  ['Can I use my kitchen while you work?', "Mostly, yes. The doors come off for part of the job, and we'll tell you ahead of time which days the kitchen is off limits."],
+  ['What colors work well on cabinets?', 'White and off white stay popular, and deep greens and blues work well on islands and lower cabinets. Try a sample next to your counters before you decide.'],
+];
+const schema = [
+  service('Cabinet painting', ROUTES.cabinets, description),
+  breadcrumbs([['Cabinet painting', ROUTES.cabinets]]),
+  faqPage(faq),
+];
+---
+<Base {title} {description} pageClass="op-cabinets" {schema}>
+  <PageHero
+    tag="CABINET PAINTING · HILLSBORO, OR"
+    title="Kitchen cabinet painting in Hillsboro"
+    lead="If your cabinet boxes are solid but the color is dated, painting gives your kitchen a new look for much less than new cabinets usually cost."
+    photo="olvera-02-kitchen"
+    photoAlt="Kitchen with white shaker cabinets, rattan pendant lights and a walnut island"
+    photoPosition="center 38%"
+  />
+  <Fit />
+  <Process />
+  <Care />
+  <Cost />
+  <CabinetFaq items={faq} />
+  <CtaBand title="Get a free cabinet painting estimate" text={`Call ${PHONE_DISPLAY} or send us a photo of your kitchen to get started.`} />
+</Base>

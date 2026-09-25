@@ -1,0 +1,184 @@
+{
+  "5:12": {
+    "src": "/img/logo-transparent-5-3-108x72.webp",
+    "width": 108,
+    "height": 72,
+    "frame": "5:3",
+    "name": "Logo (logo_transparent)"
+  },
+  "6:4": {
+    "src": "/img/olvera-01-hero-exterior-5-3-760x860.webp",
+    "width": 760,
+    "height": 860,
+    "frame": "5:3",
+    "name": "Hero photo (olvera_01_hero_exterior)"
+  },
+  "7:23": {
+    "src": "/img/olvera-02-kitchen-pendants-5-3-395x380.webp",
+    "width": 395,
+    "height": 380,
+    "frame": "5:3",
+    "name": "photo (olvera_02_kitchen_pendants)"
+  },
+  "7:36": {
+    "src": "/img/olvera-13-craftsman-exterior-5-3-395x380.webp",
+    "width": 395,
+    "height": 380,
+    "frame": "5:3",
+    "name": "photo (olvera_13_craftsman_exterior)"
+  },
+  "7:49": {
+    "src": "/img/olvera-12-green-cabinets-5-3-395x380.webp",
+    "width": 395,
+    "height": 380,
+    "frame": "5:3",
+    "name": "photo (olvera_12_green_cabinets)"
+  },
+  "8:11": {
+    "src": "/img/olvera-03-terracotta-bedroom-5-3-496x600.webp",
+    "width": 496,
+    "height": 600,
+    "frame": "5:3",
+    "name": "Tile (olvera_03_terracotta_bedroom)"
+  },
+  "8:15": {
+    "src": "/img/olvera-04-plum-wall-5-3-360x600.webp",
+    "width": 360,
+    "height": 600,
+    "frame": "5:3",
+    "name": "Tile (olvera_04_plum_wall)"
+  },
+  "8:20": {
+    "src": "/img/orig-bathroom-vanity-5-3-360x292.webp",
+    "width": 360,
+    "height": 292,
+    "frame": "5:3",
+    "name": "Tile (orig_bathroom_vanity)"
+  },
+  "8:24": {
+    "src": "/img/orig-white-doors-landing-5-3-360x292.webp",
+    "width": 360,
+    "height": 292,
+    "frame": "5:3",
+    "name": "Tile (orig_white_doors_landing)"
+  },
+  "8:29": {
+    "src": "/img/olvera-11-brush-cutin-5-3-500x660.webp",
+    "width": 500,
+    "height": 660,
+    "frame": "5:3",
+    "name": "photo (olvera_11_brush_cutin)"
+  },
+  "8:66": {
+    "src": "/img/olvera-10-fog-forest-wide-5-3-1440x597.webp",
+    "width": 1440,
+    "height": 597,
+    "frame": "5:3",
+    "name": "bg (olvera_10_fog_forest_wide)"
+  },
+  "10:14": {
+    "src": "/img/logo-transparent-5-3-270x180.webp",
+    "width": 270,
+    "height": 180,
+    "frame": "5:3",
+    "name": "Logo (logo_transparent)"
+  },
+  "10:20": {
+    "src": "/img/logo-light-5-3-180x120.webp",
+    "width": 180,
+    "height": 120,
+    "frame": "5:3",
+    "name": "Logo (logo_light)"
+  },
+  "11:6": {
+    "src": "/img/logo-transparent-11-2-78x52.webp",
+    "width": 78,
+    "height": 52,
+    "frame": "11:2",
+    "name": "Logo (logo_transparent)"
+  },
+  "11:15": {
+    "src": "/img/olvera-01-hero-exterior-11-2-390x300.webp",
+    "width": 390,
+    "height": 300,
+    "frame": "11:2",
+    "name": "Hero photo (olvera_01_hero_exterior)"
+  },
+  "12:7": {
+    "src": "/img/olvera-02-11-2-348x240.webp",
+    "width": 348,
+    "height": 240,
+    "frame": "11:2",
+    "name": "kitchen (olvera_02)"
+  },
+  "12:20": {
+    "src": "/img/olvera-13-11-2-348x240.webp",
+    "width": 348,
+    "height": 240,
+    "frame": "11:2",
+    "name": "craftsman (olvera_13)"
+  },
+  "12:33": {
+    "src": "/img/olvera-12-11-2-348x240.webp",
+    "width": 348,
+    "height": 240,
+    "frame": "11:2",
+    "name": "green cabinets (olvera_12)"
+  },
+  "12:51": {
+    "src": "/img/tile-terracotta-11-2-170x220.webp",
+    "width": 170,
+    "height": 220,
+    "frame": "11:2",
+    "name": "Tile terracotta"
+  },
+  "12:54": {
+    "src": "/img/tile-plum-11-2-170x220.webp",
+    "width": 170,
+    "height": 220,
+    "frame": "11:2",
+    "name": "Tile plum"
+  },
+  "12:57": {
+    "src": "/img/tile-vanity-11-2-170x220.webp",
+    "width": 170,
+    "height": 220,
+    "frame": "11:2",
+    "name": "Tile vanity"
+  },
+  "12:60": {
+    "src": "/img/tile-white-doors-11-2-170x220.webp",
+    "width": 170,
+    "height": 220,
+    "frame": "11:2",
+    "name": "Tile white doors"
+  },
+  "12:69": {
+    "src": "/img/olvera-11-brush-cutin-11-2-350x300.webp",
+    "width": 350,
+    "height": 300,
+    "frame": "11:2",
+    "name": "photo (olvera_11_brush_cutin)"
+  },
+  "13:2": {
+    "src": "/img/why-olvera-fog-bg-11-2-390x802.webp",
+    "width": 390,
+    "height": 802,
+    "frame": "11:2",
+    "name": "Why Olvera fog bg"
+  },
+  "13:86": {
+    "src": "/img/logo-transparent-11-2-180x120.webp",
+    "width": 180,
+    "height": 120,
+    "frame": "11:2",
+    "name": "Logo (logo_transparent)"
+  },
+  "13:90": {
+    "src": "/img/logo-light-11-2-132x88.webp",
+    "width": 132,
+    "height": 88,
+    "frame": "11:2",
+    "name": "Logo (logo_light)"
+  }
+}

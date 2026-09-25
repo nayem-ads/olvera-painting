@@ -1,0 +1,27 @@
+---
+// Service area page (copy doc PAGE 7). Owner: about-area agent. One page on purpose (no city doorway pages).
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/inner/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Cities from '../../sections/service-area/Cities.astro';
+import AreaServices from '../../sections/service-area/AreaServices.astro';
+import { housePainter, breadcrumbs } from '../../data/schema';
+---
+<Base
+  title="Painters in Hillsboro, Beaverton, Portland & Tigard | Olvera"
+  description="Olvera Painting serves homes within 50 miles of Hillsboro, OR, including Beaverton, Portland, Tigard, Tualatin, Forest Grove and Newberg. Free estimates."
+  pageClass="op-service-area"
+  schema={[housePainter, breadcrumbs([['Service area', '/service-area/']])]}
+>
+  <PageHero
+    tag="SERVICE AREA"
+    title="Painters serving Hillsboro, Beaverton, Portland and Tigard"
+    lead="We're based at 24880 NW Meek Rd in Hillsboro and paint homes within about 50 miles, across Washington County, Portland and nearby towns."
+    photo="orig-exterior-balcony"
+    photoAlt="Two-story cedar-shake house with white trim and a balcony during an Olvera Painting exterior job, a ladder against the wall"
+    photoPosition="center 35%"
+  />
+  <Cities />
+  <AreaServices />
+  <CtaBand />
+</Base>

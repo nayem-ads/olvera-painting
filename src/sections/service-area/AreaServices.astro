@@ -1,0 +1,18 @@
+---
+// Service area: "Services in every area we cover" (copy doc PAGE 7). Links styled like the homepage service links (7:34).
+import Section from '../../components/inner/Section.astro';
+import { ROUTES } from '../../data/site';
+const links: [string, string][] = [
+  ['Interior painting', ROUTES.interior],
+  ['Exterior painting', ROUTES.exterior],
+  ['Cabinet painting', ROUTES.cabinets],
+];
+---
+<Section bg="primer" id="services" title="Services in every area we cover" narrow>
+  <p class="t-body-m lg:t-body-l text-ink">Interior painting, exterior painting and cabinet painting, with the same prep, cleanup and free estimate wherever you live.</p>
+  <ul class="mt-[24px] lg:mt-[32px] flex flex-col lg:flex-row gap-[14px] lg:gap-[40px]">
+    {links.map(([label, href]) => (
+      <li><a href={href} class="t-button text-forest hover:text-forest-dark whitespace-pre">{label}  →</a></li>
+    ))}
+  </ul>
+</Section>

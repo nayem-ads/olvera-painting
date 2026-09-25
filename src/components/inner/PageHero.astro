@@ -1,0 +1,29 @@
+---
+// Inner-page hero (simplified version of the homepage hero). Evergreen band, rotated green tag, H1, lead, two CTAs,
+// photo right on desktop / top on mobile. Pass photo = key in src/data/photos.json (or omit for text-only).
+import Photo from '../Photo.astro';
+import Button from '../Button.astro';
+import { ROUTES, PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+interface Props { tag: string; title: string; lead: string; photo?: string; photoAlt?: string; photoPosition?: string; primaryLabel?: string; showCall?: boolean }
+const { tag, title, lead, photo, photoAlt = '', photoPosition = 'center', primaryLabel = 'Get my free estimate  →', showCall = true } = Astro.props;
+---
+<section class="relative bg-evergreen text-white overflow-hidden">
+  {photo && (
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-[44%] h-[240px] lg:h-auto relative">
+      <Photo name={photo} alt={photoAlt} priority class="absolute inset-0 w-full h-full object-cover" style={`object-position:${photoPosition}`} />
+      <div class="absolute inset-x-0 bottom-0 h-[120px] bg-gradient-to-b from-evergreen/0 to-evergreen lg:hidden"></div>
+      <div class="hidden lg:block absolute inset-y-0 left-0 w-[240px] bg-gradient-to-r from-evergreen to-evergreen/0"></div>
+    </div>
+  )}
+  <div class={`relative mx-auto max-w-[1440px] px-[20px] lg:px-[96px] ${photo ? "pt-[8px]" : "pt-[40px]"} pb-[40px] lg:py-[88px]`}>
+    <div class={`flex flex-col gap-[16px] lg:gap-[24px] ${photo ? 'lg:max-w-[620px]' : 'lg:max-w-[860px]'}`}>
+      <p class="self-start -rotate-[1.5deg] bg-forest px-[12px] py-[5px] lg:px-[16px] lg:py-[7px] tm-eyebrow lg:t-eyebrow text-white">{tag}</p>
+      <h1 class="tm-hero lg:t-display-l">{title}</h1>
+      <p class="t-body-m lg:t-body-l opacity-84">{lead}</p>
+      <div class="flex flex-col lg:flex-row gap-[12px] lg:gap-[14px] pt-[4px]">
+        <Button href={ROUTES.freeEstimate} class="w-full lg:w-auto py-[17px] lg:px-[28px] lg:py-[18px]">{primaryLabel}</Button>
+        {showCall && <Button href={PHONE_TEL} variant="outline-light" class="w-full lg:w-auto py-[17px] lg:px-[28px]">Call {PHONE_DISPLAY}</Button>}
+      </div>
+    </div>
+  </div>
+</section>

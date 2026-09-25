@@ -1,0 +1,35 @@
+---
+// Every page: <Base title description pageClass="op-<page>" [noindex] [schema={...}]>. Renders top bar + header, main, footer, mobile call bar.
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CallBar from '../components/CallBar.astro';
+interface Props { title: string; description?: string; noindex?: boolean; pageClass?: string; schema?: object | object[] }
+const { title, description = '', noindex = false, pageClass = '', schema } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
+    <meta name="theme-color" content="#16241c" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={new URL('/img/og.jpg', Astro.site).href} />
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+    <Header />
+    <main id="main" class={pageClass}><slot /></main>
+    <Footer />
+    <CallBar />
+  </body>
+</html>

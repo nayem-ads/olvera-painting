@@ -1,0 +1,45 @@
+---
+// Recent work. Figma desktop 8:2 (mosaic 8:10), mobile 12:45 (2x2 grid 12:50).
+import Img from '../../components/Img.astro';
+import Button from '../../components/Button.astro';
+import { ROUTES } from '../../data/site';
+const tiles = [
+  { d: '8:11', m: '12:51', label: 'BEDROOM · CLAY WALLS, BLACK TRIM', labelM: 'CLAY BEDROOM', alt: 'Bedroom with clay-colored terracotta walls and black-painted trim', cls: 'lg:min-w-0 lg:flex-1' },
+  { d: '8:15', m: '12:54', label: 'BATH · PLUM ACCENT WALL', labelM: 'PLUM ACCENT WALL', alt: 'Bathroom with a deep plum accent wall above black tile', cls: 'lg:w-[28.8462%] lg:shrink-0' },
+  { d: '8:20', m: '12:57', label: 'BATH · SOFT WHITE WALLS', labelM: 'BATH · SOFT WHITE', alt: 'Bathroom vanity with soft white painted walls', cls: 'lg:min-h-0 lg:flex-1' },
+  { d: '8:24', m: '12:60', label: 'LANDING · DOORS AND TRIM', labelM: 'DOORS AND TRIM', alt: 'Upstairs landing with white painted doors and trim', cls: 'lg:min-h-0 lg:flex-1' },
+];
+---
+<section class="bg-primer" aria-labelledby="work-title" data-node="8:2" data-node-m="12:45">
+  <div class="mx-auto max-w-[1440px] flex flex-col gap-[28px] px-[20px] py-[56px] lg:gap-[40px] lg:p-[96px]">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between lg:gap-[32px]" data-node="8:3">
+      <div class="flex flex-col gap-[8px] lg:gap-[10px]" data-node="8:4" data-node-m="12:46">
+        <p class="tm-eyebrow lg:t-eyebrow text-forest whitespace-nowrap">OUR WORK</p>
+        <h2 id="work-title" class="tm-h2 lg:t-display-m text-ink">Recent work</h2>
+        <p class="t-body-m lg:t-body-l text-muted">Every photo here is from an Olvera job.</p>
+      </div>
+      <div class="hidden lg:block shrink-0"><Button href={ROUTES.ourWork} variant="outline-dark" class="h-[55px] min-w-[235px] px-[26px]" dataNode="8:8">See more of our work  →</Button></div>
+    </div>
+    <div class="grid grid-cols-2 gap-[10px] lg:flex lg:h-[600px] lg:gap-[16px]" data-node="8:10" data-node-m="12:50">
+      {tiles.slice(0, 2).map((t) => (
+        <figure class={`relative m-0 overflow-hidden rounded-[4px] aspect-[170/220] lg:aspect-auto ${t.cls}`} data-node={t.d} data-node-m={t.m}>
+          <Img node={t.m} alt={t.alt} class="lg:hidden absolute inset-0 w-full h-full object-cover" />
+          <Img node={t.d} alt={t.alt} class="hidden lg:block absolute inset-0 w-full h-full object-cover" />
+          <div aria-hidden="true" class="hidden lg:block absolute inset-x-0 bottom-0 h-[160px] bg-gradient-to-b from-[rgba(22,36,28,0)] to-[rgba(22,36,28,0.75)]"></div>
+          <figcaption class="absolute left-[10px] bottom-[10px] rounded-[3px] bg-white px-[7px] py-[4px] tm-micro text-ink whitespace-nowrap lg:left-[20px] lg:bottom-[20px] lg:px-[10px] lg:py-[6px] lg:t-tag"><span class="lg:hidden">{t.labelM}</span><span class="hidden lg:inline">{t.label}</span></figcaption>
+        </figure>
+      ))}
+      <div class="contents lg:flex lg:w-[28.8462%] lg:shrink-0 lg:flex-col lg:gap-[16px]" data-node="8:19">
+        {tiles.slice(2).map((t) => (
+          <figure class={`relative m-0 overflow-hidden rounded-[4px] aspect-[170/220] lg:aspect-auto ${t.cls}`} data-node={t.d} data-node-m={t.m}>
+            <Img node={t.m} alt={t.alt} class="lg:hidden absolute inset-0 w-full h-full object-cover" />
+            <Img node={t.d} alt={t.alt} class="hidden lg:block absolute inset-0 w-full h-full object-cover" />
+            <div aria-hidden="true" class="hidden lg:block absolute inset-x-0 bottom-0 h-[160px] bg-gradient-to-b from-[rgba(22,36,28,0)] to-[rgba(22,36,28,0.75)]"></div>
+            <figcaption class="absolute left-[10px] bottom-[10px] rounded-[3px] bg-white px-[7px] py-[4px] tm-micro text-ink whitespace-nowrap lg:left-[20px] lg:bottom-[20px] lg:px-[10px] lg:py-[6px] lg:t-tag"><span class="lg:hidden">{t.labelM}</span><span class="hidden lg:inline">{t.label}</span></figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+    <Button href={ROUTES.ourWork} variant="outline-dark" class="lg:hidden w-full h-[55px]" dataNodeM="12:63">See more of our work  →</Button>
+  </div>
+</section>

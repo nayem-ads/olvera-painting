@@ -1,0 +1,20 @@
+---
+// Interior page: "What affects the cost of interior painting" (no prices, factors only).
+import Section from '../../components/inner/Section.astro';
+import CheckList from '../../components/inner/CheckList.astro';
+import { ROUTES } from '../../data/site';
+const items = [
+  'Room size and ceiling height',
+  'How much patching and repair the walls need',
+  'Number of colors and how many rooms change color',
+  'Trim, doors and railings included or not',
+  'Dark colors going light, or light going very dark',
+  'Whether the rooms are furnished or empty',
+];
+---
+<Section bg="primer" id="interior-cost" title="What affects the cost of interior painting" intro="We don't post flat prices because two rooms the same size can take very different work. These are the things that move the price:">
+  <div class="flex flex-col gap-[24px] lg:gap-[32px]">
+    <CheckList items={items} cols={2} />
+    <p class="tm-step lg:t-display-xs text-ink"><a href={ROUTES.freeEstimate} class="underline decoration-forest decoration-2 underline-offset-[6px] hover:text-forest">Every estimate is free.</a></p>
+  </div>
+</Section>

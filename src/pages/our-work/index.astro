@@ -1,0 +1,20 @@
+---
+// Our work (copy doc PAGE 6). Owner: our-work agent. Hero → filterable job photos → sample testimonials → CTA band.
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/inner/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Gallery from '../../sections/our-work/Gallery.astro';
+import Clients from '../../sections/our-work/Clients.astro';
+import { breadcrumbs } from '../../data/schema';
+---
+<Base
+  title="Painting Projects in Hillsboro, OR | Olvera Painting LLC"
+  description="Photos of interior and exterior painting projects by Olvera Painting LLC in Hillsboro and the Portland area. Call 503-840-8056 for a free estimate."
+  pageClass="op-our-work"
+  schema={breadcrumbs([['Our work', '/our-work/']])}
+>
+  <PageHero tag="OUR WORK" title="Painting projects in Hillsboro and nearby" lead="Photos from Olvera jobs. No stock photos." />
+  <Gallery />
+  <Clients />
+  <CtaBand title="Want results like these?" />
+</Base>

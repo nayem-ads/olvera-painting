@@ -1,0 +1,17 @@
+---
+// Exterior page: "What affects the cost of exterior painting" (copy doc PAGE 3). No prices, factors only.
+import Section from '../../components/inner/Section.astro';
+import CheckList from '../../components/inner/CheckList.astro';
+import { ROUTES } from '../../data/site';
+const items = [
+  'Size of the house and number of stories',
+  'Siding type and its condition',
+  'How much scraping, repair and caulking is needed',
+  'Number of colors (body, trim, accents)',
+  'Access: steep slopes, tall walls, landscaping close to the house',
+];
+---
+<Section bg="primer" id="exterior-cost" title="What affects the cost of exterior painting">
+  <CheckList items={items} cols={2} />
+  <p class="mt-[28px] lg:mt-[40px] pt-[20px] lg:pt-[28px] border-t border-mist t-body-m lg:t-body-l text-ink"><a href={ROUTES.freeEstimate} class="underline decoration-forest decoration-2 underline-offset-4 hover:text-forest">We'll walk around the house with you and give you a free estimate.</a></p>
+</Section>

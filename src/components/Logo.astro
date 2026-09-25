@@ -1,0 +1,11 @@
+---
+// Client logo = the client's own PNG artwork exported through Figma (FIT), never redrawn or recoloured.
+// variant "color" (logo_transparent) on light backgrounds, "light" (logo_light) on dark. Box sizes from Figma.
+import images from '../data/images.json';
+interface Props { node: string; class?: string; priority?: boolean; dataNode?: string; dataNodeM?: string }
+const { node, class: cls = '', priority = false, dataNode, dataNodeM } = Astro.props;
+const img = (images as Record<string, { src: string; width: number; height: number }>)[node];
+if (!img) throw new Error('Logo: no image for node ' + node);
+---
+<img src={img.src} width={img.width} height={img.height} alt="Olvera Painting LLC" class={cls}
+  loading={priority ? 'eager' : 'lazy'} decoding="async" data-node={dataNode} data-node-m={dataNodeM} />

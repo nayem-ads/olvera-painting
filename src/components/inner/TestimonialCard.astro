@@ -1,0 +1,14 @@
+---
+// Paper testimonial card with tape strip (homepage 9:77 / 13:28 style). SAMPLE copy until real signed testimonials are approved.
+interface Props { quote: string; name: string; place: string; tilt?: number; lang?: string }
+const { quote, name, place, tilt = 0, lang } = Astro.props;
+---
+<figure class="relative bg-white drop-shadow-[0px_10px_12px_rgba(23,36,28,0.12)] flex flex-col gap-[14px] lg:gap-[18px] pt-[34px] pb-[24px] px-[22px] lg:pt-[44px] lg:pb-[32px] lg:px-[32px]" style={`transform:rotate(${tilt}deg)`} lang={lang}>
+  <span aria-hidden="true" class="absolute -top-[12px] left-1/2 -translate-x-1/2 w-[90px] lg:w-[110px] h-[24px] lg:h-[28px] bg-[rgba(116,184,82,0.85)]" style={`transform:translateX(-50%) rotate(${-tilt * 2}deg)`}></span>
+  <p aria-label="5 stars" class="t-button text-star">★★★★★</p>
+  <blockquote class="t-body-m lg:t-body-l text-ink">“{quote}”</blockquote>
+  <figcaption class="flex flex-col gap-[14px] lg:gap-[18px]">
+    <span class="tm-signature lg:t-signature text-ink">{name}</span>
+    <span class="tm-eyebrow-s lg:t-eyebrow text-muted">{name.toUpperCase().replace('&', 'AND')} · {place.toUpperCase()}</span>
+  </figcaption>
+</figure>

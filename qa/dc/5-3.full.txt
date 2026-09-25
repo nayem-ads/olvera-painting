@@ -1,0 +1,869 @@
+const imgLogoLogoTransparent = "https://www.figma.com/api/mcp/asset/eb070566-b1d8-4e57-9f97-162ba381b7a9.png";
+const imgHeroPhotoOlvera01HeroExterior = "https://www.figma.com/api/mcp/asset/ec857a49-05ba-4108-a2f5-8d321ab99e69.png";
+const imgPhotoOlvera02KitchenPendants = "https://www.figma.com/api/mcp/asset/a7a458f4-6ea0-4c9b-82b6-989da2ca16af.png";
+const imgPhotoOlvera13CraftsmanExterior = "https://www.figma.com/api/mcp/asset/2acd3190-7566-4be7-898f-9bbbb9b1e4a3.png";
+const imgPhotoOlvera12GreenCabinets = "https://www.figma.com/api/mcp/asset/4bd87c16-60a2-4690-a78a-757ecca4d8df.png";
+const imgTileOlvera03TerracottaBedroom = "https://www.figma.com/api/mcp/asset/35e347f1-9899-4873-92be-13b7be4b8270.png";
+const imgTileOlvera04PlumWall = "https://www.figma.com/api/mcp/asset/ba165eaf-8084-415e-ab13-e366e8d1d715.png";
+const imgTileOrigBathroomVanity = "https://www.figma.com/api/mcp/asset/e9be3bab-8a3f-4434-913b-d9c194c3717e.png";
+const imgTileOrigWhiteDoorsLanding = "https://www.figma.com/api/mcp/asset/a1321718-5f1b-4432-b60f-7f374667b986.png";
+const imgPhotoOlvera11BrushCutin = "https://www.figma.com/api/mcp/asset/72f2ccf3-6d89-4366-8e24-c2895f4aae35.png";
+const imgBgOlvera10FogForestWide = "https://www.figma.com/api/mcp/asset/775cfc5a-ffba-4dcc-bd4f-2b83917f33e4.png";
+const img50MileRadius = "https://www.figma.com/api/mcp/asset/c6c57e3c-6d18-46f1-9afc-9fcf18b5e756.png";
+const imgLogoLogoLight = "https://www.figma.com/api/mcp/asset/6bb0307b-6c5f-432e-b4a3-4fc5b96989d0.png";
+const imgFirSkylineBrandMotifFromLogo = "https://www.figma.com/api/mcp/asset/333f8c23-365c-4c5d-8c79-f070860e20c4.svg";
+const imgOregonOutline = "https://www.figma.com/api/mcp/asset/ad46d253-4b4b-4e70-bc34-7795b47d0dff.svg";
+const imgEllipse = "https://www.figma.com/api/mcp/asset/00dd49c2-5c78-494a-82bd-2045dda1cb88.svg";
+const imgHillsboroPin = "https://www.figma.com/api/mcp/asset/30a21de5-4ca0-4d4f-adaa-837833bbdc0c.svg";
+
+export default function DesktopHome1440() {
+  return (
+    <div className="bg-[var(--color\/primer,#f4f5f0)] content-stretch flex flex-col items-start relative size-full" data-node-id="5:3" data-name="Desktop — Home 1440">
+      <div className="[word-break:break-word] bg-[var(--color\/evergreen,#16241c)] content-stretch flex font-['Barlow_Condensed:SemiBold'] items-center justify-between leading-[18px] not-italic overflow-clip px-[96px] py-[10px] relative shrink-0 text-[14px] tracking-[2.4px] w-full whitespace-nowrap" data-node-id="5:4" data-name="Top bar">
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip relative shrink-0" data-node-id="5:5" data-name="left">
+          <p className="relative shrink-0 text-[color:var(--color\/forest-light,#74b852)]" data-node-id="5:6">
+            CCB #240826
+          </p>
+          <p className="relative shrink-0 text-[color:var(--color\/white,white)]" data-node-id="5:7">
+            LICENSED · BONDED · INSURED
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip relative shrink-0 text-[color:var(--color\/white,white)]" data-node-id="5:8" data-name="right">
+          <p className="relative shrink-0" data-node-id="5:9">
+            HABLAMOS ESPAÑOL
+          </p>
+          <p className="relative shrink-0" data-node-id="5:10">
+            FREE ESTIMATES · 503-840-8056
+          </p>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/white,white)] border-[var(--color\/mist,#e3e8e0)] border-b border-solid content-stretch flex items-center justify-between overflow-clip px-[96px] py-[14px] relative shrink-0 w-full" data-node-id="5:11" data-name="Header">
+        <div className="h-[72px] relative shrink-0 w-[108px]" data-node-id="5:12" data-name="Logo (logo_transparent)">
+          <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgLogoLogoTransparent} />
+        </div>
+        <div className="[word-break:break-word] content-stretch flex font-['Barlow:Bold'] gap-[36px] items-start leading-[20px] not-italic overflow-clip relative shrink-0 text-[16px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.3px] whitespace-nowrap" data-node-id="5:13" data-name="Nav">
+          <p className="relative shrink-0" data-node-id="5:14">
+            Interior
+          </p>
+          <p className="relative shrink-0" data-node-id="5:15">
+            Exterior
+          </p>
+          <p className="relative shrink-0" data-node-id="5:16">
+            Cabinets
+          </p>
+          <p className="relative shrink-0" data-node-id="5:17">
+            Our work
+          </p>
+          <p className="relative shrink-0" data-node-id="5:18">
+            About
+          </p>
+          <p className="relative shrink-0" data-node-id="5:19">
+            Service area
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[20px] items-center overflow-clip relative shrink-0" data-node-id="5:20" data-name="Actions">
+          <div className="[word-break:break-word] content-stretch flex flex-col items-start not-italic overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="5:21" data-name="Phone">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/text-muted,#5b6b60)] tracking-[2.4px]" data-node-id="5:22">
+              CALL EFRAIN
+            </p>
+            <p className="font-['Bebas_Neue:Regular'] leading-[30px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#2f4538)] tracking-[1px]" data-node-id="5:23">
+              503-840-8056
+            </p>
+          </div>
+          <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[26px] py-[16px] relative rounded-[6px] shrink-0" data-node-id="5:24" data-name="Button/Primary">
+            <p className="[word-break:break-word] font-['Barlow:Bold'] leading-[20px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] tracking-[0.3px] whitespace-nowrap" data-node-id="5:25">
+              Free estimate
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/primer,#f4f5f0)] h-[960px] overflow-clip relative shrink-0 w-full" data-node-id="6:2" data-name="Hero">
+        <div className="absolute bg-[var(--color\/evergreen,#16241c)] h-[860px] left-0 top-0 w-[1440px]" data-node-id="6:3" data-name="bg" />
+        <div className="absolute h-[860px] left-[680px] top-0 w-[760px]" data-node-id="6:4" data-name="Hero photo (olvera_01_hero_exterior)">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHeroPhotoOlvera01HeroExterior} />
+        </div>
+        <div className="absolute bg-gradient-to-r from-[#16241c] h-[860px] left-[680px] to-[rgba(22,36,28,0)] top-0 w-[340px]" data-node-id="6:5" data-name="photo fade" />
+        <div className="absolute h-[91.5px] left-[-30px] top-[1465.4px] w-[1477.9px]" data-node-id="6:6" data-name="Fir skyline (brand motif from logo)">
+          <div className="absolute inset-[-1.88%_0_-0.55%_0]">
+            <img alt="" className="block max-w-none size-full" src={imgFirSkylineBrandMotifFromLogo} />
+          </div>
+        </div>
+        <div className="absolute bg-[var(--color\/primer,#f4f5f0)] h-[100px] left-0 top-[860px] w-[1440px]" data-node-id="6:7" data-name="ground" />
+        <div className="absolute content-stretch flex flex-col gap-[26px] items-start left-[96px] overflow-clip top-[72px]" data-node-id="6:8" data-name="Hero copy">
+          <div className="flex h-[41.858px] items-center justify-center relative shrink-0 w-[377.708px]" data-node-id="6:9">
+            <div className="flex-none rotate-[-1.5deg]">
+              <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[16px] py-[7px] relative" data-name="Tape label">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/white,white)] tracking-[2.4px] whitespace-nowrap" data-node-id="6:10">
+                  HILLSBORO, OREGON · 10+ YEARS PAINTING HOMES
+                </p>
+              </div>
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Bebas_Neue:Regular'] leading-[0] not-italic relative shrink-0 text-[0px] text-[color:var(--color\/white,white)] w-[640px]" data-node-id="6:11">
+            <span className="leading-[82px] text-[86px]">{`Hillsboro house painters for `}</span>
+            <span className="leading-[82px] text-[#74b852] text-[86px]">interiors, exteriors and cabinets</span>
+          </p>
+          <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[30px] not-italic opacity-84 relative shrink-0 text-[20px] text-[color:var(--color\/white,white)] w-[520px]" data-node-id="6:12">{`We cover your floors and furniture and do the prep that makes paint last. Tell us what needs painting and we'll set up a free estimate.`}</p>
+          <div className="content-stretch flex gap-[14px] items-start overflow-clip relative shrink-0" data-node-id="6:13" data-name="CTAs">
+            <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[28px] py-[18px] relative rounded-[6px] shrink-0" data-node-id="6:14" data-name="Button/Primary">
+              <p className="[word-break:break-word] font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] tracking-[0.3px] whitespace-pre" data-node-id="6:15" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Get my free estimate  →`}</p>
+            </div>
+            <div className="border-[1.5px] border-[rgba(255,255,255,0.55)] border-solid content-stretch flex items-start overflow-clip px-[28px] py-[17px] relative rounded-[6px] shrink-0" data-node-id="6:16" data-name="Button/Outline">
+              <p className="[word-break:break-word] font-['Barlow:Bold'] leading-[20px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] tracking-[0.3px] whitespace-nowrap" data-node-id="6:17">
+                Call 503-840-8056
+              </p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex gap-[22px] items-center overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="6:18" data-name="Trust chips">
+            <div className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] items-center overflow-clip pl-[14px] pr-[16px] py-[10px] relative rounded-[40px] shrink-0" data-node-id="6:19" data-name="Google badge (PLACEHOLDER)">
+              <p className="font-['Barlow:Bold'] leading-[20px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.3px]" data-node-id="6:20">
+                5.0
+              </p>
+              <p className="font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/star,#fbbc04)] tracking-[0.3px]" data-node-id="6:21" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                ★★★★★
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/text-muted,#5b6b60)]" data-node-id="6:22">
+                Google reviews
+              </p>
+            </div>
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/white,white)] tracking-[2.4px]" data-node-id="6:23">
+              60+ SIGNED CLIENT TESTIMONIALS
+            </p>
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/forest-light,#74b852)] tracking-[2.4px]" data-node-id="6:24">
+              CCB #240826
+            </p>
+          </div>
+        </div>
+        <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-center justify-between left-[96px] overflow-clip pl-[28px] pr-[20px] py-[24px] rounded-[12px] shadow-[0px_18px_40px_0px_rgba(23,36,28,0.18)] top-[806px] w-[1248px]" data-node-id="6:25" data-name="Estimate bar (form)">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="6:26" data-name="Form title">
+            <p className="font-['Bebas_Neue:Regular'] leading-[42px] relative shrink-0 text-[40px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px]" data-node-id="6:27">
+              Get a free estimate
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[23px] relative shrink-0 text-[15px] text-[color:var(--color\/text-muted,#5b6b60)]" data-node-id="6:28">{`We'll call you to set up a time.`}</p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0" data-node-id="6:29" data-name="Field/Name">
+            <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/ink,#2f4538)] tracking-[2.4px] whitespace-nowrap" data-node-id="6:30">
+              NAME
+            </p>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start justify-between overflow-clip px-[14px] py-[13px] relative rounded-[6px] shrink-0 w-[170px]" data-node-id="6:31" data-name="input">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[27px] not-italic relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] whitespace-nowrap" data-node-id="6:32">
+                Your name
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0" data-node-id="6:33" data-name="Field/Phone">
+            <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/ink,#2f4538)] tracking-[2.4px] whitespace-nowrap" data-node-id="6:34">
+              PHONE
+            </p>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start justify-between overflow-clip px-[14px] py-[13px] relative rounded-[6px] shrink-0 w-[160px]" data-node-id="6:35" data-name="input">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[27px] not-italic relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] whitespace-nowrap" data-node-id="6:36">
+                503-000-0000
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0" data-node-id="6:37" data-name="Field/Address or ZIP">
+            <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/ink,#2f4538)] tracking-[2.4px] whitespace-nowrap" data-node-id="6:38">
+              ADDRESS OR ZIP
+            </p>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start justify-between overflow-clip px-[14px] py-[13px] relative rounded-[6px] shrink-0 w-[130px]" data-node-id="6:39" data-name="input">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[27px] not-italic relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] whitespace-nowrap" data-node-id="6:40">
+                97124
+              </p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="6:41" data-name="Field/What needs painting?">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/ink,#2f4538)] tracking-[2.4px]" data-node-id="6:42">
+              WHAT NEEDS PAINTING?
+            </p>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex font-['Barlow:Regular'] items-start justify-between leading-[27px] overflow-clip px-[14px] py-[13px] relative rounded-[6px] shrink-0 text-[17px] w-[178px]" data-node-id="6:43" data-name="input">
+              <p className="not-italic relative shrink-0 text-[color:var(--color\/text-muted,#5b6b60)]" data-node-id="6:44">
+                Interior
+              </p>
+              <p className="font-normal relative shrink-0 text-[color:var(--color\/ink,#2f4538)]" data-node-id="6:45" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                ▾
+              </p>
+            </div>
+          </div>
+          <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[26px] py-[18px] relative rounded-[6px] shrink-0" data-node-id="6:46" data-name="Button/Primary">
+            <p className="[word-break:break-word] font-['Barlow:Bold'] leading-[20px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] tracking-[0.3px] whitespace-nowrap" data-node-id="6:47">
+              Get my free estimate
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="[word-break:break-word] bg-[var(--color\/primer,#f4f5f0)] content-stretch flex items-start not-italic overflow-clip pb-[64px] pt-[40px] px-[96px] relative shrink-0 w-full" data-node-id="7:2" data-name="Trust strip">
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px overflow-clip pr-[24px] relative" data-node-id="7:3" data-name="Stat">
+          <p className="font-['Bebas_Neue:Regular'] leading-[70px] relative shrink-0 text-[72px] text-[color:var(--color\/forest,#448c2c)] whitespace-nowrap" data-node-id="7:4">
+            10+
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/ink,#2f4538)] w-[min-content]" data-node-id="7:5">
+            Years painting homes around Hillsboro
+          </p>
+        </div>
+        <div className="border-[var(--color\/mist,#e3e8e0)] border-l-2 border-solid content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px overflow-clip pl-[32px] pr-[24px] relative" data-node-id="7:6" data-name="Stat">
+          <p className="font-['Bebas_Neue:Regular'] leading-[70px] relative shrink-0 text-[72px] text-[color:var(--color\/forest,#448c2c)] whitespace-nowrap" data-node-id="7:7">
+            60+
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/ink,#2f4538)] w-[min-content]" data-node-id="7:8">
+            Hand-signed client testimonials
+          </p>
+        </div>
+        <div className="border-[var(--color\/mist,#e3e8e0)] border-l-2 border-solid content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px overflow-clip pl-[32px] pr-[24px] relative" data-node-id="7:9" data-name="Stat">
+          <p className="font-['Bebas_Neue:Regular'] leading-[70px] relative shrink-0 text-[72px] text-[color:var(--color\/forest,#448c2c)] whitespace-nowrap" data-node-id="7:10">
+            $0
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/ink,#2f4538)] w-[min-content]" data-node-id="7:11">
+            Free estimates, no pressure to book
+          </p>
+        </div>
+        <div className="border-[var(--color\/mist,#e3e8e0)] border-l-2 border-solid content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px overflow-clip pl-[32px] pr-[24px] relative" data-node-id="7:12" data-name="Stat">
+          <p className="font-['Bebas_Neue:Regular'] leading-[70px] relative shrink-0 text-[72px] text-[color:var(--color\/forest,#448c2c)] whitespace-nowrap" data-node-id="7:13">
+            50 MI
+          </p>
+          <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/ink,#2f4538)] w-[min-content]" data-node-id="7:14">
+            Radius we cover from Hillsboro
+          </p>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col gap-[48px] items-start overflow-clip pb-[104px] pt-[88px] px-[96px] relative shrink-0 w-full" data-node-id="7:15" data-name="Services">
+        <div className="[word-break:break-word] content-stretch flex items-end justify-between not-italic overflow-clip relative shrink-0 w-full" data-node-id="7:16" data-name="Section head">
+          <div className="content-stretch flex flex-col gap-[10px] items-start overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="7:17" data-name="titles">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest,#448c2c)] tracking-[2.4px]" data-node-id="7:18">
+              WHAT WE PAINT
+            </p>
+            <p className="font-['Bebas_Neue:Regular'] leading-[56px] relative shrink-0 text-[56px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px]" data-node-id="7:19">
+              Painting services for your home
+            </p>
+          </div>
+          <p className="font-['Barlow:Regular'] leading-[27px] relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[380px]" data-node-id="7:20">
+            Interior, exterior and cabinet painting for homes within about 50 miles of Hillsboro.
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[28px] items-start overflow-clip relative shrink-0 w-full" data-node-id="7:21" data-name="Paint-chip cards">
+          <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip relative rounded-[4px] self-stretch" data-node-id="7:22" data-name="Card/Interior painting">
+            <div className="h-[380px] relative shrink-0 w-full" data-node-id="7:23" data-name="photo (olvera_02_kitchen_pendants)">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhotoOlvera02KitchenPendants} />
+            </div>
+            <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-node-id="7:24" data-name="Swatch strip">
+              <div className="bg-[#ede7dc] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:25" data-name="chip/Warm white">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/ink,#2f4538)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:26">
+                  WARM WHITE
+                </p>
+              </div>
+              <div className="bg-[#b97a68] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:27" data-name="chip/Clay">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/white,white)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:28">
+                  CLAY
+                </p>
+              </div>
+              <div className="bg-[#6b2f4e] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:29" data-name="chip/Plum">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/white,white)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:30">
+                  PLUM
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start overflow-clip pb-[32px] pt-[28px] px-[28px] relative shrink-0 w-full" data-node-id="7:31" data-name="body">
+              <p className="font-['Bebas_Neue:Regular'] leading-[42px] not-italic relative shrink-0 text-[40px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px] whitespace-nowrap" data-node-id="7:32">
+                Interior painting
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[27px] min-w-full not-italic relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="7:33">
+                Walls, ceilings, trim and doors, from one bedroom to the whole house. We cover furniture and floors and patch holes before we paint.
+              </p>
+              <p className="font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/forest,#448c2c)] tracking-[0.3px] whitespace-pre" data-node-id="7:34" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Interior painting  →`}</p>
+            </div>
+          </div>
+          <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip relative rounded-[4px] self-stretch" data-node-id="7:35" data-name="Card/Exterior painting">
+            <div className="h-[380px] relative shrink-0 w-full" data-node-id="7:36" data-name="photo (olvera_13_craftsman_exterior)">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhotoOlvera13CraftsmanExterior} />
+            </div>
+            <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-node-id="7:37" data-name="Swatch strip">
+              <div className="bg-[#b5713f] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:38" data-name="chip/Cedar">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/white,white)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:39">
+                  CEDAR
+                </p>
+              </div>
+              <div className="bg-[#f5f4ef] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:40" data-name="chip/Trim white">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/ink,#2f4538)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:41">
+                  TRIM WHITE
+                </p>
+              </div>
+              <div className="bg-[#3a5a48] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:42" data-name="chip/Door green">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/white,white)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:43">
+                  DOOR GREEN
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start overflow-clip pb-[32px] pt-[28px] px-[28px] relative shrink-0 w-full" data-node-id="7:44" data-name="body">
+              <p className="font-['Bebas_Neue:Regular'] leading-[42px] not-italic relative shrink-0 text-[40px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px] whitespace-nowrap" data-node-id="7:45">
+                Exterior painting
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[27px] min-w-full not-italic relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="7:46">
+                Siding, trim, shakes, soffits and doors. We wash, scrape, caulk and prime first so the paint holds up to Oregon rain.
+              </p>
+              <p className="font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/forest,#448c2c)] tracking-[0.3px] whitespace-pre" data-node-id="7:47" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Exterior painting  →`}</p>
+            </div>
+          </div>
+          <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip relative rounded-[4px] self-stretch" data-node-id="7:48" data-name="Card/Cabinet painting">
+            <div className="h-[380px] relative shrink-0 w-full" data-node-id="7:49" data-name="photo (olvera_12_green_cabinets)">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhotoOlvera12GreenCabinets} />
+            </div>
+            <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-node-id="7:50" data-name="Swatch strip">
+              <div className="bg-[#2f4538] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:51" data-name="chip/Evergreen">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/white,white)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:52">
+                  EVERGREEN
+                </p>
+              </div>
+              <div className="bg-[#a7b59b] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:53" data-name="chip/Sage">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/ink,#2f4538)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:54">
+                  SAGE
+                </p>
+              </div>
+              <div className="bg-[#b89a5a] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[8px] pl-[14px] pt-[26px] relative" data-node-id="7:55" data-name="chip/Brass">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/ink,#2f4538)] tracking-[1.6px] whitespace-nowrap" data-node-id="7:56">
+                  BRASS
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start overflow-clip pb-[32px] pt-[28px] px-[28px] relative shrink-0 w-full" data-node-id="7:57" data-name="body">
+              <p className="font-['Bebas_Neue:Regular'] leading-[42px] not-italic relative shrink-0 text-[40px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px] whitespace-nowrap" data-node-id="7:58">
+                Cabinet painting
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[27px] min-w-full not-italic relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="7:59">
+                A new look for your kitchen without replacing the cabinets. We clean, sand and use a bonding primer so the finish holds up to daily use.
+              </p>
+              <p className="font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/forest,#448c2c)] tracking-[0.3px] whitespace-pre" data-node-id="7:60" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Cabinet painting  →`}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/primer,#f4f5f0)] content-stretch flex flex-col gap-[40px] items-start overflow-clip p-[96px] relative shrink-0 w-full" data-node-id="8:2" data-name="Recent work">
+        <div className="content-stretch flex items-end justify-between overflow-clip relative shrink-0 w-full" data-node-id="8:3" data-name="Section head">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[10px] items-start not-italic overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="8:4" data-name="titles">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest,#448c2c)] tracking-[2.4px]" data-node-id="8:5">
+              OUR WORK
+            </p>
+            <p className="font-['Bebas_Neue:Regular'] leading-[56px] relative shrink-0 text-[56px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px]" data-node-id="8:6">
+              Recent work
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[30px] relative shrink-0 text-[20px] text-[color:var(--color\/text-muted,#5b6b60)]" data-node-id="8:7">
+              Every photo here is from an Olvera job.
+            </p>
+          </div>
+          <div className="border-[1.5px] border-[var(--color\/ink,#2f4538)] border-solid content-stretch flex items-start overflow-clip px-[26px] py-[16px] relative rounded-[6px] shrink-0" data-node-id="8:8" data-name="Button/Outline dark">
+            <p className="[word-break:break-word] font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.3px] whitespace-pre" data-node-id="8:9" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`See more of our work  →`}</p>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[16px] h-[600px] items-start overflow-clip relative shrink-0 w-full" data-node-id="8:10" data-name="Mosaic">
+          <div className="flex-[1_0_0] h-full min-w-px overflow-clip relative rounded-[4px]" data-node-id="8:11" data-name="Tile (olvera_03_terracotta_bedroom)">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgTileOlvera03TerracottaBedroom} />
+            <div className="absolute bg-gradient-to-b bottom-0 from-[rgba(22,36,28,0)] h-[160px] left-0 right-0 to-[rgba(22,36,28,0.75)]" data-node-id="8:12" data-name="shade" />
+            <div className="absolute bg-[var(--color\/white,white)] bottom-[20px] content-stretch flex items-start left-[20px] overflow-clip px-[10px] py-[6px] rounded-[3px]" data-node-id="8:13" data-name="caption">
+              <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--color\/ink,#2f4538)] tracking-[2.4px] whitespace-nowrap" data-node-id="8:14">
+                BEDROOM · CLAY WALLS, BLACK TRIM
+              </p>
+            </div>
+          </div>
+          <div className="h-full overflow-clip relative rounded-[4px] shrink-0 w-[360px]" data-node-id="8:15" data-name="Tile (olvera_04_plum_wall)">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgTileOlvera04PlumWall} />
+            <div className="absolute bg-gradient-to-b bottom-0 from-[rgba(22,36,28,0)] h-[160px] left-0 right-0 to-[rgba(22,36,28,0.75)]" data-node-id="8:16" data-name="shade" />
+            <div className="absolute bg-[var(--color\/white,white)] bottom-[20px] content-stretch flex items-start left-[20px] overflow-clip px-[10px] py-[6px] rounded-[3px]" data-node-id="8:17" data-name="caption">
+              <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--color\/ink,#2f4538)] tracking-[2.4px] whitespace-nowrap" data-node-id="8:18">
+                BATH · PLUM ACCENT WALL
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[16px] h-full items-start overflow-clip relative shrink-0 w-[360px]" data-node-id="8:19" data-name="stack">
+            <div className="flex-[1_0_0] min-h-px overflow-clip relative rounded-[4px] w-full" data-node-id="8:20" data-name="Tile (orig_bathroom_vanity)">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgTileOrigBathroomVanity} />
+              <div className="absolute bg-gradient-to-b bottom-0 from-[rgba(22,36,28,0)] h-[160px] left-0 right-0 to-[rgba(22,36,28,0.75)]" data-node-id="8:21" data-name="shade" />
+              <div className="absolute bg-[var(--color\/white,white)] bottom-[20px] content-stretch flex items-start left-[20px] overflow-clip px-[10px] py-[6px] rounded-[3px]" data-node-id="8:22" data-name="caption">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--color\/ink,#2f4538)] tracking-[2.4px] whitespace-nowrap" data-node-id="8:23">
+                  BATH · SOFT WHITE WALLS
+                </p>
+              </div>
+            </div>
+            <div className="flex-[1_0_0] min-h-px overflow-clip relative rounded-[4px] w-full" data-node-id="8:24" data-name="Tile (orig_white_doors_landing)">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgTileOrigWhiteDoorsLanding} />
+              <div className="absolute bg-gradient-to-b bottom-0 from-[rgba(22,36,28,0)] h-[160px] left-0 right-0 to-[rgba(22,36,28,0.75)]" data-node-id="8:25" data-name="shade" />
+              <div className="absolute bg-[var(--color\/white,white)] bottom-[20px] content-stretch flex items-start left-[20px] overflow-clip px-[10px] py-[6px] rounded-[3px]" data-node-id="8:26" data-name="caption">
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--color\/ink,#2f4538)] tracking-[2.4px] whitespace-nowrap" data-node-id="8:27">
+                  LANDING · DOORS AND TRIM
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/white,white)] content-stretch flex gap-[80px] items-start overflow-clip px-[96px] py-[104px] relative shrink-0 w-full" data-node-id="8:28" data-name="Process — protect your home">
+        <div className="h-[660px] relative rounded-[4px] shrink-0 w-[500px]" data-node-id="8:29" data-name="photo (olvera_11_brush_cutin)">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgPhotoOlvera11BrushCutin} />
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[32px] items-start min-w-px overflow-clip relative" data-node-id="8:30" data-name="steps col">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[10px] items-start not-italic overflow-clip relative shrink-0 w-full" data-node-id="8:31" data-name="titles">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest,#448c2c)] tracking-[2.4px] whitespace-nowrap" data-node-id="8:32">
+              OUR PROCESS
+            </p>
+            <p className="font-['Bebas_Neue:Regular'] leading-[56px] min-w-full relative shrink-0 text-[56px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px] w-[min-content]" data-node-id="8:33">
+              How we protect your home while we paint
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="8:34" data-name="steps">
+            <div className="border-0 border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex gap-[24px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="8:35" data-name="Step 1">
+              <div className="flex h-[39.243px] items-center justify-center relative shrink-0 w-[48.978px]" data-node-id="8:36">
+                <div className="flex-none rotate-[1.5deg]">
+                  <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[12px] py-[4px] relative" data-name="tape number">
+                    <p className="[word-break:break-word] font-['Bebas_Neue:Regular'] leading-[30px] not-italic relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[1px] whitespace-nowrap" data-node-id="8:37">
+                      01
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px not-italic overflow-clip relative" data-node-id="8:38" data-name="text">
+                <p className="font-['Bebas_Neue:Regular'] leading-[30px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#2f4538)] tracking-[1px] whitespace-nowrap" data-node-id="8:39">
+                  Walkthrough and free estimate
+                </p>
+                <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="8:40">
+                  We look at the project with you, talk through colors, and give you a price before any work starts.
+                </p>
+              </div>
+            </div>
+            <div className="border-[var(--color\/mist,#e3e8e0)] border-solid border-t content-stretch flex gap-[24px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="8:41" data-name="Step 2">
+              <div className="flex h-[39.243px] items-center justify-center relative shrink-0 w-[48.978px]" data-node-id="8:42">
+                <div className="flex-none rotate-[-1.5deg]">
+                  <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[12px] py-[4px] relative" data-name="tape number">
+                    <p className="[word-break:break-word] font-['Bebas_Neue:Regular'] leading-[30px] not-italic relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[1px] whitespace-nowrap" data-node-id="8:43">
+                      02
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px not-italic overflow-clip relative" data-node-id="8:44" data-name="text">
+                <p className="font-['Bebas_Neue:Regular'] leading-[30px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#2f4538)] tracking-[1px] whitespace-nowrap" data-node-id="8:45">
+                  Cover and mask
+                </p>
+                <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="8:46">
+                  Floors, furniture, fixtures and plants get covered before we open a can.
+                </p>
+              </div>
+            </div>
+            <div className="border-[var(--color\/mist,#e3e8e0)] border-solid border-t content-stretch flex gap-[24px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="8:47" data-name="Step 3">
+              <div className="flex h-[39.243px] items-center justify-center relative shrink-0 w-[48.978px]" data-node-id="8:48">
+                <div className="flex-none rotate-[1.5deg]">
+                  <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[12px] py-[4px] relative" data-name="tape number">
+                    <p className="[word-break:break-word] font-['Bebas_Neue:Regular'] leading-[30px] not-italic relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[1px] whitespace-nowrap" data-node-id="8:49">
+                      03
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px not-italic overflow-clip relative" data-node-id="8:50" data-name="text">
+                <p className="font-['Bebas_Neue:Regular'] leading-[30px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#2f4538)] tracking-[1px] whitespace-nowrap" data-node-id="8:51">
+                  Prep
+                </p>
+                <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="8:52">
+                  Washing, scraping, sanding, patching, caulking and priming. This is the part that decides how long the paint lasts.
+                </p>
+              </div>
+            </div>
+            <div className="border-[var(--color\/mist,#e3e8e0)] border-solid border-t content-stretch flex gap-[24px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="8:53" data-name="Step 4">
+              <div className="flex h-[39.243px] items-center justify-center relative shrink-0 w-[48.978px]" data-node-id="8:54">
+                <div className="flex-none rotate-[-1.5deg]">
+                  <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[12px] py-[4px] relative" data-name="tape number">
+                    <p className="[word-break:break-word] font-['Bebas_Neue:Regular'] leading-[30px] not-italic relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[1px] whitespace-nowrap" data-node-id="8:55">
+                      04
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px not-italic overflow-clip relative" data-node-id="8:56" data-name="text">
+                <p className="font-['Bebas_Neue:Regular'] leading-[30px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#2f4538)] tracking-[1px] whitespace-nowrap" data-node-id="8:57">
+                  Paint
+                </p>
+                <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="8:58">
+                  Brush, roller or sprayer, whichever fits the surface, with enough coats to cover evenly.
+                </p>
+              </div>
+            </div>
+            <div className="border-[var(--color\/mist,#e3e8e0)] border-solid border-t content-stretch flex gap-[24px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="8:59" data-name="Step 5">
+              <div className="flex h-[39.243px] items-center justify-center relative shrink-0 w-[48.978px]" data-node-id="8:60">
+                <div className="flex-none rotate-[1.5deg]">
+                  <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex items-start overflow-clip px-[12px] py-[4px] relative" data-name="tape number">
+                    <p className="[word-break:break-word] font-['Bebas_Neue:Regular'] leading-[30px] not-italic relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[1px] whitespace-nowrap" data-node-id="8:61">
+                      05
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px not-italic overflow-clip relative" data-node-id="8:62" data-name="text">
+                <p className="font-['Bebas_Neue:Regular'] leading-[30px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#2f4538)] tracking-[1px] whitespace-nowrap" data-node-id="8:63">
+                  Clean up and final walkthrough
+                </p>
+                <p className="font-['Barlow:Regular'] leading-[27px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="8:64">
+                  We pull the masking, clean up, and walk the job with you before we call it done.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/evergreen,#16241c)] h-[597px] overflow-clip relative shrink-0 w-full" data-node-id="8:65" data-name="Why Olvera">
+        <div className="absolute h-[597px] left-0 opacity-45 top-0 w-[1440px]" data-node-id="8:66" data-name="bg (olvera_10_fog_forest_wide)">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBgOlvera10FogForestWide} />
+        </div>
+        <div className="absolute bg-gradient-to-b from-[rgba(22,36,28,0.55)] h-[597px] left-0 to-[rgba(22,36,28,0.95)] top-0 w-[1440px]" data-node-id="8:67" data-name="overlay" />
+        <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[48px] items-start left-[96px] not-italic overflow-clip top-[96px] w-[1248px]" data-node-id="8:68" data-name="content">
+          <div className="content-stretch flex flex-col gap-[10px] items-start overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="8:69" data-name="titles">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest-light,#74b852)] tracking-[2.4px]" data-node-id="8:70">
+              WHY OLVERA
+            </p>
+            <p className="font-['Bebas_Neue:Regular'] leading-[56px] relative shrink-0 text-[56px] text-[color:var(--color\/white,white)] tracking-[0.5px]" data-node-id="8:71">
+              Why homeowners call Olvera
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[32px] items-start overflow-clip relative shrink-0 w-full" data-node-id="8:72" data-name="reasons">
+            <div className="bg-[rgba(255,255,255,0.07)] border border-[rgba(255,255,255,0.16)] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[14px] items-start min-w-px overflow-clip pb-[32px] pt-[28px] px-[28px] relative rounded-[4px] self-stretch" data-node-id="8:73" data-name="Reason">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest-light,#74b852)] tracking-[2.4px] whitespace-nowrap" data-node-id="8:74">
+                OWNER-RUN
+              </p>
+              <p className="font-['Bebas_Neue:Regular'] leading-[42px] min-w-full relative shrink-0 text-[40px] text-[color:var(--color\/white,white)] tracking-[0.5px] w-[min-content]" data-node-id="8:75">
+                You deal with the owner.
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[27px] min-w-full opacity-80 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="8:76">
+                Efrain Olvera owns and runs the company, and 503-840-8056 is his number.
+              </p>
+            </div>
+            <div className="bg-[rgba(255,255,255,0.07)] border border-[rgba(255,255,255,0.16)] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[14px] items-start min-w-px overflow-clip pb-[32px] pt-[28px] px-[28px] relative rounded-[4px] self-stretch" data-node-id="8:77" data-name="Reason">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest-light,#74b852)] tracking-[2.4px] whitespace-nowrap" data-node-id="8:78">
+                CCB #240826
+              </p>
+              <p className="font-['Bebas_Neue:Regular'] leading-[42px] min-w-full relative shrink-0 text-[40px] text-[color:var(--color\/white,white)] tracking-[0.5px] w-[min-content]" data-node-id="8:79">
+                Check our license before you hire.
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[27px] min-w-full opacity-80 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="8:80">
+                Look up CCB #240826 on the Oregon Construction Contractors Board website. It’s worth doing with any contractor.
+              </p>
+            </div>
+            <div className="bg-[rgba(255,255,255,0.07)] border border-[rgba(255,255,255,0.16)] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[14px] items-start min-w-px overflow-clip pb-[32px] pt-[28px] px-[28px] relative rounded-[4px] self-stretch" data-node-id="8:81" data-name="Reason">
+              <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest-light,#74b852)] tracking-[2.4px] whitespace-nowrap" data-node-id="8:82">
+                EN · ES
+              </p>
+              <p className="font-['Bebas_Neue:Regular'] leading-[42px] min-w-full relative shrink-0 text-[40px] text-[color:var(--color\/white,white)] tracking-[0.5px] w-[min-content]" data-node-id="8:83">
+                Hablamos español.
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[27px] min-w-full opacity-80 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="8:84">
+                Call us in English or Spanish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/primer,#f4f5f0)] content-stretch flex flex-col gap-[56px] items-start pb-[112px] pt-[104px] px-[96px] relative shrink-0 w-full" data-node-id="9:2" data-name="Testimonials wall">
+        <div className="[word-break:break-word] content-stretch flex items-end justify-between overflow-clip relative shrink-0 w-full whitespace-nowrap" data-node-id="9:3" data-name="Section head">
+          <div className="content-stretch flex flex-col gap-[10px] items-start not-italic overflow-clip relative shrink-0" data-node-id="9:4" data-name="titles">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest,#448c2c)] tracking-[2.4px]" data-node-id="9:5">
+              60+ SIGNED TESTIMONIALS
+            </p>
+            <p className="font-['Bebas_Neue:Regular'] leading-[56px] relative shrink-0 text-[56px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px]" data-node-id="9:6">
+              What our clients say
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[30px] relative shrink-0 text-[20px] text-[color:var(--color\/text-muted,#5b6b60)]" data-node-id="9:7">
+              More than 60 clients have signed testimonials for Olvera. Here are a few.
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex gap-[14px] items-center overflow-clip pl-[20px] pr-[24px] py-[16px] relative rounded-[8px] shrink-0" data-node-id="9:8" data-name="Google badge (PLACEHOLDER — real reviews at dev)">
+            <p className="font-['Bebas_Neue:Regular'] leading-[42px] not-italic relative shrink-0 text-[40px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px]" data-node-id="9:9">
+              5.0
+            </p>
+            <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" data-node-id="9:10" data-name="s">
+              <p className="font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/star,#fbbc04)] tracking-[0.3px]" data-node-id="9:11" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                ★★★★★
+              </p>
+              <p className="font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/text-muted,#5b6b60)]" data-node-id="9:12">
+                Google reviews
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[40px] items-start pt-[20px] px-[8px] relative shrink-0 w-full" data-node-id="9:76" data-name="Paper cards">
+          <div className="flex flex-[1_0_0] h-[374.961px] items-center justify-center min-w-px relative" data-node-id="9:77">
+            <div className="flex-none rotate-[1.2deg] w-full">
+              <div className="bg-[var(--color\/white,white)] content-stretch drop-shadow-[0px_10px_12px_rgba(23,36,28,0.12)] flex flex-col gap-[18px] items-start pb-[32px] pt-[44px] px-[32px] relative w-full" data-name="Paper card (SAMPLE quote — replace with signed testimonial)">
+                <p className="[word-break:break-word] font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/star,#fbbc04)] tracking-[0.3px] whitespace-nowrap" data-node-id="9:78" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                  ★★★★★
+                </p>
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[30px] min-w-full not-italic relative shrink-0 text-[20px] text-[color:var(--color\/ink,#2f4538)] w-[min-content]" data-node-id="9:79">
+                  “Efrain and his crew repainted our whole downstairs and you would never know they were there. Everything got covered, and they cleaned up at the end of every day.”
+                </p>
+                <p className="[word-break:break-word] font-['Caveat:Bold'] font-bold leading-[30px] relative shrink-0 text-[34px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:80">
+                  Linda M.
+                </p>
+                <div className="bg-[rgba(46,69,56,0.3)] h-px relative shrink-0 w-[120px]" data-node-id="9:81" data-name="Rectangle" />
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/text-muted,#5b6b60)] tracking-[2.4px] whitespace-nowrap" data-node-id="9:82">
+                  LINDA M. · HILLSBORO
+                </p>
+                <div className="absolute flex h-[28.767px] items-center justify-center left-[560.8px] top-[-12px] w-[110.193px]" data-node-id="9:83">
+                  <div className="flex-none rotate-[0.4deg]">
+                    <div className="bg-[rgba(116,184,82,0.85)] h-[28px] relative w-[110px]" data-name="green tape" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-[1_0_0] h-[372.326px] items-center justify-center min-w-px relative" data-node-id="9:84">
+            <div className="flex-none rotate-[-0.8deg] w-full">
+              <div className="bg-[var(--color\/white,white)] content-stretch drop-shadow-[0px_10px_12px_rgba(23,36,28,0.12)] flex flex-col gap-[18px] items-start pb-[32px] pt-[44px] px-[32px] relative w-full" data-name="Paper card (SAMPLE quote — replace with signed testimonial)">
+                <p className="[word-break:break-word] font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/star,#fbbc04)] tracking-[0.3px] whitespace-nowrap" data-node-id="9:85" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                  ★★★★★
+                </p>
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[30px] min-w-full not-italic relative shrink-0 text-[20px] text-[color:var(--color\/ink,#2f4538)] w-[min-content]" data-node-id="9:86">
+                  “Our cedar house had not been painted in 15 years. They scraped, primed and replaced two rotted boards before any paint went on. It looks brand new.”
+                </p>
+                <p className="[word-break:break-word] font-['Caveat:Bold'] font-bold leading-[30px] relative shrink-0 text-[34px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:87">{`Mark & Jen T.`}</p>
+                <div className="bg-[rgba(46,69,56,0.3)] h-px relative shrink-0 w-[120px]" data-node-id="9:88" data-name="Rectangle" />
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/text-muted,#5b6b60)] tracking-[2.4px] whitespace-nowrap" data-node-id="9:89">
+                  MARK AND JEN T. · BEAVERTON
+                </p>
+                <div className="absolute flex h-[34.852px] items-center justify-center left-[243px] top-[-18.91px] w-[111.541px]" data-node-id="9:90">
+                  <div className="flex-none rotate-[-3.6deg]">
+                    <div className="bg-[rgba(116,184,82,0.85)] h-[28px] relative w-[110px]" data-name="green tape" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-[1_0_0] h-[341.003px] items-center justify-center min-w-px relative" data-node-id="9:91">
+            <div className="flex-none rotate-[0.6deg] w-full">
+              <div className="bg-[var(--color\/white,white)] content-stretch drop-shadow-[0px_10px_12px_rgba(23,36,28,0.12)] flex flex-col gap-[18px] items-start pb-[32px] pt-[44px] px-[32px] relative w-full" data-name="Paper card (SAMPLE quote — replace with signed testimonial)">
+                <p className="[word-break:break-word] font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/star,#fbbc04)] tracking-[0.3px] whitespace-nowrap" data-node-id="9:92" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                  ★★★★★
+                </p>
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[30px] min-w-full not-italic relative shrink-0 text-[20px] text-[color:var(--color\/ink,#2f4538)] w-[min-content]" data-node-id="9:93">
+                  “We painted our kitchen cabinets white instead of replacing them. Best money we have spent on this house.”
+                </p>
+                <p className="[word-break:break-word] font-['Caveat:Bold'] font-bold leading-[30px] relative shrink-0 text-[34px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:94">
+                  Sandra R.
+                </p>
+                <div className="bg-[rgba(46,69,56,0.3)] h-px relative shrink-0 w-[120px]" data-node-id="9:95" data-name="Rectangle" />
+                <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/text-muted,#5b6b60)] tracking-[2.4px] whitespace-nowrap" data-node-id="9:96">
+                  SANDRA R. · TIGARD
+                </p>
+                <div className="absolute flex h-[29.533px] items-center justify-center left-[137px] top-[-13.54px] w-[110.38px]" data-node-id="9:97">
+                  <div className="flex-none rotate-[-0.8deg]">
+                    <div className="bg-[rgba(116,184,82,0.85)] h-[28px] relative w-[110px]" data-name="green tape" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/white,white)] content-stretch flex gap-[72px] items-center overflow-clip px-[96px] py-[104px] relative shrink-0 w-full" data-node-id="9:38" data-name="Service area">
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px overflow-clip relative" data-node-id="9:39" data-name="text col">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[10px] items-start not-italic overflow-clip relative shrink-0 w-full" data-node-id="9:40" data-name="titles">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest,#448c2c)] tracking-[2.4px] whitespace-nowrap" data-node-id="9:41">
+              SERVICE AREA
+            </p>
+            <p className="font-['Bebas_Neue:Regular'] leading-[56px] min-w-full relative shrink-0 text-[56px] text-[color:var(--color\/ink,#2f4538)] tracking-[0.5px] w-[min-content]" data-node-id="9:42">
+              Serving Hillsboro and homes within 50 miles
+            </p>
+          </div>
+          <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[30px] min-w-full not-italic relative shrink-0 text-[20px] text-[color:var(--color\/text-muted,#5b6b60)] w-[min-content]" data-node-id="9:43">{`We're based in Hillsboro and paint homes within about 50 miles, including Beaverton, Aloha, Tigard, Tualatin, Forest Grove, Portland and Newberg.`}</p>
+          <div className="content-start flex flex-wrap gap-[10px] items-start overflow-clip relative shrink-0 w-full" data-node-id="9:44" data-name="City chips">
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[40px] shrink-0" data-node-id="9:45" data-name="chip">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:46">
+                Hillsboro
+              </p>
+            </div>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[40px] shrink-0" data-node-id="9:47" data-name="chip">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:48">
+                Beaverton
+              </p>
+            </div>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[40px] shrink-0" data-node-id="9:49" data-name="chip">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:50">
+                Aloha
+              </p>
+            </div>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[40px] shrink-0" data-node-id="9:51" data-name="chip">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:52">
+                Tigard
+              </p>
+            </div>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[40px] shrink-0" data-node-id="9:53" data-name="chip">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:54">
+                Tualatin
+              </p>
+            </div>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[40px] shrink-0" data-node-id="9:55" data-name="chip">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:56">
+                Forest Grove
+              </p>
+            </div>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[40px] shrink-0" data-node-id="9:57" data-name="chip">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:58">
+                Portland
+              </p>
+            </div>
+            <div className="bg-[var(--color\/primer,#f4f5f0)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[40px] shrink-0" data-node-id="9:59" data-name="chip">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[23px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/ink,#2f4538)] whitespace-nowrap" data-node-id="9:60">
+                Newberg
+              </p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex gap-[6px] items-start not-italic overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="9:61" data-name="note">
+            <p className="font-['Barlow:Regular'] leading-[27px] relative shrink-0 text-[17px] text-[color:var(--color\/ink,#2f4538)]" data-node-id="9:62">
+              Not sure if you’re in range? Call
+            </p>
+            <p className="font-['Barlow:Bold'] leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/forest,#448c2c)] tracking-[0.3px]" data-node-id="9:63">
+              503-840-8056
+            </p>
+          </div>
+          <p className="[word-break:break-word] font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/forest,#448c2c)] tracking-[0.3px] whitespace-pre" data-node-id="9:64" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`See our service area  →`}</p>
+        </div>
+        <div className="h-[470px] relative shrink-0 w-[600px]" data-node-id="9:65" data-name="Oregon map (brand outline)">
+          <div className="absolute h-[410.2px] left-[24.8px] top-[26.6px] w-[579.6px]" data-node-id="9:66" data-name="Oregon outline">
+            <div className="absolute inset-[-1.22%_-0.86%]">
+              <img alt="" className="block max-w-none size-full" src={imgOregonOutline} />
+            </div>
+          </div>
+          <div className="absolute left-[67.12px] size-[140px] top-[24.68px]" data-node-id="9:67" data-name="50-mile radius">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" height="140" src={img50MileRadius} width="140" />
+          </div>
+          <div className="absolute left-[155.44px] size-[8px] top-[90.68px]" data-node-id="9:68" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[134.56px] size-[8px] top-[112.06px]" data-node-id="9:69" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[124.48px] size-[8px] top-[90.68px]" data-node-id="9:70" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[128.12px] size-[18px] top-[85.68px]" data-node-id="9:71" data-name="Hillsboro pin">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHillsboroPin} />
+          </div>
+          <div className="absolute bg-[var(--color\/evergreen,#16241c)] content-stretch flex items-start left-[153.12px] overflow-clip px-[10px] py-[5px] rounded-[3px] top-[50.68px]" data-node-id="9:72" data-name="pin label">
+            <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/white,white)] tracking-[2.4px] whitespace-nowrap" data-node-id="9:73">
+              HILLSBORO · HQ
+            </p>
+          </div>
+          <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-start left-[93.12px] overflow-clip px-[8px] py-[3px] rounded-[3px] top-[172.68px]" data-node-id="9:74" data-name="radius label">
+            <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/forest,#448c2c)] tracking-[2.4px] whitespace-nowrap" data-node-id="9:75">
+              ≈ 50 MILES
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col items-start overflow-clip pb-[104px] pt-[24px] px-[96px] relative shrink-0 w-full" data-node-id="10:2" data-name="CTA band wrap">
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/mist,#e3e8e0)] border-solid content-stretch flex items-start overflow-clip relative rounded-[10px] shadow-[0px_16px_40px_0px_rgba(23,36,28,0.1)] shrink-0 w-full" data-node-id="10:3" data-name="CTA band (mirrors business card)">
+          <div className="bg-[var(--color\/forest,#448c2c)] content-stretch flex flex-[1_0_0] flex-col gap-[22px] items-start min-w-px overflow-clip p-[64px] relative" data-node-id="10:4" data-name="green panel">
+            <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic opacity-85 relative shrink-0 text-[14px] text-[color:var(--color\/white,white)] tracking-[2.4px] whitespace-nowrap" data-node-id="10:5">
+              FREE ESTIMATES
+            </p>
+            <p className="[word-break:break-word] font-['Bebas_Neue:Regular'] leading-[70px] min-w-full not-italic relative shrink-0 text-[72px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="10:6">
+              Ready for a free estimate?
+            </p>
+            <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[30px] min-w-full not-italic opacity-90 relative shrink-0 text-[20px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="10:7">{`Tell us what you want painted and we'll set up a time to come see it.`}</p>
+            <div className="content-stretch flex gap-[14px] items-start overflow-clip relative shrink-0" data-node-id="10:8" data-name="CTAs">
+              <div className="bg-[var(--color\/white,white)] content-stretch flex items-start overflow-clip px-[28px] py-[18px] relative rounded-[6px] shrink-0" data-node-id="10:9" data-name="Button/White">
+                <p className="[word-break:break-word] font-['Barlow:Bold'] font-bold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/forest-dark,#35701f)] tracking-[0.3px] whitespace-pre" data-node-id="10:10" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>{`Get my free estimate  →`}</p>
+              </div>
+              <div className="border-[1.5px] border-[rgba(255,255,255,0.7)] border-solid content-stretch flex items-start overflow-clip px-[28px] py-[17px] relative rounded-[6px] shrink-0" data-node-id="10:11" data-name="Button/Outline">
+                <p className="[word-break:break-word] font-['Barlow:Bold'] leading-[20px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] tracking-[0.3px] whitespace-nowrap" data-node-id="10:12">
+                  Call 503-840-8056
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col gap-[18px] items-center justify-center overflow-clip px-[56px] py-[48px] relative self-stretch shrink-0 w-[480px]" data-node-id="10:13" data-name="white panel">
+            <div className="h-[180px] relative shrink-0 w-[270px]" data-node-id="10:14" data-name="Logo (logo_transparent)">
+              <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgLogoLogoTransparent} />
+            </div>
+            <p className="[word-break:break-word] font-['Bebas_Neue:Regular'] leading-[30px] not-italic relative shrink-0 text-[28px] text-[color:var(--color\/ink,#2f4538)] tracking-[1px] whitespace-nowrap" data-node-id="10:15">{`INTERIOR & EXTERIOR PAINTING`}</p>
+            <p className="[word-break:break-word] font-['Barlow_Condensed:SemiBold'] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--color\/text-muted,#5b6b60)] tracking-[2.4px] whitespace-nowrap" data-node-id="10:16">
+              CCB #240826 · LICENSED · INSURED · BONDED
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/evergreen,#16241c)] content-stretch flex flex-col gap-[48px] items-start overflow-clip pb-[40px] pt-[72px] px-[96px] relative shrink-0 w-full" data-node-id="10:17" data-name="Footer">
+        <div className="content-stretch flex gap-[64px] items-start overflow-clip relative shrink-0 w-full" data-node-id="10:18" data-name="columns">
+          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[18px] items-start min-w-px overflow-clip relative" data-node-id="10:19" data-name="brand">
+            <div className="h-[120px] relative shrink-0 w-[180px]" data-node-id="10:20" data-name="Logo (logo_light)">
+              <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgLogoLogoLight} />
+            </div>
+            <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[27px] min-w-full not-italic opacity-75 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="10:21">
+              Residential interior, exterior and cabinet painting in Hillsboro and the Portland metro.
+            </p>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start min-w-px not-italic overflow-clip relative whitespace-nowrap" data-node-id="10:22" data-name="Contact">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest-light,#74b852)] tracking-[2.4px]" data-node-id="10:23">
+              CONTACT
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:24">
+              Olvera Painting LLC
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:25">
+              24880 NW Meek Rd
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:26">
+              Hillsboro, OR 97124
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:27">
+              503-840-8056
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:28">
+              olverapaintingllc@gmail.com
+            </p>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start min-w-px not-italic overflow-clip relative whitespace-nowrap" data-node-id="10:29" data-name="Services">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest-light,#74b852)] tracking-[2.4px]" data-node-id="10:30">
+              SERVICES
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:31">
+              Interior painting
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:32">
+              Exterior painting
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:33">
+              Cabinet painting
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:34">
+              Our work
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:35">
+              Free estimate
+            </p>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start min-w-px not-italic overflow-clip relative whitespace-nowrap" data-node-id="10:36" data-name="Company">
+            <p className="font-['Barlow_Condensed:SemiBold'] leading-[18px] relative shrink-0 text-[14px] text-[color:var(--color\/forest-light,#74b852)] tracking-[2.4px]" data-node-id="10:37">
+              COMPANY
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:38">
+              About
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:39">
+              Service area
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:40">
+              Hours: 9 am – 5 pm, Mon–Fri
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:41">
+              CCB #240826
+            </p>
+            <p className="font-['Barlow:Regular'] leading-[27px] opacity-85 relative shrink-0 text-[17px] text-[color:var(--color\/white,white)]" data-node-id="10:42">
+              Licensed, bonded and insured
+            </p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] border-[rgba(255,255,255,0.12)] border-solid border-t content-stretch flex font-['Barlow:Regular'] items-start justify-between leading-[23px] not-italic overflow-clip pt-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/white,white)] w-full whitespace-nowrap" data-node-id="10:43" data-name="bottom line">
+          <p className="opacity-55 relative shrink-0" data-node-id="10:44">
+            © 2026 Olvera Painting LLC. All rights reserved.
+          </p>
+          <p className="opacity-55 relative shrink-0" data-node-id="10:45">
+            Hablamos español
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

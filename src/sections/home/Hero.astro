@@ -1,0 +1,70 @@
+---
+// Homepage hero + estimate form. Figma desktop 6:2 (5:3), mobile 11:14 / 11:19 / 11:32 (11:2).
+// One DOM for both breakpoints: mobile stacks photo -> copy -> form; desktop layers the photo on the right of the
+// evergreen block and pulls the estimate bar up over its bottom edge (in flow, so a wrapped bar at 1024-1439 grows the section).
+import Img from '../../components/Img.astro';
+import Button from '../../components/Button.astro';
+import FormField from '../../components/FormField.astro';
+import FormSubmitFields from '../../components/FormSubmitFields.astro';
+import { ROUTES, PHONE_TEL, PHONE_DISPLAY, CCB, CCB_LOOKUP, FORM_ACTION, SHOW_GOOGLE_BADGE } from '../../data/site';
+const photoAlt = 'Two-story cedar-shake house with a balcony and white trim, an exterior painted by Olvera Painting';
+const badgeStyle = SHOW_GOOGLE_BADGE ? undefined : 'display:none';
+---
+<section class="op-hero relative bg-primer" aria-labelledby="hero-title" data-node="6:2">
+  <div class="relative bg-evergreen lg:h-[860px] lg:overflow-hidden">
+    <!-- Photo: mobile 390x300 band (11:14), desktop right-hand 760x860 (6:4) -->
+    <div class="relative h-[300px] overflow-hidden lg:absolute lg:top-0 lg:right-0 lg:left-[calc(50%-40px)] lg:h-full" data-node-m="11:14">
+      <Img node="11:15" alt={photoAlt} priority class="lg:hidden absolute inset-0 w-full h-full object-cover" dataNodeM="11:15" />
+      <Img node="6:4" alt={photoAlt} priority class="hidden lg:block absolute inset-0 w-full h-full object-cover" dataNode="6:4" />
+      <div aria-hidden="true" class="lg:hidden absolute left-0 right-0 top-[160px] h-[160px] bg-gradient-to-b from-[rgba(22,36,28,0)] to-evergreen"></div>
+      <div aria-hidden="true" class="lg:hidden absolute left-[20px] top-[252.9px] h-[33.095px] flex items-center">
+        <p class="rotate-[-1.5deg] bg-forest px-[12px] py-[5px] tm-eyebrow text-white whitespace-nowrap">HILLSBORO, OR · 10+ YEARS</p>
+      </div>
+    </div>
+    <div aria-hidden="true" class="hidden lg:block absolute top-0 h-full left-[calc(50%-40px)] w-[340px] bg-gradient-to-r from-evergreen to-[rgba(22,36,28,0)]"></div>
+
+    <!-- Copy column: mobile 11:19, desktop 6:8 -->
+    <div class="relative mx-auto max-w-[1440px] px-[20px] pt-[8px] pb-[36px] lg:px-[96px] lg:pt-[72px] lg:pb-0" data-node-m="11:19">
+      <div class="flex flex-col gap-[16px] lg:gap-[26px] lg:w-[640px] lg:max-w-full" data-node="6:8">
+        <div class="hidden lg:flex h-[41.858px] items-center self-start">
+          <p class="rotate-[-1.5deg] bg-forest px-[16px] py-[7px] t-eyebrow text-white whitespace-nowrap">HILLSBORO, OREGON · 10+ YEARS PAINTING HOMES</p>
+        </div>
+        <h1 id="hero-title" class="tm-hero lg:t-hero text-white" data-node="6:11" data-node-m="11:20">Hillsboro house painters for <span class="text-forest-light">interiors, exteriors and cabinets</span></h1>
+        <p class="t-body-m lg:t-body-l text-white opacity-[.84] lg:w-[520px] lg:max-w-full" data-node="6:12" data-node-m="11:21">We cover your floors and furniture and do the prep that makes paint last. Tell us what needs painting and we'll set up a free estimate.</p>
+        <div class="flex flex-col gap-[16px] lg:flex-row lg:items-start lg:self-start lg:gap-[14px]" data-node="6:13">
+          <Button href={ROUTES.freeEstimate} variant="solid" class="w-full py-[17px] lg:w-auto lg:min-w-[233px] lg:px-[28px] lg:py-[18px]" dataNode="6:14" dataNodeM="11:22">Get my free estimate  →</Button>
+          <Button href={PHONE_TEL} variant="outline-light" class="w-full h-[57px] lg:w-auto lg:px-[28px]" dataNode="6:16" dataNodeM="11:24">Call {PHONE_DISPLAY}</Button>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-[12px] gap-y-[10px] whitespace-nowrap lg:flex-nowrap lg:self-start lg:gap-[22px]" data-node="6:18" data-node-m="11:26">
+          <div class="op-gbadge flex items-center gap-[8px] rounded-[40px] bg-white pl-[12px] pr-[15px] py-[8px] lg:gap-[10px] lg:pl-[14px] lg:pr-[16px] lg:py-[10px]" style={badgeStyle} data-node="6:19" data-node-m="11:27">
+            <span class="t-button text-ink">5.0</span>
+            <span class="t-button text-star" aria-label="5 out of 5 stars">★★★★★</span>
+            <span class="t-body-s text-muted"><span class="lg:hidden">Google</span><span class="hidden lg:inline">Google reviews</span></span>
+          </div>
+          <p class="tm-eyebrow lg:t-eyebrow text-white opacity-80 lg:opacity-100" data-node="6:23" data-node-m="11:31"><span class="lg:hidden mr-[-1.6px]">60+ SIGNED TESTIMONIALS</span><span class="hidden lg:inline mr-[-1.6px]">60+ SIGNED CLIENT TESTIMONIALS</span></p>
+          <a href={CCB_LOOKUP} target="_blank" rel="noopener" class="hidden lg:block t-eyebrow text-forest-light hover:underline" data-node="6:24"><span class="mr-[-1.6px]">{CCB}</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estimate form: mobile card 11:33 in wrap 11:32, desktop bar 6:25 overlapping the evergreen edge -->
+  <div class="relative mx-auto max-w-[1440px] px-[16px] pb-[8px] lg:px-[96px] lg:-mt-[54px] lg:pb-[27px]" data-node-m="11:32">
+    <form action={FORM_ACTION} method="POST" data-lead-form novalidate aria-labelledby="hero-form-title"
+      class="flex flex-col gap-[14px] rounded-[12px] bg-white px-[20px] py-[24px] shadow-[0px_12px_30px_0px_rgba(23,36,28,0.16)] lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:gap-[16px] lg:pl-[28px] lg:pr-[20px] lg:shadow-[0px_18px_40px_0px_rgba(23,36,28,0.18)]"
+      data-node="6:25" data-node-m="11:33">
+      <FormSubmitFields source="Homepage hero" />
+      <div class="flex flex-col gap-[14px] lg:items-start lg:gap-[2px] whitespace-nowrap" data-node="6:26">
+        <h2 id="hero-form-title" class="self-start tm-form-title lg:t-display-s text-ink" data-node="6:27" data-node-m="11:34">Get a free estimate</h2>
+        <p class="t-body-s text-muted whitespace-normal lg:whitespace-nowrap" data-node="6:28" data-node-m="11:35"><span class="lg:hidden">We'll call you to set up a time to see the project.</span><span class="hidden lg:inline">We'll call you to set up a time.</span></p>
+      </div>
+      <FormField label="NAME" name="Name" required placeholder="Your name" autocomplete="name" class="lg:w-[170px]" controlClass="lg:py-[13px]" dataNode="6:29" dataNodeM="11:36" boxNode="6:31" boxNodeM="11:38" />
+      <FormField label="PHONE" name="Phone" type="tel" required placeholder="503-000-0000" autocomplete="tel" class="lg:w-[160px]" controlClass="lg:py-[13px]" dataNode="6:33" dataNodeM="11:40" boxNode="6:35" boxNodeM="11:42" />
+      <FormField label="ADDRESS OR ZIP" name="Address or ZIP" placeholder="97124" autocomplete="postal-code" class="lg:w-[130px]" controlClass="lg:py-[13px]" dataNode="6:37" dataNodeM="11:44" boxNode="6:39" boxNodeM="11:46" />
+      <FormField label="WHAT NEEDS PAINTING?" name="What needs painting?" type="select" options={['Interior', 'Exterior', 'Cabinets', 'Not sure yet']} class="lg:w-[178px]" controlClass="lg:py-[13px] text-muted" dataNode="6:41" dataNodeM="11:48" boxNode="6:43" boxNodeM="11:50" />
+      <FormField label="ANYTHING WE SHOULD KNOW? (OPTIONAL)" name="Anything we should know?" type="textarea" placeholder="Rooms, colors, timing…" class="lg:hidden" controlClass="h-[57px] min-h-[57px]" dataNodeM="11:53" boxNodeM="11:55" />
+      <Button href="" type="submit" variant="solid" class="w-full py-[17px] lg:w-auto lg:px-[26px] lg:py-[18px]" dataNode="6:46" dataNodeM="11:57">Get my free estimate</Button>
+    </form>
+  </div>
+</section>
+<script>import '../../scripts/forms.ts';</script>

@@ -1,0 +1,23 @@
+---
+// Cabinet painting: "How we paint cabinets" (6 steps) with a real Olvera kitchen photo (floor protection down) on desktop.
+import Section from '../../components/inner/Section.astro';
+import Steps from '../../components/inner/Steps.astro';
+import Photo from '../../components/Photo.astro';
+const steps: [string, string][] = [
+  ['Remove and label', 'Doors, drawer fronts and hardware come off and get labeled so everything goes back in its place.'],
+  ['Clean', "Kitchen cabinets carry years of grease and hand oil, and paint won't stick to it. We degrease every surface."],
+  ['Sand', 'A light sand gives the primer something to grip.'],
+  ['Prime', 'A bonding primer goes on first so the paint grips and resists chipping.'],
+  ['Paint', 'Smooth coats of a hard finish made for cabinets.'],
+  ['Reinstall', 'Doors and hardware go back on, adjusted and lined up.'],
+];
+---
+<Section id="cabinet-process" bg="primer" eyebrow="OUR PROCESS" title="How we paint cabinets">
+  <div class="grid gap-[32px] lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-[80px] lg:items-start">
+    <Steps items={steps} />
+    <figure class="hidden lg:flex flex-col gap-[12px] lg:sticky lg:top-[24px]">
+      <Photo name="orig-kitchen-white-l" alt="Kitchen with white shaker cabinets and the floor covered with protective paper and blue tape" class="w-full aspect-[4/5] object-cover rounded-[6px]" style="object-position:center 30%" />
+      <figcaption class="t-tag text-muted">KITCHEN · FLOORS COVERED BEFORE WORK</figcaption>
+    </figure>
+  </div>
+</Section>

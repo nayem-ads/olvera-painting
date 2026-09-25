@@ -1,0 +1,28 @@
+---
+// Exterior page: "Our exterior prep" (copy doc PAGE 3). The 6 items have no titles in the copy, so steps are text-only.
+import Section from '../../components/inner/Section.astro';
+import Steps from '../../components/inner/Steps.astro';
+import Photo from '../../components/Photo.astro';
+const steps: [string, string][] = [
+  ['', "We wash the house to remove dirt, mildew and moss, then let it dry fully. Paint doesn't stick well to a dirty or damp surface."],
+  ['', 'Loose and peeling paint gets scraped off, and rough edges get sanded so the new coat lies flat.'],
+  ['', 'If we find soft or rotted wood, we point it out to you before anything gets painted over.'],
+  ['', "Gaps around windows, doors and trim get caulked so water can't get behind the paint."],
+  ['', 'Bare wood and repairs get primer. Cedar needs a stain blocking primer, because tannins in cedar can bleed through light paint and leave brown streaks.'],
+  ['', 'Windows, walkways, plants and cars get covered before we paint.'],
+];
+---
+<Section bg="primer" id="exterior-prep" title="Our exterior prep" class="op-ext-prep">
+  <div class="grid gap-[32px] lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-[72px] lg:items-start">
+    <div class="lg:max-w-[760px]"><Steps items={steps} /></div>
+    <div class="hidden lg:block lg:sticky lg:top-[32px]">
+      <div class="-rotate-[1.2deg] bg-white p-[10px] drop-shadow-[0px_16px_24px_rgba(23,36,28,0.16)]">
+        <Photo name="orig-exterior-stairs" alt="White exterior stairs against gray lap siding and cedar shakes, with lumber and debris on the ground" class="block w-full h-[500px] object-cover" style="object-position:55% 60%" />
+      </div>
+    </div>
+  </div>
+</Section>
+<style>
+  /* Text-only steps: set the body copy in ink so it reads as the main content, not a subtitle. */
+  :global(.op-ext-prep ol p) { color: var(--color-ink); }
+</style>

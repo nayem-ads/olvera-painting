@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.astro/
+design/source-img/
+qa/ref/
+qa/out/
+.DS_Store
+*.log
+originals/
+picks/
+source/
+_bsa-tooling.tgz
+qa/tmp/
+shot-*.png

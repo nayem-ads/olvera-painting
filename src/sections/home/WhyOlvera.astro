@@ -1,0 +1,42 @@
+---
+// Homepage: Why Olvera (Figma 8:65 desktop, 13:2 mobile). Owner: home-B.
+// Mobile child nodes of 13:2 are not in the Figma metadata, so only the section carries a mobile id.
+// Fog-forest mood image (AI, decorative) under an evergreen overlay, three reason cards.
+// Mobile: the Figma render shows the image at 30% over black (not evergreen), reproduced with brightness(0.3) on the full-bleed image.
+import Img from '../../components/Img.astro';
+import { PHONE_DISPLAY, PHONE_TEL, CCB, CCB_LOOKUP } from '../../data/site';
+const link = 'underline decoration-white/35 underline-offset-[3px] hover:decoration-white';
+const cards = [
+  { d: ['8:73', '8:75', '8:76'], eyebrow: 'OWNER-RUN', title: 'You deal with the owner.' },
+  { d: ['8:77', '8:79', '8:80'], eyebrow: CCB, title: 'Check our license before you hire.' },
+  { d: ['8:81', '8:83', '8:84'], eyebrow: 'EN · ES', title: 'Hablamos español.', lang: 'es' },
+];
+---
+<section aria-labelledby="why-title" class="relative overflow-hidden bg-evergreen" data-node="8:65" data-node-m="13:2">
+  <Img node="8:66" alt="" class="hidden lg:block absolute inset-0 w-full h-full object-cover opacity-45" />
+  <div class="hidden lg:block absolute inset-0 bg-gradient-to-b from-[rgba(22,36,28,0.55)] to-[rgba(22,36,28,0.95)]" aria-hidden="true"></div>
+  <Img node="13:2" alt="" class="lg:hidden absolute inset-0 w-full h-full object-cover [filter:brightness(0.3)]" />
+  <div class="relative mx-auto max-w-[1440px] flex flex-col gap-[24px] px-[20px] py-[56px] lg:gap-[48px] lg:px-[96px] lg:py-[96px]">
+    <div class="flex flex-col gap-[8px] lg:gap-[10px]">
+      <p class="tm-eyebrow lg:t-eyebrow text-forest-light">WHY OLVERA</p>
+      <h2 id="why-title" class="tm-h2 lg:t-display-m text-white lg:w-fit" data-node="8:71">Why homeowners call Olvera</h2>
+    </div>
+    <ul class="flex flex-col gap-[24px] lg:flex-row lg:gap-[32px]" data-node="8:72">
+      {cards.map((c, i) => (
+        <li class="flex-1 min-w-0 flex flex-col gap-[10px] pt-[20px] pb-[22px] px-[20px] lg:gap-[14px] lg:pt-[28px] lg:pb-[32px] lg:px-[28px] rounded-[4px] border border-white/16 bg-white/7" data-node={c.d[0]}>
+          <p class="tm-eyebrow lg:t-eyebrow text-forest-light">{c.eyebrow}</p>
+          <h3 class="tm-h3 lg:t-display-s text-white" data-node={c.d[1]} lang={c.lang}>{c.title}</h3>
+          <p class="op-n1 t-body-s lg:t-body-m text-white/80" data-node={c.d[2]}>
+            {i === 0 && <>Efrain Olvera owns and runs the company, and <a class={link} href={PHONE_TEL}>{PHONE_DISPLAY}</a> is his number.</>}
+            {i === 1 && <>Look up <a class={link} href={CCB_LOOKUP} target="_blank" rel="noopener">{CCB}</a> on the Oregon Construction Contractors Board website. It’s worth doing with any contractor.</>}
+            {i === 2 && <>Call us in English or Spanish.</>}
+          </p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  /* Measured: Chrome sets these mobile text styles 1px higher than the Figma render. */
+  @media (max-width: 1023.98px) { .op-n1 { position: relative; top: 1px; } }
+</style>

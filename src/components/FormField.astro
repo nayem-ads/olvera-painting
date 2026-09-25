@@ -1,0 +1,38 @@
+---
+// Estimate-form field (Figma 6:29..6:43 desktop, 11:36..11:55 mobile). States: default, focus (forest border), error (red border + message).
+// Field names are human-readable because FormSubmit emails show them as-is.
+// size "d" = desktop bar field (py 13), "m" = stacked field (p 14). labelClass: "t-eyebrow" (14px) or "tm-eyebrow" (12px).
+interface Props {
+  label: string; name: string; type?: 'text'|'tel'|'email'|'select'|'textarea'|'file';
+  placeholder?: string; required?: boolean; options?: string[]; autocomplete?: string;
+  class?: string; controlClass?: string; labelClass?: string; size?: 'd'|'m'; error?: string;
+  dataNode?: string; dataNodeM?: string; boxNode?: string; boxNodeM?: string; multiple?: boolean; accept?: string;
+}
+const { label, name, type = 'text', placeholder = '', required = false, options = [], autocomplete, class: cls = '', controlClass = '',
+  labelClass = 'tm-eyebrow lg:t-eyebrow', size = 'm', error = 'Please fill this in.', dataNode, dataNodeM, boxNode, boxNodeM, multiple, accept } = Astro.props;
+const id = `f-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${Math.random().toString(36).slice(2, 6)}`;
+const pad = size === 'd' ? 'px-[14px] py-[13px]' : 'p-[14px]';
+const box = `op-control block w-full bg-primer border border-mist rounded-[6px] ${pad} t-body-m text-ink placeholder:text-muted/80 outline-none focus:border-forest focus:ring-2 focus:ring-forest/25 transition-colors`;
+---
+<div class={`op-field flex flex-col gap-[6px] ${cls}`} data-field data-state="default" data-node={dataNode} data-node-m={dataNodeM}>
+  <label for={id} class={`${labelClass} text-ink whitespace-nowrap`}>{label}</label>
+  {type === 'select' ? (
+    <div class="relative" data-node={boxNode} data-node-m={boxNodeM}>
+      <select id={id} name={name} required={required} class={`${box} appearance-none pr-[34px] ${controlClass}`}>
+        {options.map((o) => <option value={o}>{o}</option>)}
+      </select>
+      <span aria-hidden="true" class="pointer-events-none absolute right-[14px] top-1/2 -translate-y-1/2 t-body-m text-ink">▾</span>
+    </div>
+  ) : type === 'textarea' ? (
+    <textarea id={id} name={name} required={required} placeholder={placeholder} rows="3" class={`${box} resize-y ${controlClass}`} data-node={boxNode} data-node-m={boxNodeM}></textarea>
+  ) : type === 'file' ? (
+    <input id={id} name={name} type="file" multiple={multiple} accept={accept} class={`${box} ${controlClass}`} data-node={boxNode} data-node-m={boxNodeM} />
+  ) : (
+    <input id={id} name={name} type={type} required={required} placeholder={placeholder} autocomplete={autocomplete} class={`${box} ${controlClass}`} data-node={boxNode} data-node-m={boxNodeM} />
+  )}
+  <p class="op-err hidden t-body-s text-error" role="alert">{error}</p>
+</div>
+<style>
+  [data-state="error"] :global(.op-control) { border-color: var(--color-error); }
+  [data-state="error"] :global(.op-err) { display: block; }
+</style>

@@ -1,0 +1,49 @@
+---
+// Interior page: "Picking colors and sheens". Real <table> for the sheen guide; fits 360px without scrolling
+// (wrapper scrolls as a fallback only, so the page itself never overflows).
+import Section from '../../components/inner/Section.astro';
+const rows: [string, string, string][] = [
+  ['Ceilings', 'Flat', "Hides small flaws and doesn't reflect light"],
+  ['Living rooms, bedrooms', 'Matte or eggshell', 'Soft look, easier to clean than flat'],
+  ['Kitchens, bathrooms', 'Satin', 'Handles moisture and wiping'],
+  ['Trim and doors', 'Semi-gloss', 'Stands up to hands, shoes and scrubbing'],
+];
+---
+<Section bg="white" id="colors-sheens" title="Picking colors and sheens">
+  <div class="grid gap-[24px] lg:grid-cols-12 lg:gap-x-[64px] lg:gap-y-[28px] lg:grid-rows-[auto_1fr]">
+    <p class="t-body-m lg:t-body-l text-ink lg:col-span-5 lg:row-start-1">Going bold? Deep colors like the blue-green bedroom in our photos often need a tinted primer and extra coats to cover evenly. Mention it at the estimate so it's part of the price from the start.</p>
+    <div class="flex flex-col gap-[16px] lg:gap-[20px] lg:col-span-7 lg:col-start-6 lg:row-start-1 lg:row-span-2 min-w-0">
+      <p class="t-body-m lg:t-body-l text-ink">Sheen matters as much as color. A common setup:</p>
+      <div class="overflow-x-auto">
+        <table class="op-sheen w-full border-collapse text-left">
+          <thead>
+            <tr class="bg-primer">
+              <th scope="col" class="w-[32%] tm-step lg:t-display-xs text-ink font-normal lg:whitespace-nowrap">Surface</th>
+              <th scope="col" class="w-[28%] tm-step lg:t-display-xs text-ink font-normal lg:whitespace-nowrap">Usual sheen</th>
+              <th scope="col" class="tm-step lg:t-display-xs text-ink font-normal">Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(([s, sheen, why]) => (
+              <tr>
+                <th scope="row" class="t-body-s lg:t-body-m font-semibold text-ink">{s}</th>
+                <td class="t-body-s lg:t-body-m font-semibold text-forest-dark">{sheen}</td>
+                <td class="t-body-s lg:t-body-m text-muted">{why}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="lg:col-span-5 lg:row-start-2 lg:self-start border-l-[3px] border-forest bg-primer px-[18px] py-[16px] lg:px-[24px] lg:py-[20px] t-body-s lg:t-body-m text-ink">Stuck between two colors? Put a large sample on your own wall and look at it in the morning and the evening. Color changes a lot with the light in each room.</p>
+  </div>
+</Section>
+<style>
+  .op-sheen { border: 1px solid var(--color-mist); }
+  .op-sheen th, .op-sheen td { border: 1px solid var(--color-mist); padding: 12px 10px; vertical-align: top; }
+  .op-sheen thead th { padding-top: 12px; padding-bottom: 10px; }
+  @media (min-width: 1024px) {
+    .op-sheen th, .op-sheen td { padding: 16px 20px; }
+    .op-sheen thead th { padding-top: 16px; padding-bottom: 12px; }
+  }
+</style>

@@ -1,0 +1,93 @@
+---
+// Top bar + header (Figma 5:4/5:11 desktop, 11:3/11:5 mobile) with a working mobile menu (menu not in Figma; built from header tokens).
+import Logo from './Logo.astro';
+import Button from './Button.astro';
+import { ROUTES, PHONE_DISPLAY, PHONE_TEL, CCB } from '../data/site';
+const nav = [
+  ['Interior', ROUTES.interior, '5:14'], ['Exterior', ROUTES.exterior, '5:15'], ['Cabinets', ROUTES.cabinets, '5:16'],
+  ['Our work', ROUTES.ourWork, '5:17'], ['About', ROUTES.about, '5:18'], ['Service area', ROUTES.serviceArea, '5:19'],
+];
+const menu = [
+  ['Interior painting', ROUTES.interior], ['Exterior painting', ROUTES.exterior], ['Cabinet painting', ROUTES.cabinets],
+  ['Our work', ROUTES.ourWork], ['About', ROUTES.about], ['Service area', ROUTES.serviceArea], ['Free estimate', ROUTES.freeEstimate],
+];
+const path = Astro.url.pathname;
+---
+<div class="bg-evergreen" data-node="5:4" data-node-m="11:3">
+  <div class="mx-auto max-w-[1440px] flex items-center justify-center lg:justify-between px-[20px] lg:px-[96px] py-[8px] lg:py-[10px] whitespace-nowrap">
+    <p class="tm-eyebrow-s text-forest-light lg:hidden" data-node-m="11:4"><span class="op-tr">{CCB} · LICENSED · BONDED · INSURED</span></p>
+    <div class="hidden lg:flex gap-[20px] t-eyebrow" data-node="5:5">
+      <p class="text-forest-light min-w-[92px]"><span class="op-tr">{CCB}</span></p>
+      <p class="text-white min-w-[209px]"><span class="op-tr">LICENSED · BONDED · INSURED</span></p>
+    </div>
+    <div class="hidden lg:flex gap-[20px] t-eyebrow text-white" data-node="5:8">
+      <p lang="es" class="min-w-[135px]"><span class="op-tr">HABLAMOS ESPAÑOL</span></p>
+      <p class="min-w-[227px]"><span class="op-tr">FREE ESTIMATES · <a href={PHONE_TEL} class="hover:text-forest-light">{PHONE_DISPLAY}</a></span></p>
+    </div>
+  </div>
+</div>
+<header class="op-header relative z-40 bg-white lg:border-b lg:border-mist" data-node="5:11" data-node-m="11:5">
+  <div class="mx-auto max-w-[1440px] flex items-center justify-between pl-[20px] pr-[16px] py-[10px] lg:px-[96px] lg:py-[14px]">
+    <a href={ROUTES.home} aria-label="Olvera Painting LLC, home" class="shrink-0">
+      <Logo node="5:12" class="hidden lg:block w-[108px] h-[72px]" priority dataNode="5:12" />
+      <Logo node="11:6" class="lg:hidden w-[78px] h-[52px]" priority dataNodeM="11:6" />
+    </a>
+    <nav aria-label="Main" class="hidden lg:block">
+      <ul class="flex gap-[20px] xl:gap-[36px] t-button text-ink whitespace-nowrap" data-node="5:13">
+        {nav.map(([label, href, id]) => (
+          <li><a href={href} data-node={id} aria-current={path.startsWith(href) ? 'page' : undefined}
+            class="hover:text-forest aria-[current=page]:text-forest underline-offset-[6px] hover:underline">{label}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div class="hidden lg:flex items-center gap-[20px]" data-node="5:20">
+      <a href={PHONE_TEL} class="hidden xl:flex flex-col whitespace-nowrap group" data-node="5:21">
+        <span class="t-eyebrow text-muted">CALL EFRAIN</span>
+        <span class="t-display-xs text-ink group-hover:text-forest">{PHONE_DISPLAY}</span>
+      </a>
+      <Button href={ROUTES.freeEstimate} class="px-[26px] py-[16px]" dataNode="5:24">Free estimate</Button>
+    </div>
+    <div class="flex lg:hidden items-center gap-[10px]" data-node-m="11:7">
+      <a href={PHONE_TEL} class="bg-forest text-white t-button rounded-[40px] px-[14px] py-[10px] hover:bg-forest-dark" data-node-m="11:8">Call</a>
+      <button type="button" class="op-menu-btn bg-primer rounded-[6px] px-[10px] py-[13px] flex flex-col gap-[5px]" aria-expanded="false" aria-controls="op-menu" aria-label="Open menu" data-node-m="11:10">
+        <span class="op-bar block bg-ink h-[2px] w-[20px] transition-transform"></span>
+        <span class="op-bar block bg-ink h-[2px] w-[20px] transition-opacity"></span>
+        <span class="op-bar block bg-ink h-[2px] w-[20px] transition-transform"></span>
+      </button>
+    </div>
+  </div>
+  <nav id="op-menu" aria-label="Mobile" hidden class="lg:hidden absolute left-0 right-0 top-full bg-white border-t border-mist shadow-[0px_18px_40px_0px_rgba(23,36,28,0.18)] px-[20px] pt-[8px] pb-[24px]">
+    <ul class="flex flex-col">
+      {menu.map(([label, href]) => (
+        <li class="border-b border-mist"><a href={href} class="block py-[14px] tm-h3 text-ink hover:text-forest" aria-current={path.startsWith(href) ? 'page' : undefined}>{label}</a></li>
+      ))}
+    </ul>
+    <div class="mt-[20px] flex flex-col gap-[10px]">
+      <Button href={PHONE_TEL} class="w-full py-[17px]">Call {PHONE_DISPLAY}</Button>
+      <p class="tm-eyebrow text-muted text-center" lang="es">HABLAMOS ESPAÑOL</p>
+    </div>
+  </nav>
+</header>
+<style>
+  /* Figma sizes letter-spaced text without the trailing tracking of the last glyph. */
+  .op-tr { margin-right: -2.4px; }
+</style>
+<script>
+  const btn = document.querySelector<HTMLButtonElement>('.op-menu-btn');
+  const menu = document.getElementById('op-menu');
+  if (btn && menu) {
+    const bars = btn.querySelectorAll<HTMLElement>('.op-bar');
+    const set = (open: boolean) => {
+      menu.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      bars[0].style.transform = open ? 'translateY(7px) rotate(45deg)' : '';
+      bars[1].style.opacity = open ? '0' : '';
+      bars[2].style.transform = open ? 'translateY(-7px) rotate(-45deg)' : '';
+    };
+    btn.addEventListener('click', () => set(menu.hidden));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { set(false); btn.focus(); } });
+    menu.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('a')) set(false); });
+    matchMedia('(min-width: 1024px)').addEventListener('change', (e) => { if (e.matches) set(false); });
+  }
+</script>

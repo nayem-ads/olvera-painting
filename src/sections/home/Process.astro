@@ -1,0 +1,47 @@
+---
+// Homepage: Process (Figma 8:28 desktop, 12:65 mobile). Owner: home-B.
+// Desktop: photo left (8:29), titles + steps right. Mobile: titles, photo (12:69), steps.
+import Img from '../../components/Img.astro';
+const steps: [string, string][] = [
+  ['Walkthrough and free estimate', 'We look at the project with you, talk through colors, and give you a price before any work starts.'],
+  ['Cover and mask', 'Floors, furniture, fixtures and plants get covered before we open a can.'],
+  ['Prep', 'Washing, scraping, sanding, patching, caulking and priming. This is the part that decides how long the paint lasts.'],
+  ['Paint', 'Brush, roller or sprayer, whichever fits the surface, with enough coats to cover evenly.'],
+  ['Clean up and final walkthrough', 'We pull the masking, clean up, and walk the job with you before we call it done.'],
+];
+// Figma ids per step: [row, text column] desktop / mobile
+const ids = [['8:35', '8:38', '12:71', '12:74'], ['8:41', '8:44', '12:77', '12:80'], ['8:47', '8:50', '12:83', '12:86'], ['8:53', '8:56', '12:89', '12:92'], ['8:59', '8:62', '12:95', '12:98']];
+const alt = 'Painter cutting in a straight line along trim';
+---
+<section aria-labelledby="process-title" class="bg-white" data-node="8:28" data-node-m="12:65">
+  <div class="mx-auto max-w-[1440px] flex items-start lg:gap-[48px] xl:gap-[80px] px-[20px] py-[56px] lg:px-[96px] lg:py-[104px]">
+    <Img node="8:29" alt={alt} class="hidden lg:block shrink-0 w-[500px] max-w-[42%] h-auto aspect-[500/660] rounded-[4px] object-cover" dataNode="8:29" />
+    <div class="flex-1 min-w-0 flex flex-col gap-[24px] lg:gap-[32px]" data-node="8:30">
+      <div class="flex flex-col gap-[8px] lg:gap-[10px]" data-node="8:31" data-node-m="12:66">
+        <p class="tm-eyebrow lg:t-eyebrow text-forest">OUR PROCESS</p>
+        <h2 id="process-title" class="tm-h2 lg:t-display-m text-ink" data-node="8:33" data-node-m="12:68">How we protect your home while we paint</h2>
+      </div>
+      <Img node="12:69" alt={alt} class="lg:hidden w-full h-[300px] rounded-[4px] object-cover" dataNodeM="12:69" />
+      <ol class="flex flex-col" data-node="8:34" data-node-m="12:70">
+        {steps.map(([title, text], i) => (
+          <li class:list={['flex gap-[16px] py-[16px] lg:gap-[24px] lg:py-[20px]', i > 0 && 'border-t border-mist']} data-node={ids[i][0]} data-node-m={ids[i][2]}>
+            <span class="op-chip op-n1 shrink-0 flex items-center justify-center w-[37.77px] h-[30.96px] lg:w-[48.98px] lg:h-[39.24px]" aria-hidden="true">
+              <span class="block bg-forest text-white whitespace-nowrap px-[9px] py-[3px] tm-step lg:px-[12px] lg:py-[4px] lg:t-display-xs" style={`transform: rotate(${i % 2 ? -1.5 : 1.5}deg)`}><span class="op-nt">{String(i + 1).padStart(2, '0')}</span></span>
+            </span>
+            <div class="flex-1 min-w-0 flex flex-col gap-[3px] lg:gap-[4px]" data-node={ids[i][1]} data-node-m={ids[i][3]}>
+              <h3 class="op-n1 tm-step lg:t-display-xs text-ink"><span class="sr-only">Step {i + 1}: </span>{title}</h3>
+              <p class="op-n1 t-body-s lg:t-body-m text-muted">{text}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</section>
+<style>
+  /* Measured: Chrome sets these mobile text styles 1px higher than the Figma render. */
+  @media (max-width: 1023.98px) { .op-n1 { position: relative; top: 1px; } .op-chip { left: -1px; } }
+
+  /* Figma sizes the chip without the trailing letter-spacing of the last digit. */
+  .op-nt { margin-right: -1px; }
+</style>

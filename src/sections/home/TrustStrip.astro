@@ -1,0 +1,19 @@
+---
+// Trust strip. Figma desktop 7:2 (4 columns, mist dividers), mobile 11:59 (2x2, shorter labels).
+const stats = [
+  { n: '10+', d: 'Years painting homes around Hillsboro', m: 'Years painting homes', ids: ['7:3', '7:5', '11:60', '11:62'] },
+  { n: '60+', d: 'Hand-signed client testimonials', m: 'Hand-signed testimonials', ids: ['7:6', '7:8', '11:63', '11:65'] },
+  { n: '$0', d: 'Free estimates, no pressure to book', m: 'Free estimates', ids: ['7:9', '7:11', '11:66', '11:68'] },
+  { n: '50 MI', d: 'Radius we cover from Hillsboro', m: 'Around Hillsboro', ids: ['7:12', '7:14', '11:69', '11:71'] },
+];
+---
+<section class="bg-primer" aria-label="Olvera Painting at a glance" data-node="7:2" data-node-m="11:59">
+  <ul class="mx-auto max-w-[1440px] flex flex-wrap items-start gap-x-[16px] gap-y-[24px] px-[20px] pt-[32px] pb-[40px] lg:flex-nowrap lg:gap-0 lg:px-[96px] lg:pt-[40px] lg:pb-[64px]">
+    {stats.map((s, i) => (
+      <li class={`flex w-[calc(50%-8px)] flex-col gap-[2px] lg:w-auto lg:min-w-0 lg:flex-1 lg:gap-[4px] lg:pr-[24px] ${i ? 'lg:border-l-2 lg:border-mist lg:pl-[32px]' : ''}`} data-node={s.ids[0]} data-node-m={s.ids[2]}>
+        <p class="tm-stat lg:t-display-l text-forest whitespace-nowrap">{s.n}</p>
+        <p class="t-body-s lg:t-body-m text-ink" data-node={s.ids[1]} data-node-m={s.ids[3]}><span class="lg:hidden">{s.m}</span><span class="hidden lg:inline">{s.d}</span></p>
+      </li>
+    ))}
+  </ul>
+</section>

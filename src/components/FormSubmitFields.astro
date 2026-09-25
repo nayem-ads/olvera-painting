@@ -1,0 +1,13 @@
+---
+// Hidden FormSubmit config. Put inside every lead form: <form action={FORM_ACTION} method="POST" data-lead-form novalidate>
+import { FORM_CC, ROUTES } from '../data/site';
+interface Props { source: string }
+const { source } = Astro.props;
+---
+<input type="hidden" name="_cc" value={FORM_CC} />
+<input type="hidden" name="_subject" value={`New free estimate request (${source}) - Olvera Painting website`} />
+<input type="hidden" name="_template" value="table" />
+<input type="hidden" name="_captcha" value="false" />
+<input type="hidden" name="_next" value={ROUTES.thankYou} data-next />
+<input type="hidden" name="Form location" value={source} />
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />

@@ -1,0 +1,8 @@
+---
+// Sticky mobile bar "Call | Free estimate" (Figma 13:104). position: fixed on every page below lg.
+import { ROUTES, PHONE_TEL } from '../data/site';
+---
+<div class="op-callbar lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white flex items-start gap-[10px] px-[14px] pt-[10px] pb-[22px] shadow-[0px_-6px_20px_0px_rgba(23,36,28,0.18)]" data-node-m="13:104">
+  <a href={PHONE_TEL} class="flex-1 min-w-0 flex justify-center py-[15px] rounded-[6px] border-[1.5px] border-forest text-forest t-button hover:bg-forest hover:text-white" data-node-m="13:105">Call</a>
+  <a href={ROUTES.freeEstimate} class="flex-1 min-w-0 flex justify-center py-[15px] rounded-[6px] bg-forest text-white t-button hover:bg-forest-dark" data-node-m="13:107">Free estimate</a>
+</div>

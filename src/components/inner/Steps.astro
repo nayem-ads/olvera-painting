@@ -1,0 +1,17 @@
+---
+// Numbered steps with the rotated green number chip from the homepage process section (8:34 / 12:70).
+// items: [title, text][] — title may be empty for a text-only step.
+interface Props { items: [string, string][] }
+const { items } = Astro.props;
+---
+<ol class="flex flex-col">
+  {items.map(([title, text], i) => (
+    <li class={`flex gap-[16px] lg:gap-[24px] py-[16px] lg:py-[20px] ${i ? 'border-t border-mist' : ''}`}>
+      <span aria-hidden="true" class={`shrink-0 self-start mt-[2px] bg-forest text-white px-[9px] py-[3px] lg:px-[12px] lg:py-[4px] tm-step lg:t-display-xs ${i % 2 ? '-rotate-[1.5deg]' : 'rotate-[1.5deg]'}`}>{String(i + 1).padStart(2, '0')}</span>
+      <div class="flex flex-col gap-[3px] lg:gap-[4px] min-w-0">
+        {title && <h3 class="tm-step lg:t-display-xs text-ink">{title}</h3>}
+        <p class="t-body-s lg:t-body-m text-muted">{text}</p>
+      </div>
+    </li>
+  ))}
+</ol>

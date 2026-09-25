@@ -1,0 +1,45 @@
+---
+// /interior-painting/ — copy doc PAGE 2. Owner: interior agent (see design/AGENT-PACK.md).
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/inner/PageHero.astro';
+import Section from '../../components/inner/Section.astro';
+import Faq from '../../components/inner/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import WhatWePaint from '../../sections/interior/WhatWePaint.astro';
+import Process from '../../sections/interior/Process.astro';
+import ColorsSheens from '../../sections/interior/ColorsSheens.astro';
+import CostFactors from '../../sections/interior/CostFactors.astro';
+import { service, breadcrumbs, faqPage } from '../../data/schema';
+
+const title = 'Interior Painting in Hillsboro, OR | Olvera Painting LLC';
+const meta = 'Interior house painting in Hillsboro, Beaverton and Portland. Walls, ceilings, trim and doors, with furniture covered and careful prep. Free estimates.';
+const faq: [string, string][] = [
+  ['Do I need to move my furniture?', 'We move and cover the big pieces. Please clear small items, valuables and anything fragile before we arrive.'],
+  ['Can we stay home while you paint?', 'Yes. We work room by room, so you can keep using the rest of the house.'],
+  ['How long will my project take?', "It depends on the number of rooms and how much prep they need. Ask at your estimate and we'll give you a time frame for your project."],
+  ['Will there be a strong paint smell?', 'Most interior paints today are low odor, and opening a window helps. If odor is a concern, ask about low or zero VOC paint at your estimate.'],
+];
+const schema = [
+  service('Interior painting', '/interior-painting/', meta),
+  breadcrumbs([['Interior painting', '/interior-painting/']]),
+  faqPage(faq),
+];
+---
+<Base title={title} description={meta} pageClass="op-interior" schema={schema}>
+  <PageHero
+    tag="INTERIOR PAINTING · HILLSBORO, OR"
+    title="Interior painting in Hillsboro and the Portland metro"
+    lead="One room or the whole house. We cover your furniture and floors, patch and prime the walls, and clean up before we leave."
+    photo="olvera-03-clay-bedroom"
+    photoAlt="Bedroom painted in a warm clay color with black window trim and baseboards, painted by Olvera Painting"
+    photoPosition="center 40%"
+  />
+  <WhatWePaint />
+  <Process />
+  <ColorsSheens />
+  <CostFactors />
+  <Section bg="white" id="interior-faq" title="Interior painting FAQ" narrow>
+    <Faq items={faq} />
+  </Section>
+  <CtaBand title="Get a free interior painting estimate" text="Call 503-840-8056 or send us the rooms you want painted, and we'll set up a time to see them." />
+</Base>

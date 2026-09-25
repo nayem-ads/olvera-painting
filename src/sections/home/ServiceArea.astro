@@ -1,0 +1,72 @@
+---
+// Homepage: Service area (Figma 9:38 desktop, 13:44 mobile). Owner: home-B.
+// Map = brand Oregon outline + 50-mile radius around Hillsboro, layered exactly as in Figma (no map embed).
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const cities = ['Hillsboro', 'Beaverton', 'Aloha', 'Tigard', 'Tualatin', 'Forest Grove', 'Portland', 'Newberg'];
+const chipD = ['9:45', '9:47', '9:49', '9:51', '9:53', '9:55', '9:57', '9:59'];
+const chipM = ['13:61', '13:63', '13:65', '13:67', '13:69', '13:71', '13:73', '13:75'];
+// Figma chip widths (its text boxes are rounded up to whole px); used as min-width so the rows wrap like Figma.
+const chipWD = [88, 97, 67, 72, 83, 113, 86, 89];
+const chipWM = [84, 93, 63, 68, 79, 109, 82, 85];
+const mapLabel = 'Map of Oregon with a 50-mile radius around Hillsboro, our home base';
+---
+<section aria-labelledby="area-title" class="bg-white" data-node="9:38" data-node-m="13:44">
+  <div class="mx-auto max-w-[1440px] flex items-center lg:gap-[48px] xl:gap-[72px] px-[20px] py-[56px] lg:px-[96px] lg:py-[104px]">
+    <div class="flex-1 min-w-0 flex flex-col gap-[24px]" data-node="9:39">
+      <div class="flex flex-col gap-[8px] lg:gap-[10px]" data-node="9:40" data-node-m="13:45">
+        <p class="tm-eyebrow lg:t-eyebrow text-forest">SERVICE AREA</p>
+        <h2 id="area-title" class="tm-h2 lg:t-display-m text-ink" data-node="9:42" data-node-m="13:47">Serving Hillsboro and homes within 50 miles</h2>
+      </div>
+      <p class="t-body-m lg:t-body-l text-muted" data-node="9:43" data-node-m="13:48">We're based in Hillsboro and paint homes within about 50 miles, including Beaverton, Aloha, Tigard, Tualatin, Forest Grove, Portland and Newberg.</p>
+      <!-- Mobile map (13:49) -->
+      <div class="op-map-m lg:hidden relative w-[348px] max-w-full h-[272.6px] shrink-0" role="img" aria-label={mapLabel} data-node-m="13:49">
+        <div class="absolute" style="left:14.38px;top:15.43px;width:336.17px;height:237.92px" data-node-m="13:50">
+          <img src="/svg/oregon-mobile.svg" alt="" class="absolute max-w-none" style="left:-0.86%;top:-1.22%;width:101.72%;height:102.44%" width="341.968" height="243.716" loading="lazy" />
+        </div>
+        <img src="/img/radius-mobile-81.webp" alt="" class="absolute" style="left:38.93px;top:14.31px;width:81.2px;height:81.2px" loading="lazy" data-node-m="13:51" />
+        <img src="/svg/dot-mobile.svg" alt="" class="absolute" style="left:90.16px;top:52.59px;width:4.64px;height:4.64px" data-node-m="13:52" />
+        <img src="/svg/dot-mobile.svg" alt="" class="absolute" style="left:78.04px;top:64.99px;width:4.64px;height:4.64px" data-node-m="13:53" />
+        <img src="/svg/dot-mobile.svg" alt="" class="absolute" style="left:72.2px;top:52.59px;width:4.64px;height:4.64px" data-node-m="13:54" />
+        <img src="/svg/pin-mobile.svg" alt="" class="absolute" style="left:74.31px;top:49.69px;width:10.44px;height:10.44px" data-node-m="13:55" />
+        <span class="op-ml absolute bg-evergreen text-white" style="left:88.81px;top:29.39px;padding:2.9px 5.8px" data-node-m="13:56"><span class="op-trm">HILLSBORO · HQ</span></span>
+        <span class="op-ml absolute bg-white text-forest" style="left:54.01px;top:100.15px;padding:1.74px 4.64px" data-node-m="13:58"><span class="op-trm">≈ 50 MILES</span></span>
+      </div>
+      <ul class="flex flex-wrap gap-[8px] lg:gap-[10px]" aria-label="Cities we serve" data-node="9:44" data-node-m="13:60">
+        {cities.map((c, i) => (
+          <li class="bg-primer border border-mist rounded-[40px] px-[12px] py-[7px] lg:px-[14px] lg:py-[8px] t-body-s text-ink whitespace-nowrap min-w-[var(--wm)] lg:min-w-[var(--wd)]" style={`--wm:${chipWM[i]}px;--wd:${chipWD[i]}px`} data-node={chipD[i]} data-node-m={chipM[i]}><span class="op-cn">{c}</span></li>
+        ))}
+      </ul>
+      <p class="hidden lg:flex self-start gap-[6px] items-start whitespace-nowrap" data-node="9:61">
+        <span class="t-body-m text-ink">Not sure if you’re in range? Call</span>
+        <a href={PHONE_TEL} class="t-button text-forest hover:text-forest-dark hover:underline underline-offset-4">{PHONE_DISPLAY}</a>
+      </p>
+      <p class="lg:hidden t-body-m text-ink" data-node-m="13:77">Not sure if you’re in range? Call <a href={PHONE_TEL} class="underline decoration-forest/50 underline-offset-[3px] hover:text-forest">{PHONE_DISPLAY}</a> and ask.</p>
+      <a href={ROUTES.serviceArea} class="hidden lg:block self-start t-button text-forest whitespace-pre hover:text-forest-dark hover:underline underline-offset-4" data-node="9:64">See our service area  →</a>
+    </div>
+    <!-- Desktop map (9:65) -->
+    <div class="op-map-d hidden lg:block relative shrink-0 w-[600px] h-[470px]" role="img" aria-label={mapLabel} data-node="9:65">
+      <div class="absolute" style="left:24.8px;top:26.6px;width:579.6px;height:410.2px" data-node="9:66">
+        <img src="/svg/oregon-desktop.svg" alt="" class="absolute max-w-none" style="left:-0.86%;top:-1.22%;width:101.72%;height:102.44%" width="589.6" height="420.2" loading="lazy" />
+      </div>
+      <img src="/img/radius-desktop-140.webp" alt="" class="absolute" style="left:67.12px;top:24.68px;width:140px;height:140px" loading="lazy" data-node="9:67" />
+      <img src="/svg/dot-desktop.svg" alt="" class="absolute w-[8px] h-[8px]" style="left:155.44px;top:90.68px" data-node="9:68" />
+      <img src="/svg/dot-desktop.svg" alt="" class="absolute w-[8px] h-[8px]" style="left:134.56px;top:112.06px" data-node="9:69" />
+      <img src="/svg/dot-desktop.svg" alt="" class="absolute w-[8px] h-[8px]" style="left:124.48px;top:90.68px" data-node="9:70" />
+      <img src="/svg/pin-desktop.svg" alt="" class="absolute w-[18px] h-[18px]" style="left:128.12px;top:85.68px" data-node="9:71" />
+      <span class="absolute bg-evergreen text-white t-eyebrow whitespace-nowrap px-[10px] py-[5px] rounded-[3px]" style="left:153.12px;top:50.68px" data-node="9:72"><span class="op-tr">HILLSBORO · HQ</span></span>
+      <span class="absolute bg-white text-forest t-eyebrow whitespace-nowrap px-[8px] py-[3px] rounded-[3px]" style="left:93.12px;top:172.68px" data-node="9:74"><span class="op-tr">≈ 50 MILES</span></span>
+    </div>
+  </div>
+</section>
+<style>
+  .op-ml { font-family: var(--font-label); font-weight: 600; font-size: 8.12px; line-height: 10.44px; letter-spacing: 1.392px; border-radius: 1.74px; white-space: nowrap; }
+  /* Figma sizes letter-spaced labels without the trailing tracking of the last glyph. */
+  .op-tr { margin-right: -2.4px; }
+  .op-trm { margin-right: -1.392px; }
+  /* Narrow phones (<390): scale the 348px mobile map to fit. */
+  @media (max-width: 389.98px) { .op-map-m { zoom: 0.9; } }
+  /* 1024–1279: scale the fixed-geometry desktop map so the text column keeps a readable width. */
+  @media (min-width: 1024px) and (max-width: 1279.98px) { .op-map-d { zoom: 0.7; } }
+  /* Measured: Chrome sets the chip labels (Barlow 15/23) higher than the Figma render. */
+  .op-cn { position: relative; top: 1px; }
+</style>

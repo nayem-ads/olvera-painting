@@ -1,0 +1,109 @@
+---
+// Homepage: Testimonials (Figma 9:2 desktop, 13:18 mobile). Owner: home-B.
+// SAMPLE quotes from the design; they will be replaced with real signed testimonials.
+// Desktop: 3 taped paper cards in a row. Mobile: horizontal swipe scroller (scroll-snap) + pager dots.
+// The Google badge is a placeholder: hidden unless SHOW_GOOGLE_BADGE (QA reveals .op-gbadge).
+import { SHOW_GOOGLE_BADGE } from '../../data/site';
+const badgeStyle = SHOW_GOOGLE_BADGE ? undefined : 'display:none';
+const cards = [
+  { quote: '“Efrain and his crew repainted our whole downstairs and you would never know they were there. Everything got covered, and they cleaned up at the end of every day.”', sig: 'Linda M.', name: 'LINDA M. · HILLSBORO' },
+  { quote: '“Our cedar house had not been painted in 15 years. They scraped, primed and replaced two rotted boards before any paint went on. It looks brand new.”', sig: 'Mark & Jen T.', name: 'MARK AND JEN T. · BEAVERTON' },
+  { quote: '“We painted our kitchen cabinets white instead of replacing them. Best money we have spent on this house.”', sig: 'Sandra R.', name: 'SANDRA R. · TIGARD' },
+];
+---
+<section aria-labelledby="testimonials-title" class="bg-primer" data-node="9:2" data-node-m="13:18">
+  <div class="mx-auto max-w-[1440px] flex flex-col gap-[24px] px-[20px] pt-[56px] pb-[64px] lg:gap-[56px] lg:px-[96px] lg:pt-[104px] lg:pb-[112px]">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between lg:gap-[32px]" data-node="9:3">
+      <div class="flex flex-col gap-[8px] lg:gap-[10px]" data-node="9:4" data-node-m="13:19">
+        <p class="tm-eyebrow lg:t-eyebrow text-forest">60+ SIGNED TESTIMONIALS</p>
+        <h2 id="testimonials-title" class="tm-h2 lg:t-display-m text-ink" data-node-m="13:21">What our clients say</h2>
+        <p class="t-body-m lg:t-body-l text-muted" data-node="9:7" data-node-m="13:22">More than 60 clients have signed testimonials for Olvera. Here are a few.</p>
+      </div>
+      <div class="hidden lg:contents">
+        <div class="op-gbadge shrink-0 items-center gap-[14px] pl-[20px] pr-[24px] py-[16px] bg-white border border-mist rounded-[8px] whitespace-nowrap" style={badgeStyle} data-node="9:8">
+          <p class="t-display-s text-ink">5.0</p>
+          <div class="flex flex-col">
+            <p class="t-button text-star" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+            <p class="op-n1 t-body-s text-muted">Google reviews</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contents lg:hidden">
+      <div class="op-gbadge self-start items-center gap-[10px] pl-[14px] pr-[16px] py-[10px] bg-white border border-mist rounded-[8px] whitespace-nowrap" style={badgeStyle} data-node-m="13:23">
+        <p class="tm-rating text-ink">5.0</p>
+        <p class="t-button text-star" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+        <p class="op-n1 t-body-s text-muted">Google reviews</p>
+      </div>
+    </div>
+    <div class="op-tscroll flex items-start gap-[16px] -mx-[20px] pl-[24px] pr-[20px] pt-[16px] pb-[32px] -mb-[20px] overflow-x-auto snap-x snap-mandatory lg:mx-0 lg:mb-0 lg:gap-[40px] lg:px-[8px] lg:pt-[20px] lg:pb-0 lg:overflow-visible" data-node="9:76" tabindex="0" role="region" aria-label="Client testimonials">
+      {cards.map((c, i) => (
+        <div class={`op-tw op-tw-${i + 1} shrink-0 snap-start flex items-center justify-center lg:shrink lg:flex-1 lg:min-w-0`}>
+          <figure class={`op-card op-card-${i + 1} relative w-[290px] lg:w-full flex flex-col gap-[14px] pt-[34px] pb-[24px] px-[22px] lg:gap-[18px] lg:pt-[44px] lg:pb-[32px] lg:px-[32px] bg-white`}>
+            <p class="t-button text-star whitespace-nowrap" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="t-body-m lg:t-body-l text-ink"><p>{c.quote}</p></blockquote>
+            <figcaption class="flex flex-col gap-[14px] lg:gap-[18px]">
+              <span class="tm-signature lg:t-signature text-ink whitespace-nowrap" aria-hidden="true">{c.sig}</span>
+              <span class="hidden lg:block w-[120px] h-px bg-[rgba(46,69,56,0.3)]" aria-hidden="true"></span>
+              <span class="tm-eyebrow-s lg:t-eyebrow text-muted whitespace-nowrap">{c.name}</span>
+            </figcaption>
+            <span class="op-tape absolute flex items-center justify-center" aria-hidden="true"><span class="block"></span></span>
+          </figure>
+        </div>
+      ))}
+    </div>
+    <div class="op-pager lg:hidden self-start flex gap-[6px] h-[6px]" aria-hidden="true" data-node-m="13:40">
+      <span class="is-on"></span><span></span><span></span>
+    </div>
+  </div>
+</section>
+<style>
+  /* Measured: Chrome sets Barlow 15/23 (t-body-s) 1px higher than the Figma render. */
+  .op-n1 { position: relative; top: 1px; }
+
+  .op-tscroll { scrollbar-width: none; scroll-padding-inline: 24px; }
+  .op-tscroll::-webkit-scrollbar { display: none; }
+  .op-card { filter: drop-shadow(0 8px 10px rgba(23, 36, 28, 0.12)); }
+  .op-tape > span { width: 90px; height: 24px; background: rgba(116, 184, 82, 0.85); transform: rotate(var(--r)); }
+  /* Mobile (13:27): rotated-card boxes = Figma wrapper boxes (bounding box of the rotated card). */
+  .op-tw-1 { width: 295.72px; padding-block: 2.5px; }
+  .op-tw-2 { width: 295.24px; padding-block: 2.5px; }
+  .op-tw-3 { width: 295.6px; padding-block: 2.5px; }
+  .op-card-1, .op-card-3 { transform: rotate(1deg); }
+  .op-card-2 { transform: rotate(-1deg); }
+  .op-card-1 .op-tape, .op-card-3 .op-tape { left: 99.16px; top: -10px; width: 90.78px; height: 27.13px; --r: 2deg; }
+  .op-card-2 .op-tape { left: 100px; top: -13.14px; width: 90.78px; height: 27.13px; --r: -2deg; }
+  .op-pager span { width: 6px; height: 6px; border-radius: 3px; background: var(--color-mist); transition: width 0.2s, background-color 0.2s; }
+  .op-pager span.is-on { width: 18px; background: var(--color-forest); }
+  @media (min-width: 1024px) {
+    /* Desktop (9:76): wrapper padding = half the extra height of the rotated card's bounding box. */
+    .op-tw-1, .op-tw-2, .op-tw-3 { width: auto; }
+    .op-tw-1 { padding-block: 3.98px; }
+    .op-tw-2 { padding-block: 2.66px; }
+    .op-tw-3 { padding-block: 2px; }
+    .op-card { filter: drop-shadow(0 10px 12px rgba(23, 36, 28, 0.12)); }
+    .op-card-1 { transform: rotate(1.2deg); }
+    .op-card-2 { transform: rotate(-0.8deg); }
+    .op-card-3 { transform: rotate(0.6deg); }
+    .op-tape > span { width: 110px; height: 28px; }
+    /* Tape x as a share of the 384px card so it tracks narrower cards (1024–1439). */
+    .op-card-1 .op-tape { left: 146.0417%; top: -12px; width: 110.19px; height: 28.77px; --r: 0.4deg; }
+    .op-card-2 .op-tape { left: 63.2813%; top: -18.91px; width: 111.54px; height: 34.85px; --r: -3.6deg; }
+    .op-card-3 .op-tape { left: 35.6771%; top: -13.54px; width: 110.38px; height: 29.53px; --r: -0.8deg; }
+  }
+</style>
+<script>
+  // Pager dots follow the mobile scroller (no-op on desktop where the row does not scroll).
+  const sc = document.querySelector<HTMLElement>('.op-tscroll');
+  const dots = document.querySelectorAll<HTMLElement>('.op-pager span');
+  if (sc && dots.length) {
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const max = sc.scrollWidth - sc.clientWidth;
+      const idx = max > 0 ? Math.round((sc.scrollLeft / max) * (dots.length - 1)) : 0;
+      dots.forEach((d, i) => d.classList.toggle('is-on', i === idx));
+    };
+    sc.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(update); }, { passive: true });
+  }
+</script>

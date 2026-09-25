@@ -1,0 +1,38 @@
+---
+// Exterior painting service page (copy doc PAGE 3). Owner: exterior agent. No Figma frame: built from the shared inner-page kit.
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/inner/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import WhatWePaint from '../../sections/exterior/WhatWePaint.astro';
+import Prep from '../../sections/exterior/Prep.astro';
+import Timing from '../../sections/exterior/Timing.astro';
+import Cost from '../../sections/exterior/Cost.astro';
+import FaqSection from '../../sections/exterior/FaqSection.astro';
+import { exteriorFaq } from '../../sections/exterior/faq';
+import { service, breadcrumbs, faqPage } from '../../data/schema';
+import { ROUTES, PHONE_DISPLAY } from '../../data/site';
+
+const title = 'Exterior House Painting in Hillsboro, OR | Olvera Painting';
+const meta = 'Exterior house painting in Hillsboro and the Portland area. Siding, trim and cedar shakes, washed, scraped, caulked and primed before paint. Free estimates.';
+const schema = [
+  service('Exterior painting', ROUTES.exterior, meta),
+  breadcrumbs([['Exterior painting', ROUTES.exterior]]),
+  faqPage(exteriorFaq),
+];
+---
+<Base title={title} description={meta} pageClass="op-exterior" schema={schema}>
+  <PageHero
+    tag="EXTERIOR PAINTING · HILLSBORO, OR"
+    title="Exterior house painting in Hillsboro, built for Oregon weather"
+    lead="Paint in the Pacific Northwest has to deal with months of rain, moss, and summer sun on the south and west walls. Prep decides how long it lasts, so that's where we spend our time."
+    photo="olvera-01-hero-exterior"
+    photoAlt="Two-storey house with cedar shake siding, white trim and a white balcony railing, surrounded by fir trees"
+    photoPosition="center 40%"
+  />
+  <WhatWePaint />
+  <Prep />
+  <Timing />
+  <Cost />
+  <FaqSection />
+  <CtaBand title="Get a free exterior painting estimate" text={`Call ${PHONE_DISPLAY} or send us your address, and we'll come look at the house.`} />
+</Base>

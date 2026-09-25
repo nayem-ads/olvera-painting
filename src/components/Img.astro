@@ -1,0 +1,11 @@
+---
+// Figma image slot, pre-cropped 2x WebP from scripts/build-images.mjs (src/data/images.json, keyed by Figma node id).
+// Usage: <Img node="6:4" alt="..." class="..." priority />
+import images from '../data/images.json';
+interface Props { node: string; alt: string; class?: string; priority?: boolean; style?: string; dataNode?: string; dataNodeM?: string }
+const { node, alt, class: cls = '', priority = false, style, dataNode, dataNodeM } = Astro.props;
+const img = (images as Record<string, { src: string; width: number; height: number }>)[node];
+if (!img) throw new Error(`Img: no image for Figma node ${node} (see src/data/images.json)`);
+---
+<img src={img.src} width={img.width} height={img.height} alt={alt} class={cls} style={style}
+  loading={priority ? 'eager' : 'lazy'} decoding="async" fetchpriority={priority ? 'high' : 'auto'} data-node={dataNode} data-node-m={dataNodeM} />

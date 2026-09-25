@@ -1,0 +1,112 @@
+{
+ "olvera-01-hero-exterior": {
+  "src": "/img/photos/olvera-01-hero-exterior.webp",
+  "width": 1200,
+  "height": 1490
+ },
+ "olvera-02-kitchen": {
+  "src": "/img/photos/olvera-02-kitchen.webp",
+  "width": 1200,
+  "height": 1490
+ },
+ "olvera-03-clay-bedroom": {
+  "src": "/img/photos/olvera-03-clay-bedroom.webp",
+  "width": 1200,
+  "height": 1490
+ },
+ "olvera-04-plum-wall": {
+  "src": "/img/photos/olvera-04-plum-wall.webp",
+  "width": 1200,
+  "height": 1490
+ },
+ "mood-10-fog-forest": {
+  "src": "/img/photos/mood-10-fog-forest.webp",
+  "width": 1200,
+  "height": 509
+ },
+ "mood-11-brush-cutin": {
+  "src": "/img/photos/mood-11-brush-cutin.webp",
+  "width": 1200,
+  "height": 1490
+ },
+ "mood-12-green-cabinets": {
+  "src": "/img/photos/mood-12-green-cabinets.webp",
+  "width": 1200,
+  "height": 1490
+ },
+ "mood-13-craftsman-exterior": {
+  "src": "/img/photos/mood-13-craftsman-exterior.webp",
+  "width": 1200,
+  "height": 1490
+ },
+ "orig-bathroom-vanity": {
+  "src": "/img/photos/orig-bathroom-vanity.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-exterior-balcony": {
+  "src": "/img/photos/orig-exterior-balcony.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-exterior-porch-entry": {
+  "src": "/img/photos/orig-exterior-porch-entry.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-exterior-side-siding": {
+  "src": "/img/photos/orig-exterior-side-siding.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-exterior-stairs": {
+  "src": "/img/photos/orig-exterior-stairs.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-gray-room-doors": {
+  "src": "/img/photos/orig-gray-room-doors.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-green-room-doorway": {
+  "src": "/img/photos/orig-green-room-doorway.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-kitchen-pendants": {
+  "src": "/img/photos/orig-kitchen-pendants.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-kitchen-white-l": {
+  "src": "/img/photos/orig-kitchen-white-l.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-plum-wall": {
+  "src": "/img/photos/orig-plum-wall.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-stairwell": {
+  "src": "/img/photos/orig-stairwell.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-terracotta-bedroom": {
+  "src": "/img/photos/orig-terracotta-bedroom.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-terracotta-black-doorway": {
+  "src": "/img/photos/orig-terracotta-black-doorway.webp",
+  "width": 900,
+  "height": 1600
+ },
+ "orig-white-doors-landing": {
+  "src": "/img/photos/orig-white-doors-landing.webp",
+  "width": 1200,
+  "height": 1600
+ }
+}

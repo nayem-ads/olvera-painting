@@ -1,0 +1,38 @@
+---
+// Green split CTA band mirroring the business card (Figma 10:2 desktop, 13:78 mobile). Used on every page.
+// Optional props override the copy on inner pages; the homepage uses the defaults (Figma copy).
+import Logo from './Logo.astro';
+import Button from './Button.astro';
+import { ROUTES, PHONE_DISPLAY, PHONE_TEL, CCB } from '../data/site';
+interface Props { title?: string; text?: string; eyebrow?: string; bg?: 'white' | 'primer' }
+const { title = 'Ready for a free estimate?', text = "Tell us what you want painted and we'll set up a time to come see it.", eyebrow = 'FREE ESTIMATES', bg = 'white' } = Astro.props;
+---
+<section aria-labelledby="cta-title" class={bg === 'white' ? 'bg-white' : 'bg-primer'} data-node="10:2" data-node-m="13:78">
+  <div class="mx-auto max-w-[1440px] px-[20px] pt-[8px] pb-[56px] lg:px-[96px] lg:pt-[24px] lg:pb-[104px]">
+    <div class="flex flex-col lg:flex-row bg-white border border-mist rounded-[10px] overflow-hidden lg:shadow-[0px_16px_40px_0px_rgba(23,36,28,0.1)]" data-node="10:3" data-node-m="13:79">
+      <div class="flex-1 min-w-0 bg-forest flex flex-col gap-[16px] pt-[32px] pb-[28px] px-[24px] lg:gap-[22px] lg:p-[48px] xl:p-[64px]" data-node="10:4" data-node-m="13:80">
+        <p class="hidden lg:block self-start t-eyebrow text-white opacity-85 whitespace-nowrap" data-node="10:5"><span class="op-tr">{eyebrow}</span></p>
+        <h2 id="cta-title" class="op-n1 tm-cta lg:t-display-l text-white" data-node="10:6" data-node-m="13:81">{title}</h2>
+        <p class="t-body-m lg:t-body-l text-white opacity-90" data-node="10:7" data-node-m="13:82">{text}</p>
+        <div class="flex flex-col lg:flex-row lg:flex-wrap lg:self-start lg:items-start gap-[14px]" data-node="10:8">
+          <Button href={ROUTES.freeEstimate} variant="white" class="w-full lg:w-auto py-[17px] lg:px-[28px] lg:py-[18px]" dataNode="10:9" dataNodeM="13:83">Get my free estimate  →</Button>
+          <Button href={PHONE_TEL} variant="outline-white" class="max-lg:hidden px-[28.5px] py-[17.5px]" dataNode="10:11">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+      <div class="bg-white flex flex-col items-center justify-center gap-[10px] py-[24px] lg:gap-[18px] lg:w-[40%] xl:w-[480px] lg:px-[24px] xl:px-[56px] lg:py-[48px] text-center" data-node="10:13" data-node-m="13:85">
+        <Logo node="10:14" class="hidden lg:block w-[270px] h-[180px]" dataNode="10:14" />
+        <Logo node="13:86" class="lg:hidden w-[180px] h-[120px]" dataNodeM="13:86" />
+        <p class="hidden lg:block t-display-xs text-ink xl:whitespace-nowrap" data-node="10:15">INTERIOR &amp; EXTERIOR PAINTING</p>
+        <a href={PHONE_TEL} class="op-n1 lg:hidden tm-phone text-ink whitespace-nowrap hover:text-forest" data-node-m="13:87">{PHONE_DISPLAY}</a>
+        <p class="tm-eyebrow-s lg:t-eyebrow text-muted whitespace-nowrap lg:whitespace-normal xl:whitespace-nowrap" data-node="10:16" data-node-m="13:88"><span class="op-tr">{CCB} · LICENSED · INSURED · BONDED</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  /* Measured: Chrome sets the mobile display text (tm-cta, tm-phone) 1px higher than the Figma render. */
+  @media (max-width: 1023.98px) { .op-n1 { position: relative; top: 1px; } }
+
+  /* Figma sizes letter-spaced text without the trailing tracking of the last glyph. */
+  .op-tr { margin-right: -2.4px; }
+</style>

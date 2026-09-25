@@ -1,0 +1,35 @@
+---
+// Right column on /free-estimate/: Prefer to call? · What happens next · Contact details (copy doc PAGE 8).
+import Steps from '../../components/inner/Steps.astro';
+import { BUSINESS, PHONE_DISPLAY, PHONE_TEL, EMAIL, CCB, CCB_LOOKUP, ADDRESS_LINE1, ADDRESS_LINE2 } from '../../data/site';
+const link = 'underline decoration-forest/50 underline-offset-[3px] hover:text-forest hover:decoration-forest';
+---
+<div class="flex flex-col">
+  <section aria-labelledby="call-title" class="pb-[28px] lg:pb-[36px]">
+    <h2 id="call-title" class="tm-h3 lg:t-display-s text-ink">Prefer to call?</h2>
+    <p class="t-body-m text-muted mt-[10px]">Call Efrain at</p>
+    <a href={PHONE_TEL} class="block tm-cta lg:t-display-l text-forest hover:text-forest-dark whitespace-nowrap mt-[2px]">{PHONE_DISPLAY}</a>
+    <p class="t-body-m text-ink mt-[6px]" lang="es">Hablamos español.</p>
+  </section>
+
+  <section aria-labelledby="next-title" class="border-t border-mist pt-[28px] pb-[20px] lg:pt-[36px] lg:pb-[24px]">
+    <h2 id="next-title" class="tm-h3 lg:t-display-s text-ink mb-[4px]">What happens next</h2>
+    <Steps items={[
+      ['', 'We call you to set up a walkthrough.'],
+      ['', 'We look at the project with you and talk through colors and prep.'],
+      ['', "You get your estimate. It's free, and you decide if and when to book."],
+    ]} />
+  </section>
+
+  <section aria-labelledby="contact-title" class="border-t border-mist pt-[28px] lg:pt-[36px]">
+    <h2 id="contact-title" class="tm-h3 lg:t-display-s text-ink">Contact details</h2>
+    <address class="not-italic t-body-m text-ink flex flex-col gap-[6px] mt-[14px]">
+      <span class="font-bold">{BUSINESS}</span>
+      <span>{ADDRESS_LINE1}, {ADDRESS_LINE2}</span>
+      <span>Phone: <a class={link} href={PHONE_TEL}>{PHONE_DISPLAY}</a></span>
+      <span class="break-words">Email: <a class={`${link} break-all`} href={`mailto:${EMAIL}`}>{EMAIL}</a></span>
+      <span>Hours: 9 am to 5 pm, Monday to Friday</span>
+      <span><a class={link} href={CCB_LOOKUP} target="_blank" rel="noopener">{CCB}</a> | Licensed, bonded and insured</span>
+    </address>
+  </section>
+</div>

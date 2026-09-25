@@ -1,0 +1,10 @@
+---
+// Cabinet painting FAQ. Items come from the page so the same array feeds the FAQPage JSON-LD.
+import Section from '../../components/inner/Section.astro';
+import Faq from '../../components/inner/Faq.astro';
+interface Props { items: [string, string][] }
+const { items } = Astro.props;
+---
+<Section id="cabinet-faq" bg="white" eyebrow="FAQ" title="Cabinet painting FAQ" narrow>
+  <Faq items={items} />
+</Section>

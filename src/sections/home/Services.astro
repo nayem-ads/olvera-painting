@@ -1,0 +1,60 @@
+---
+// Services. Figma desktop 7:15 (3 paint-chip cards in a row), mobile 12:2 (stacked).
+import Img from '../../components/Img.astro';
+import { ROUTES } from '../../data/site';
+type Swatch = [label: string, bg: string, fg: string];
+const cards: { title: string; text: string; link: string; href: string; img: [string, string]; alt: string; swatches: Swatch[]; ids: [string, string, string, string] }[] = [
+  {
+    title: 'Interior painting', link: 'Interior painting  →', href: ROUTES.interior,
+    text: 'Walls, ceilings, trim and doors, from one bedroom to the whole house. We cover furniture and floors and patch holes before we paint.',
+    img: ['7:23', '12:7'], alt: 'White shaker kitchen with rattan pendant lights and a walnut island',
+    swatches: [['WARM WHITE', '#ede7dc', '#2f4538'], ['CLAY', '#b97a68', '#ffffff'], ['PLUM', '#6b2f4e', '#ffffff']],
+    ids: ['7:22', '12:6', '7:31', '12:15'],
+  },
+  {
+    title: 'Exterior painting', link: 'Exterior painting  →', href: ROUTES.exterior,
+    text: 'Siding, trim, shakes, soffits and doors. We wash, scrape, caulk and prime first so the paint holds up to Oregon rain.',
+    img: ['7:36', '12:20'], alt: 'Craftsman-style house exterior with painted siding and trim',
+    swatches: [['CEDAR', '#b5713f', '#ffffff'], ['TRIM WHITE', '#f5f4ef', '#2f4538'], ['DOOR GREEN', '#3a5a48', '#ffffff']],
+    ids: ['7:35', '12:19', '7:44', '12:28'],
+  },
+  {
+    title: 'Cabinet painting', link: 'Cabinet painting  →', href: ROUTES.cabinets,
+    text: 'A new look for your kitchen without replacing the cabinets. We clean, sand and use a bonding primer so the finish holds up to daily use.',
+    img: ['7:49', '12:33'], alt: 'Kitchen with green painted cabinets',
+    swatches: [['EVERGREEN', '#2f4538', '#ffffff'], ['SAGE', '#a7b59b', '#2f4538'], ['BRASS', '#b89a5a', '#2f4538']],
+    ids: ['7:48', '12:32', '7:57', '12:41'],
+  },
+];
+---
+<section class="bg-white" aria-labelledby="services-title" data-node="7:15" data-node-m="12:2">
+  <div class="mx-auto max-w-[1440px] flex flex-col gap-[28px] px-[20px] py-[56px] lg:gap-[48px] lg:px-[96px] lg:pt-[88px] lg:pb-[104px]">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between lg:gap-[32px]" data-node="7:16">
+      <div class="flex flex-col gap-[8px] lg:min-w-0 lg:gap-[10px]" data-node="7:17" data-node-m="12:3">
+        <p class="tm-eyebrow lg:t-eyebrow text-forest whitespace-nowrap">WHAT WE PAINT</p>
+        <h2 id="services-title" class="tm-h2 lg:t-display-m text-ink" data-node="7:19" data-node-m="12:5">Painting services for your home</h2>
+      </div>
+      <p class="hidden lg:block w-[380px] shrink-0 t-body-m text-muted" data-node="7:20">Interior, exterior and cabinet painting for homes within about 50 miles of Hillsboro.</p>
+    </div>
+    <div class="flex flex-col gap-[28px] lg:flex-row lg:items-stretch" data-node="7:21">
+      {cards.map((c) => (
+        <article class="relative flex flex-col overflow-hidden rounded-[4px] border border-mist bg-primer lg:min-w-0 lg:flex-1" data-node={c.ids[0]} data-node-m={c.ids[1]}>
+          <div class="h-[240px] lg:h-[380px]">
+            <Img node={c.img[1]} alt={c.alt} class="lg:hidden w-full h-full object-cover" />
+            <Img node={c.img[0]} alt={c.alt} class="hidden lg:block w-full h-full object-cover" />
+          </div>
+          <div class="flex" aria-hidden="true">
+            {c.swatches.map(([label, bg, fg]) => (
+              <p class="min-w-0 flex-1 overflow-hidden whitespace-nowrap pb-[6px] pl-[10px] pt-[18px] tm-micro lg:pb-[8px] lg:pl-[14px] lg:pt-[26px] lg:t-swatch" style={`background:${bg};color:${fg}`}>{label}</p>
+            ))}
+          </div>
+          <div class="flex flex-col gap-[10px] px-[20px] pt-[20px] pb-[24px] lg:gap-[12px] lg:px-[28px] lg:pt-[28px] lg:pb-[32px]" data-node={c.ids[2]} data-node-m={c.ids[3]}>
+            <h3 class="tm-h3 lg:t-display-s text-ink">{c.title}</h3>
+            <p class="t-body-s lg:t-body-m text-muted">{c.text}</p>
+            <a href={c.href} class="self-start t-button text-forest whitespace-pre hover:text-forest-dark after:absolute after:inset-0 after:content-['']">{c.link}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

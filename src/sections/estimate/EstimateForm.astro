@@ -1,0 +1,34 @@
+---
+// Full estimate form card (styled like the homepage mobile estimate card 11:33). Posts to FormSubmit; forms.ts validates.
+// FormSubmit's field name for uploaded files is "attachment".
+import FormField from '../../components/FormField.astro';
+import FormSubmitFields from '../../components/FormSubmitFields.astro';
+import Button from '../../components/Button.astro';
+import { FORM_ACTION } from '../../data/site';
+const lbl = 'tm-eyebrow lg:t-eyebrow uppercase whitespace-normal!';
+---
+<div class="bg-white rounded-[12px] shadow-[0px_12px_30px_0px_rgba(23,36,28,0.16)] px-[20px] py-[24px] lg:p-[32px]">
+  <h2 id="estimate-form-title" class="tm-form-title lg:t-display-s text-ink">Get a free estimate</h2>
+  <form action={FORM_ACTION} method="POST" enctype="multipart/form-data" data-lead-form novalidate aria-labelledby="estimate-form-title" class="flex flex-col gap-[14px] lg:gap-[18px] mt-[16px] lg:mt-[20px]">
+    <FormSubmitFields source="Free estimate page" />
+    <div class="grid gap-[14px] lg:gap-[18px] md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+      <FormField label="Name" name="Name" required placeholder="Your name" autocomplete="name" labelClass={lbl} error="Please add your name." />
+      <FormField label="Phone" name="Phone" type="tel" required placeholder="503-000-0000" autocomplete="tel" labelClass={lbl} error="Please add a phone number we can call." />
+      <FormField label="Email" name="Email" type="email" autocomplete="email" labelClass={lbl} error="Please check your email address." />
+      <FormField label="Address or ZIP" name="Address or ZIP" placeholder="97124" autocomplete="street-address" labelClass={lbl} />
+    </div>
+    <FormField label="What needs painting?" name="What needs painting?" type="select" options={['Interior', 'Exterior', 'Cabinets', 'Not sure yet']} labelClass={lbl} />
+    <FormField label="Tell us about the project (optional)" name="Project details" type="textarea" placeholder="Rooms, colors, timing…" labelClass={lbl} controlClass="min-h-[120px]" />
+    <FormField label="Upload photos (optional)" name="attachment" type="file" accept="image/*" labelClass={lbl} controlClass="op-file min-w-0 text-muted cursor-pointer" />
+    <Button href="" type="submit" class="w-full py-[17px] lg:py-[18px] mt-[4px] disabled:opacity-70 disabled:cursor-wait">Get my free estimate  →</Button>
+    <p data-form-error hidden role="alert" class="t-body-s text-error">Please check the highlighted fields. Name and phone are required.</p>
+  </form>
+</div>
+<script>import '../../scripts/forms.ts';</script>
+<style>
+  :global(.op-file)::file-selector-button {
+    margin-right: 12px; border: 0; border-radius: 6px; padding: 6px 14px; cursor: pointer;
+    background: var(--color-forest); color: #fff; font: 700 15px/20px var(--font-body); letter-spacing: 0.3px;
+  }
+  :global(.op-file:hover)::file-selector-button { background: var(--color-forest-dark); }
+</style>

@@ -1,0 +1,22 @@
+---
+// Cabinet painting: "Is painting right for your cabinets?" Good-fit list + "wrong call" callout. Copy: PAGE 4.
+import Section from '../../components/inner/Section.astro';
+import CheckList from '../../components/inner/CheckList.astro';
+const goodFit = [
+  'The cabinet boxes and doors are solid wood or MDF and in good shape',
+  'You like the layout and just want a new look',
+  'You want to update the kitchen without a full remodel',
+];
+---
+<Section id="cabinet-fit" bg="white" eyebrow="GOOD FIT" title="Is painting right for your cabinets?">
+  <div class="grid gap-[28px] lg:grid-cols-[minmax(0,1fr)_minmax(0,480px)] lg:gap-[64px] lg:items-start">
+    <div class="flex flex-col gap-[16px] lg:gap-[20px]">
+      <h3 class="tm-step lg:t-display-xs text-ink">Painting is a good fit when:</h3>
+      <CheckList items={goodFit} />
+    </div>
+    <div class="relative bg-primer border border-mist rounded-[6px] overflow-hidden pl-[26px] pr-[22px] py-[22px] lg:pl-[36px] lg:pr-[32px] lg:py-[30px]">
+      <span aria-hidden="true" class="absolute inset-y-0 left-0 w-[6px] bg-cedar"></span>
+      <p class="t-body-m text-ink">Painting is the wrong call when the boxes are water damaged, the doors are falling apart, or you want to change the layout. We'll tell you at the estimate if that's your situation.</p>
+    </div>
+  </div>
+</Section>

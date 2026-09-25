@@ -1,0 +1,68 @@
+---
+// Footer: desktop 4 columns (Figma 10:17), mobile stacked (13:89, pb 110 leaves room for the fixed call bar).
+import Logo from './Logo.astro';
+import { ROUTES, PHONE_DISPLAY, PHONE_TEL, EMAIL, CCB, CCB_LOOKUP, ADDRESS_LINE1, ADDRESS_LINE2, HOURS, BUSINESS } from '../data/site';
+const l = 'hover:text-forest-light hover:underline underline-offset-4';
+---
+<footer class="bg-evergreen text-white" data-node="10:17" data-node-m="13:89">
+  <!-- Desktop -->
+  <div class="hidden lg:flex mx-auto max-w-[1440px] flex-col gap-[48px] px-[96px] pt-[72px] pb-[40px]">
+    <div class="flex gap-[32px] xl:gap-[64px] items-start" data-node="10:18">
+      <div class="flex-1 min-w-0 flex flex-col gap-[18px]" data-node="10:19">
+        <a href={ROUTES.home} aria-label="Olvera Painting LLC, home"><Logo node="10:20" class="w-[180px] h-[120px]" dataNode="10:20" /></a>
+        <p class="t-body-m opacity-75" data-node="10:21">Residential interior, exterior and cabinet painting in Hillsboro and the Portland metro.</p>
+      </div>
+      <div class="flex-1 min-w-0 flex flex-col gap-[10px]" data-node="10:22">
+        <p class="t-eyebrow text-forest-light">CONTACT</p>
+        <p class="t-body-m opacity-85">{BUSINESS}</p>
+        <p class="t-body-m opacity-85">{ADDRESS_LINE1}</p>
+        <p class="t-body-m opacity-85">{ADDRESS_LINE2}</p>
+        <p class="t-body-m opacity-85"><a class={l} href={PHONE_TEL}>{PHONE_DISPLAY}</a></p>
+        <p class="t-body-m opacity-85 [overflow-wrap:anywhere]"><a class={l} href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
+      </div>
+      <nav aria-label="Services" class="flex-1 min-w-0 flex flex-col gap-[10px]" data-node="10:29">
+        <p class="t-eyebrow text-forest-light">SERVICES</p>
+        <a class={`t-body-m opacity-85 ${l}`} href={ROUTES.interior}>Interior painting</a>
+        <a class={`t-body-m opacity-85 ${l}`} href={ROUTES.exterior}>Exterior painting</a>
+        <a class={`t-body-m opacity-85 ${l}`} href={ROUTES.cabinets}>Cabinet painting</a>
+        <a class={`t-body-m opacity-85 ${l}`} href={ROUTES.ourWork}>Our work</a>
+        <a class={`t-body-m opacity-85 ${l}`} href={ROUTES.freeEstimate}>Free estimate</a>
+      </nav>
+      <div class="flex-1 min-w-0 flex flex-col gap-[10px]" data-node="10:36">
+        <p class="t-eyebrow text-forest-light">COMPANY</p>
+        <a class={`t-body-m opacity-85 ${l}`} href={ROUTES.about}>About</a>
+        <a class={`t-body-m opacity-85 ${l}`} href={ROUTES.serviceArea}>Service area</a>
+        <p class="t-body-m opacity-85">{HOURS}</p>
+        <p class="t-body-m opacity-85"><a class={l} href={CCB_LOOKUP} target="_blank" rel="noopener">{CCB}</a></p>
+        <p class="t-body-m opacity-85">Licensed, bonded and insured</p>
+      </div>
+    </div>
+    <div class="op-fb flex justify-between border-t border-white/12 pt-[24px] t-body-s whitespace-nowrap" data-node="10:43">
+      <p class="opacity-55">© 2026 {BUSINESS}. All rights reserved.</p>
+      <p class="opacity-55" lang="es">Hablamos español</p>
+    </div>
+  </div>
+  <!-- Mobile -->
+  <div class="op-fm lg:hidden flex flex-col gap-[24px] px-[20px] pt-[48px] pb-[110px] t-body-s">
+    <a href={ROUTES.home} aria-label="Olvera Painting LLC, home" class="self-start"><Logo node="13:90" class="w-[132px] h-[88px]" dataNodeM="13:90" /></a>
+    <div class="flex flex-col gap-[8px]" data-node-m="13:91">
+      <p class="tm-eyebrow text-forest-light">CONTACT</p>
+      <p class="opacity-85">{BUSINESS}</p>
+      <p class="opacity-85">{ADDRESS_LINE1}, {ADDRESS_LINE2}</p>
+      <p class="opacity-85"><a class={l} href={PHONE_TEL}>{PHONE_DISPLAY}</a></p>
+      <p class="opacity-85"><a class={l} href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
+      <p class="opacity-85">{HOURS}</p>
+    </div>
+    <nav aria-label="Pages" class="flex flex-col gap-[8px]" data-node-m="13:98">
+      <p class="tm-eyebrow text-forest-light">PAGES</p>
+      <p class="opacity-85"><a class={l} href={ROUTES.interior}>Interior painting</a> · <a class={l} href={ROUTES.exterior}>Exterior painting</a> · <a class={l} href={ROUTES.cabinets}>Cabinet painting</a></p>
+      <p class="opacity-85"><a class={l} href={ROUTES.ourWork}>Our work</a> · <a class={l} href={ROUTES.about}>About</a> · <a class={l} href={ROUTES.serviceArea}>Service area</a> · <a class={l} href={ROUTES.freeEstimate}>Free estimate</a></p>
+    </nav>
+    <p class="opacity-60" data-node-m="13:102">{CCB} · Licensed, bonded and insured · <span lang="es">Hablamos español</span></p>
+    <p class="self-start opacity-50 whitespace-nowrap" data-node-m="13:103">© 2026 {BUSINESS}</p>
+  </div>
+</footer>
+<style>
+  /* Measured: Chrome sets Barlow 15/23 (t-body-s) 1px higher than the Figma render. */
+  .op-fb p, .op-fm > p, .op-fm > div > p:not(:first-child), .op-fm > nav > p:not(:first-child) { position: relative; top: 1px; }
+</style>

@@ -1,0 +1,22 @@
+---
+// Interior page: "How an interior job goes". The copy is three prose paragraphs (before / first day / after),
+// shown as numbered Steps without added titles, so no text is invented.
+import Section from '../../components/inner/Section.astro';
+import Steps from '../../components/inner/Steps.astro';
+import Photo from '../../components/Photo.astro';
+const steps: [string, string][] = [
+  ['', 'Before we start, we agree on the rooms, colors and sheens, so everyone knows the plan on day one.'],
+  ['', "On the first day we move furniture to the middle of the room and cover it, lay drop cloths, take off outlet and switch covers, and mask what isn't getting paint. Then comes the prep: filling nail holes and dents, fixing small cracks, caulking gaps along trim, and spot priming patches so they don't show through the finish."],
+  ['', 'After the paint, we put the covers back, move the furniture back, and walk the rooms with you.'],
+];
+---
+<Section bg="primer" id="interior-process" title="How an interior job goes">
+  <div class="grid gap-[32px] lg:grid-cols-12 lg:gap-[64px] lg:items-start">
+    <div class="lg:col-span-7 lg:order-2">
+      <Steps items={steps} />
+    </div>
+    <div class="hidden lg:block lg:col-span-5 lg:order-1">
+      <Photo name="orig-gray-room-doors" alt="Hallway floor covered with protection paper and taped edges during an Olvera interior job, with white doors and trim" class="w-full h-[420px] object-cover rounded-[4px]" />
+    </div>
+  </div>
+</Section>

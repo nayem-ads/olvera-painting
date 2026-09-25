@@ -1,0 +1,28 @@
+---
+// Interior page: "What we paint inside your home" (copy doc PAGE 2). Heading + checklist left, Olvera job photo right.
+// Same wrapper/spacing/type as components/inner/Section.astro; the heading sits in the left column so the photo
+// can span the full block height on desktop.
+import CheckList from '../../components/inner/CheckList.astro';
+import Photo from '../../components/Photo.astro';
+const items = [
+  'Walls and accent walls',
+  'Ceilings, including vaulted and stairwell ceilings',
+  'Trim, baseboards and crown molding',
+  'Doors and door frames',
+  'Stair railings and spindles',
+  'Closets, hallways, mudrooms and laundry rooms',
+];
+---
+<section id="what-we-paint" aria-labelledby="what-we-paint-title" class="bg-white">
+  <div class="mx-auto max-w-[1440px] px-[20px] lg:px-[96px] py-[56px] lg:py-[96px]">
+    <div class="grid gap-[32px] lg:grid-cols-12 lg:gap-[64px] lg:items-center">
+      <div class="lg:col-span-7 flex flex-col gap-[24px] lg:gap-[40px]">
+        <h2 id="what-we-paint-title" class="tm-h2 lg:t-display-m text-ink">What we paint inside your home</h2>
+        <CheckList items={items} cols={2} />
+      </div>
+      <div class="lg:col-span-5">
+        <Photo name="olvera-04-plum-wall" alt="Plum accent wall with black window trim in a bathroom with black tile, painted by Olvera Painting" class="w-full h-[260px] lg:h-[420px] object-cover rounded-[4px]" />
+      </div>
+    </div>
+  </div>
+</section>

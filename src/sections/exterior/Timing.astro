@@ -1,0 +1,17 @@
+---
+// Exterior page: "Why timing matters in Oregon" (copy doc PAGE 3). Evergreen band; mood-10 fog forest is a decorative backdrop only (alt="").
+import Photo from '../../components/Photo.astro';
+---
+<section aria-labelledby="timing-title" class="relative bg-evergreen text-white overflow-hidden">
+  <Photo name="mood-10-fog-forest" alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.16] pointer-events-none" style="object-position:center bottom" />
+  <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-evergreen/40 to-evergreen/80"></div>
+  <div class="relative mx-auto max-w-[1440px] px-[20px] lg:px-[96px] py-[56px] lg:py-[96px]">
+    <div class="grid gap-[28px] lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-[80px] lg:items-end">
+      <div class="flex flex-col gap-[16px] lg:gap-[24px] max-w-[720px]">
+        <h2 id="timing-title" class="tm-h2 lg:t-display-m text-white">Why timing matters in Oregon</h2>
+        <p class="t-body-m lg:t-body-l text-white/85">Exterior paint needs a dry surface and the right temperature to cure. Every can lists a minimum temperature on the label, and siding that's still wet from last night's rain can cause peeling even on a warm day. We plan exterior work around dry stretches and the forecast.</p>
+      </div>
+      <p class="relative -rotate-[1deg] bg-forest px-[22px] py-[20px] lg:px-[32px] lg:py-[28px] tm-h3 lg:t-display-s text-white shadow-[0px_14px_30px_rgba(0,0,0,0.25)]">If you want your house painted in summer, it helps to call in spring.</p>
+    </div>
+  </div>
+</section>

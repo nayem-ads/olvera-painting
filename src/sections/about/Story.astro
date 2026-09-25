@@ -1,0 +1,22 @@
+---
+// About: the story paragraph (copy doc PAGE 5, paragraph 2). No photo of Efrain exists, so the copy doc's
+// [IMAGE: Efrain…] slot is a real Olvera job photo (exterior in progress) with an honest alt. Never a fake portrait.
+import Section from '../../components/inner/Section.astro';
+import Photo from '../../components/Photo.astro';
+---
+<Section bg="white">
+  <div class="grid gap-[32px] lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-[96px] lg:items-center">
+    <p class="t-body-m lg:t-body-l text-ink max-w-[640px] border-l-[4px] border-forest pl-[18px] lg:pl-[28px]">
+      Efrain started out painting houses for other contractors around Portland. After years of seeing jobs rushed and prep skipped, he started Olvera Painting LLC to do the work the way he thought it should be done. His rule is simple: when the crew leaves, the customer should feel like the house was treated like it was ours.
+    </p>
+    <div class="relative">
+      <span aria-hidden="true" class="absolute -top-[10px] left-1/2 z-10 w-[96px] h-[24px] bg-[rgba(116,184,82,0.85)] -translate-x-1/2 -rotate-[2deg]"></span>
+      <Photo
+        name="orig-exterior-side-siding"
+        alt="Side of a house with grey lap siding and a ladder on the ground, during an Olvera Painting exterior job"
+        class="w-full aspect-[4/5] lg:aspect-[380/440] object-cover rounded-[6px] shadow-[0px_10px_24px_0px_rgba(23,36,28,0.12)]"
+        style="object-position:60% 55%"
+      />
+    </div>
+  </div>
+</Section>

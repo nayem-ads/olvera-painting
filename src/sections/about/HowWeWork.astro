@@ -1,0 +1,11 @@
+---
+// About: "How we work" (copy doc PAGE 5). Primer band, narrow text column.
+import Section from '../../components/inner/Section.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+---
+<Section bg="primer" id="how-we-work" title="How we work" narrow>
+  <div class="flex flex-col gap-[16px] lg:gap-[20px] t-body-m lg:t-body-l text-ink">
+    <p>Efrain owns and runs the company, and <a href={PHONE_TEL} class="font-bold text-forest hover:text-forest-dark whitespace-nowrap">{PHONE_DISPLAY}</a> is his number. He does the walkthroughs and estimates himself and checks every job before it is finished.</p>
+    <p>We paint interiors, exteriors and cabinets for homeowners within about 50 miles of Hillsboro. We cover your home before we start, do the prep, and clean up when the work is done.</p>
+  </div>
+</Section>

@@ -1,0 +1,17 @@
+---
+// Thank-you page after a FormSubmit post (_next). noindex. Owner: estimate agent.
+import Base from '../../../layouts/Base.astro';
+import EstimateHero from '../../../sections/estimate/EstimateHero.astro';
+import Button from '../../../components/Button.astro';
+import { ROUTES, PHONE_DISPLAY, PHONE_TEL } from '../../../data/site';
+---
+<Base title="Thank you | Olvera Painting LLC" noindex pageClass="op-thank-you">
+  <EstimateHero tag="FREE ESTIMATES" title="Thanks, we got your request" lead="We'll call you to set up a time to see the project." tall>
+    <p class="t-body-m lg:t-body-l">Need us sooner? Call <a href={PHONE_TEL} class="font-bold underline decoration-forest-light underline-offset-[4px] hover:text-forest-light whitespace-nowrap">{PHONE_DISPLAY}</a></p>
+    <div class="flex flex-col lg:flex-row gap-[12px] lg:gap-[14px] pt-[8px]">
+      <Button href={ROUTES.home} class="w-full lg:w-auto py-[17px] lg:px-[28px] lg:py-[18px]">Back to home</Button>
+      <Button href={ROUTES.ourWork} variant="outline-light" class="w-full lg:w-auto py-[17px] lg:px-[28px]">See more of our work  →</Button>
+    </div>
+  </EstimateHero>
+  <div class="bg-primer h-[56px] lg:h-[96px]" aria-hidden="true"></div>
+</Base>
