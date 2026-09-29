@@ -8,8 +8,11 @@ import Photo from '../../components/Photo.astro';
 type Cat = 'interior' | 'exterior';
 // caption = wide-desktop chip (xl, 1280+), short = chip on narrower tiles (mobile and 1024-1279). Captions say only what the photo shows.
 const items: { photo: string; cat: Cat; caption: string; short: string; alt: string; pos?: string }[] = [
+  { photo: 'navy-front', cat: 'exterior', caption: 'Craftsman · navy body, white trim', short: 'Navy craftsman', alt: 'Front of a craftsman house painted navy blue with white trim, gable brackets and porch columns' },
+  { photo: 'navy-porch', cat: 'exterior', caption: 'Porch, columns and railing', short: 'Porch and railing', alt: 'Craftsman porch with white columns and railing against navy shingle siding' },
+  { photo: 'navy-side', cat: 'exterior', caption: 'Shingles, brackets and window trim', short: 'Brackets and trim', alt: 'Side of a navy shingle house with rows of white brackets and white window trim' },
+  { photo: 'navy-front-left', cat: 'exterior', caption: 'Navy exterior, white trim', short: 'Navy exterior', alt: 'Navy blue craftsman house with white trim seen from the front lawn' },
   { photo: 'olvera-03-clay-bedroom', cat: 'interior', caption: 'Bedroom · clay walls, black trim', short: 'Clay bedroom', alt: 'Bedroom with clay-colored walls and black window trim and baseboards' },
-  { photo: 'olvera-01-hero-exterior', cat: 'exterior', caption: 'Cedar shake exterior', short: 'Cedar shake', alt: 'Two-story cedar shake house with white trim, posts and balcony' },
   { photo: 'orig-kitchen-pendants', cat: 'interior', caption: 'Kitchen masked and covered for painting', short: 'Kitchen masked', alt: 'Kitchen with the floor covered in protective paper and blue tape along the edges' },
   { photo: 'olvera-02-kitchen', cat: 'interior', caption: 'Kitchen · finished', short: 'Kitchen finished', alt: 'Finished kitchen with white walls, white cabinets, rattan pendant lights and a walnut island' },
   { photo: 'orig-exterior-side-siding', cat: 'exterior', caption: 'Lap siding exterior, in progress', short: 'Lap siding', alt: 'Side of a house with gray lap siding and a ladder on the ground, work in progress' },

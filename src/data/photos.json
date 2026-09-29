@@ -108,5 +108,25 @@
   "src": "/img/photos/orig-white-doors-landing.webp",
   "width": 1200,
   "height": 1600
+ },
+ "navy-front": {
+  "src": "/img/photos/navy-front.webp",
+  "width": 1200,
+  "height": 1600
+ },
+ "navy-front-left": {
+  "src": "/img/photos/navy-front-left.webp",
+  "width": 1200,
+  "height": 1175
+ },
+ "navy-porch": {
+  "src": "/img/photos/navy-porch.webp",
+  "width": 1200,
+  "height": 1600
+ },
+ "navy-side": {
+  "src": "/img/photos/navy-side.webp",
+  "width": 1200,
+  "height": 1600
  }
 }

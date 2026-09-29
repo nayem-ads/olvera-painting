@@ -1,5 +1,5 @@
 {
-"note": "[frame,nodeId,name,imageHash,scaleMode,imageTransform,_,w,h] from use_figma 2026-09-25. Why Olvera mobile 13:2 = SOLID + IMAGE@0.30 (opacity in CSS).",
+"note": "[frame,nodeId,name,imageHash,scaleMode,imageTransform,_,w,h] from use_figma 2026-09-25. Why Olvera mobile 13:2 = SOLID + IMAGE@0.30 (opacity in CSS). 2026-09-29: hero, services exterior card and recent-work tile 4 swapped to real Olvera job photos (navy craftsman, supplied by Jay; house number and yard sign removed), CROP transforms set by hand.",
 "rows": [
 [
 "5:3",
@@ -26,19 +26,19 @@ null,
 [
 "5:3",
 "6:4",
-"Hero photo (olvera_01_hero_exterior)",
-"fe2cfa969bf59f9d6d0694c1e706d4ad1f0fdc5b",
-"FILL",
+"Hero photo (navy-craftsman-front)",
+"98539eebf8840eb796ef20aed6e1441a26acb258",
+"CROP",
 [
 [
-1,
+0.75,
 0,
-0
+0.125
 ],
 [
 0,
-1,
-0
+0.63625,
+0.15
 ]
 ],
 null,
@@ -70,19 +70,19 @@ null,
 [
 "5:3",
 "7:36",
-"photo (olvera_13_craftsman_exterior)",
-"6242405ca9f40629a50725ccc08c5958bf6d000a",
-"FILL",
+"photo (navy-craftsman-front-left)",
+"2b99e6abf90a1e1b60a02c30591b3e91d468b685",
+"CROP",
 [
 [
-1,
+0.8833333333333333,
 0,
-0
+0.0
 ],
 [
 0,
-1,
-0
+0.6375,
+0.1
 ]
 ],
 null,
@@ -180,19 +180,19 @@ null,
 [
 "5:3",
 "8:24",
-"Tile (orig_white_doors_landing)",
-"75285d9248ef8128af493548515216a0549e4d59",
-"FILL",
+"Tile (navy-craftsman-side)",
+"22bd0d71396ccccfcce1b337a927a2582b033cff",
+"CROP",
 [
 [
-1,
+1.0,
 0,
-0
+0.0
 ],
 [
 0,
-1,
-0
+0.608125,
+0.1125
 ]
 ],
 null,
@@ -312,19 +312,19 @@ null,
 [
 "11:2",
 "11:15",
-"Hero photo (olvera_01_hero_exterior)",
-"fe2cfa969bf59f9d6d0694c1e706d4ad1f0fdc5b",
-"FILL",
+"Hero photo (navy-craftsman-front)",
+"98539eebf8840eb796ef20aed6e1441a26acb258",
+"CROP",
 [
 [
-1,
+1.0,
 0,
-0
+0.0
 ],
 [
 0,
-1,
-0
+0.576875,
+0.15625
 ]
 ],
 null,
@@ -356,19 +356,19 @@ null,
 [
 "11:2",
 "12:20",
-"craftsman (olvera_13)",
-"6242405ca9f40629a50725ccc08c5958bf6d000a",
-"FILL",
+"craftsman (navy-craftsman-front-left)",
+"2b99e6abf90a1e1b60a02c30591b3e91d468b685",
+"CROP",
 [
 [
-1,
+0.8833333333333333,
 0,
-0
+0.0
 ],
 [
 0,
-1,
-0
+0.456875,
+0.1875
 ]
 ],
 null,
@@ -466,19 +466,19 @@ null,
 [
 "11:2",
 "12:60",
-"Tile white doors",
-"75285d9248ef8128af493548515216a0549e4d59",
-"FILL",
+"Tile (navy-craftsman-side-m)",
+"22bd0d71396ccccfcce1b337a927a2582b033cff",
+"CROP",
 [
 [
-1,
+1.0,
 0,
-0
+0.0
 ],
 [
 0,
-1,
-0
+0.970625,
+0.0125
 ]
 ],
 null,

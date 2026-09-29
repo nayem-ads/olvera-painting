@@ -7,11 +7,11 @@
     "name": "Logo (logo_transparent)"
   },
   "6:4": {
-    "src": "/img/olvera-01-hero-exterior-5-3-760x860.webp",
+    "src": "/img/navy-craftsman-front-5-3-760x860.webp",
     "width": 760,
     "height": 860,
     "frame": "5:3",
-    "name": "Hero photo (olvera_01_hero_exterior)"
+    "name": "Hero photo (navy-craftsman-front)"
   },
   "7:23": {
     "src": "/img/olvera-02-kitchen-pendants-5-3-395x380.webp",
@@ -21,11 +21,11 @@
     "name": "photo (olvera_02_kitchen_pendants)"
   },
   "7:36": {
-    "src": "/img/olvera-13-craftsman-exterior-5-3-395x380.webp",
+    "src": "/img/navy-craftsman-front-left-5-3-395x380.webp",
     "width": 395,
     "height": 380,
     "frame": "5:3",
-    "name": "photo (olvera_13_craftsman_exterior)"
+    "name": "photo (navy-craftsman-front-left)"
   },
   "7:49": {
     "src": "/img/olvera-12-green-cabinets-5-3-395x380.webp",
@@ -56,11 +56,11 @@
     "name": "Tile (orig_bathroom_vanity)"
   },
   "8:24": {
-    "src": "/img/orig-white-doors-landing-5-3-360x292.webp",
+    "src": "/img/navy-craftsman-side-5-3-360x292.webp",
     "width": 360,
     "height": 292,
     "frame": "5:3",
-    "name": "Tile (orig_white_doors_landing)"
+    "name": "Tile (navy-craftsman-side)"
   },
   "8:29": {
     "src": "/img/olvera-11-brush-cutin-5-3-500x660.webp",
@@ -98,11 +98,11 @@
     "name": "Logo (logo_transparent)"
   },
   "11:15": {
-    "src": "/img/olvera-01-hero-exterior-11-2-390x300.webp",
+    "src": "/img/navy-craftsman-front-11-2-390x300.webp",
     "width": 390,
     "height": 300,
     "frame": "11:2",
-    "name": "Hero photo (olvera_01_hero_exterior)"
+    "name": "Hero photo (navy-craftsman-front)"
   },
   "12:7": {
     "src": "/img/olvera-02-11-2-348x240.webp",
@@ -112,11 +112,11 @@
     "name": "kitchen (olvera_02)"
   },
   "12:20": {
-    "src": "/img/olvera-13-11-2-348x240.webp",
+    "src": "/img/navy-craftsman-front-left-11-2-348x240.webp",
     "width": 348,
     "height": 240,
     "frame": "11:2",
-    "name": "craftsman (olvera_13)"
+    "name": "craftsman (navy-craftsman-front-left)"
   },
   "12:33": {
     "src": "/img/olvera-12-11-2-348x240.webp",
@@ -147,11 +147,11 @@
     "name": "Tile vanity"
   },
   "12:60": {
-    "src": "/img/tile-white-doors-11-2-170x220.webp",
+    "src": "/img/navy-craftsman-side-m-11-2-170x220.webp",
     "width": 170,
     "height": 220,
     "frame": "11:2",
-    "name": "Tile white doors"
+    "name": "Tile (navy-craftsman-side-m)"
   },
   "12:69": {
     "src": "/img/olvera-11-brush-cutin-11-2-350x300.webp",

@@ -1,6 +1,6 @@
 ---
 // Inner-page photo from src/data/photos.json (full photos, not Figma crops). Size it with CSS; object-fit cover.
-// Names: olvera-01..04 = retouched Olvera jobs; orig-* = untouched Olvera job photos; mood-* = AI mood images (never label as Olvera work).
+// Names: navy-* = real Olvera exterior job (house number/yard sign removed); olvera-01..04 = retouched Olvera jobs; orig-* = untouched Olvera job photos; mood-* = AI mood images (never label as Olvera work).
 import photos from '../data/photos.json';
 interface Props { name: string; alt: string; class?: string; priority?: boolean; style?: string }
 const { name, alt, class: cls = '', priority = false, style } = Astro.props;
