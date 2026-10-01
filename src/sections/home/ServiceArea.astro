@@ -2,12 +2,14 @@
 // Homepage: Service area (Figma 9:38 desktop, 13:44 mobile). Owner: home-B.
 // Map = brand Oregon outline + 50-mile radius around Hillsboro, layered exactly as in Figma (no map embed).
 import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
-const cities = ['Hillsboro', 'Beaverton', 'Aloha', 'Tigard', 'Tualatin', 'Forest Grove', 'Portland', 'Newberg'];
-const chipD = ['9:45', '9:47', '9:49', '9:51', '9:53', '9:55', '9:57', '9:59'];
-const chipM = ['13:61', '13:63', '13:65', '13:67', '13:69', '13:71', '13:73', '13:75'];
-// Figma chip widths (its text boxes are rounded up to whole px); used as min-width so the rows wrap like Figma.
-const chipWD = [88, 97, 67, 72, 83, 113, 86, 89];
-const chipWM = [84, 93, 63, 68, 79, 109, 82, 85];
+// Counties and cities supplied by Jay (Oct 2026); replaces the Figma city chips.
+const counties: [string, string][] = [
+  ['Washington County', 'Beaverton, Hillsboro, Tigard, Aloha, Tualatin, Sherwood'],
+  ['Multnomah County', 'Portland, Gresham and nearby'],
+  ['Clackamas County', 'Lake Oswego, West Linn, Milwaukie, Oregon City'],
+  ['Yamhill County', 'Newberg, McMinnville and nearby'],
+  ['Clark County, WA', 'Vancouver and nearby'],
+];
 const mapLabel = 'Map of Oregon with a 50-mile radius around Hillsboro, our home base';
 ---
 <section aria-labelledby="area-title" class="bg-white" data-node="9:38" data-node-m="13:44">
@@ -17,7 +19,7 @@ const mapLabel = 'Map of Oregon with a 50-mile radius around Hillsboro, our home
         <p class="tm-eyebrow lg:t-eyebrow text-forest">SERVICE AREA</p>
         <h2 id="area-title" class="tm-h2 lg:t-display-m text-ink" data-node="9:42" data-node-m="13:47">Serving Hillsboro and homes within 50 miles</h2>
       </div>
-      <p class="t-body-m lg:t-body-l text-muted" data-node="9:43" data-node-m="13:48">We're based in Hillsboro and paint homes within about 50 miles, including Beaverton, Aloha, Tigard, Tualatin, Forest Grove, Portland and Newberg.</p>
+      <p class="t-body-m lg:t-body-l text-muted" data-node="9:43" data-node-m="13:48">We're based in Hillsboro and paint homes across these counties:</p>
       <!-- Mobile map (13:49) -->
       <div class="op-map-m lg:hidden relative w-[348px] max-w-full h-[272.6px] shrink-0" role="img" aria-label={mapLabel} data-node-m="13:49">
         <div class="absolute" style="left:14.38px;top:15.43px;width:336.17px;height:237.92px" data-node-m="13:50">
@@ -31,9 +33,12 @@ const mapLabel = 'Map of Oregon with a 50-mile radius around Hillsboro, our home
         <span class="op-ml absolute bg-evergreen text-white" style="left:88.81px;top:29.39px;padding:2.9px 5.8px" data-node-m="13:56"><span class="op-trm">HILLSBORO · HQ</span></span>
         <span class="op-ml absolute bg-white text-forest" style="left:54.01px;top:100.15px;padding:1.74px 4.64px" data-node-m="13:58"><span class="op-trm">≈ 50 MILES</span></span>
       </div>
-      <ul class="flex flex-wrap gap-[8px] lg:gap-[10px]" aria-label="Cities we serve" data-node="9:44" data-node-m="13:60">
-        {cities.map((c, i) => (
-          <li class="bg-primer border border-mist rounded-[40px] px-[12px] py-[7px] lg:px-[14px] lg:py-[8px] t-body-s text-ink whitespace-nowrap min-w-[var(--wm)] lg:min-w-[var(--wd)]" style={`--wm:${chipWM[i]}px;--wd:${chipWD[i]}px`} data-node={chipD[i]} data-node-m={chipM[i]}><span class="op-cn">{c}</span></li>
+      <ul class="flex flex-col border-t border-mist" aria-label="Counties we serve">
+        {counties.map(([county, cities]) => (
+          <li class="flex flex-col lg:flex-row lg:items-baseline gap-[2px] lg:gap-[12px] py-[10px] border-b border-mist">
+            <span class="t-button text-ink lg:w-[170px] lg:shrink-0">{county}</span>
+            <span class="t-body-s text-muted">{cities}</span>
+          </li>
         ))}
       </ul>
       <p class="hidden lg:flex self-start gap-[6px] items-start whitespace-nowrap" data-node="9:61">
@@ -67,6 +72,4 @@ const mapLabel = 'Map of Oregon with a 50-mile radius around Hillsboro, our home
   @media (max-width: 389.98px) { .op-map-m { zoom: 0.9; } }
   /* 1024–1279: scale the fixed-geometry desktop map so the text column keeps a readable width. */
   @media (min-width: 1024px) and (max-width: 1279.98px) { .op-map-d { zoom: 0.7; } }
-  /* Measured: Chrome sets the chip labels (Barlow 15/23) higher than the Figma render. */
-  .op-cn { position: relative; top: 1px; }
 </style>
