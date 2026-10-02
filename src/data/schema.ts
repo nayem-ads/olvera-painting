@@ -4,7 +4,7 @@ const SITE = 'https://olverapaintingllc.com';
 export const housePainter = {
   '@context': 'https://schema.org', '@type': 'HousePainter', name: BUSINESS, url: SITE + '/', telephone: '+1-' + PHONE_DISPLAY, email: EMAIL,
   address: { '@type': 'PostalAddress', streetAddress: ADDRESS_LINE1, addressLocality: 'Hillsboro', addressRegion: 'OR', postalCode: '97124', addressCountry: 'US' },
-  areaServed: ['Hillsboro', 'Beaverton', 'Aloha', 'Tigard', 'Tualatin', 'Sherwood', 'Forest Grove', 'Cornelius', 'North Plains', 'Banks', 'Portland', 'Lake Oswego', 'West Linn', 'Wilsonville', 'Newberg'].map((n) => ({ '@type': 'City', name: n + ', OR' })),
+  areaServed: ['Beaverton, OR', 'Hillsboro, OR', 'Tigard, OR', 'Aloha, OR', 'Tualatin, OR', 'Sherwood, OR', 'Portland, OR', 'Gresham, OR', 'Lake Oswego, OR', 'West Linn, OR', 'Milwaukie, OR', 'Oregon City, OR', 'Newberg, OR', 'McMinnville, OR', 'Vancouver, WA'].map((n) => ({ '@type': 'City', name: n })),
   openingHours: 'Mo-Fr 09:00-17:00', image: SITE + '/img/og.jpg', knowsLanguage: ['en', 'es'],
 };
 export const service = (name: string, path: string, description: string) => ({
